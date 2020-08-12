@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://opengraphprotocol.org/schema/ fb: http://www.facebook.com/2010/fbml d: http://dictionary.com/2011/dml">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+<base href="http://dictionary.reference.com/">
+<title>Discussion | Define Discussion at Dictionary.com</title>
+<script type="text/javascript">var UrlHelper=function(){var COOKIE_DOMAIN_THESAURUS='.thesaurus.com';var COOKIE_DOMAIN_DICTIONARY='.dictionary.com';var COOKIE_DOMAIN_REFERENCE='.reference.com';var domain=null;var currentURL=null;var spanidsUrl=null;function getSpanidsUrl(bid,sid,currentDomain){var url='http://';var source='';if(currentDomain==COOKIE_DOMAIN_DICTIONARY){url+='spanids.reference.com/?';source='d';}else if(currentDomain==COOKIE_DOMAIN_REFERENCE){url+='spanids.dictionary.com/?';source='r';}else{url+='spanids.dictionary.com/?';source='t';}
+url+='bid='+bid+'&asid='+sid+'&bidnew=1&asidnew=1&source='+source+'&site=app';return url;}
+function getCurrentDomain(){var host=window.location.host;var value="";if(host.indexOf(COOKIE_DOMAIN_THESAURUS)>-1){value=COOKIE_DOMAIN_THESAURUS;}else if(host.indexOf(COOKIE_DOMAIN_DICTIONARY)>-1){value=COOKIE_DOMAIN_DICTIONARY;}else if(host.indexOf(COOKIE_DOMAIN_REFERENCE)>-1){value=COOKIE_DOMAIN_REFERENCE;}
+return value;}
+return{getCurrentDomain:function(){if(domain===null){domain=getCurrentDomain();}
+return domain;},getCurrentDomainFromRequest:function(){return window.location.host;},getCurrentUrl:function(){if(currentURL===null){currentURL=window.location.protocol+"//"+window.location.host+""+window.location.pathname;}
+return currentURL;},getSpanidsUrl:function(bid,sid,domain){if(spanidsUrl===null){spanidsUrl=getSpanidsUrl(bid,sid,domain);}
+return spanidsUrl;}}}();</script><script type="text/javascript">var cookiesManager=function(){'use strict';return{getCookieValue:function(name){var value=null,cookies=document.cookie,searchedCookie=cookies.indexOf(" "+name+"=");if(searchedCookie===-1){var checkFirstCookie=cookies.indexOf(name+"=");searchedCookie=checkFirstCookie==0?0:-1;}
+if(searchedCookie>-1){var startPositionOfValue=cookies.indexOf("=",searchedCookie)+1,endPositionOfValue=cookies.indexOf(";",searchedCookie);if(endPositionOfValue===-1){endPositionOfValue=searchedCookie.length;}
+value=cookies.substring(startPositionOfValue,endPositionOfValue);}
+return value;},setCookie:function(name,value,hours,domain){var expires='',domain=domain||UrlHelper.getCurrentDomain();if(hours!==undefined){var now=new Date(),time=now.getTime();time+=(3600*hours)*1000;now.setTime(time);expires=';expires='+now.toGMTString();}
+document.cookie=name+'='+value+expires+';path=/'+';domain='+domain;}}}();</script><script type="text/javascript">var BidSidGenerator=(function(){'use strict';var COOKIE_NAME_BID='bid',COOKIE_NAME_SID='sid',COOKIE_NAME_SPANIDS='spanids',COOKIE_BID_EXPIRES=17520,COOKIE_SID_EXPIRES=0.5,bidCookieValue=null,sidCookieValue=null,bidCookieCreated=false,sidCookieCreated=false,spanIdsCookiePresent=false;function generateCookieValue(){var max=999999,min=100000,rand=Math.floor(Math.random()*(max-min))+min,time=new Date().getTime();return rand+"-"+time;}
+function processSpanIdsCookie(){var spanIdsValue=cookiesManager.getCookieValue(COOKIE_NAME_SPANIDS);if(spanIdsValue==='1'){cookiesManager.setCookie(COOKIE_NAME_SPANIDS,0,-1);spanIdsCookiePresent=true;}
+return false;}
+return{init:function(){bidCookieValue=cookiesManager.getCookieValue(COOKIE_NAME_BID);sidCookieValue=cookiesManager.getCookieValue(COOKIE_NAME_SID);if(bidCookieValue==null||bidCookieValue.length==0){bidCookieValue=generateCookieValue();cookiesManager.setCookie(COOKIE_NAME_BID,bidCookieValue,COOKIE_BID_EXPIRES);bidCookieCreated=true;}
+if(sidCookieValue==null||sidCookieValue.length==0){sidCookieValue=generateCookieValue();sidCookieCreated=true;}
+processSpanIdsCookie();cookiesManager.setCookie(COOKIE_NAME_SID,sidCookieValue,COOKIE_SID_EXPIRES);},propagateCookies:function(){if(bidCookieCreated||sidCookieCreated||spanIdsCookiePresent){var url=UrlHelper.getSpanidsUrl(bidCookieValue,sidCookieValue,UrlHelper.getCurrentDomain()),iFrame='<iframe id="spanids" style="width:1px;height:1px;margin-left:-1;position:absolute;border:none;" src="'+url+'"></iframe>';document.write(iFrame);}},touchSidCookie:function(){sidCookieValue=cookiesManager.getCookieValue(COOKIE_NAME_SID);if(sidCookieValue==null||sidCookieValue.length==0){sidCookieValue=generateCookieValue();sidCookieCreated=true;}
+cookiesManager.setCookie(COOKIE_NAME_SID,sidCookieValue,COOKIE_SID_EXPIRES);},isSidCookieCreated:function(){return sidCookieCreated;},isSpanIdsCookiePresent:function(){return spanIdsCookiePresent;}};}());BidSidGenerator.init();BidSidGenerator.propagateCookies();</script>
+<script>var u="http://track.reference.com/main.gif?ev=ps&qr=discussion&pn=dic&st=dict&ab=&dc=desktop",s=location.search.match(new RegExp('[\?\&]s=([^\&]*)(\&?)','i')),ms=(typeof ms==='undefined')?cookiesManager.getCookieValue('mseg')||"":ms;if(s!=null&&s[1]){if(s[1]=='t'||s[1]=='ts'||s[1]=='tn'){var ev=u.indexOf('ev=');if(ev!==-1){ev=ev+3;u=u.slice(0,ev)+'c'+u.slice(ev)+'&cl=59wn52&sc=1';}}}
+new Image().src=u+"&ms="+ms+"&rf="+encodeURIComponent(document.referrer)+"&cb="+Math.floor((Math.random()*899999999)+100000000);</script>
+<link rel="dns-prefetch" href="//static.sfdict.com"/><link rel="dns-prefetch" href="//pixel.quantserve.com"/><link rel="dns-prefetch" href="//partner.googleadservices.com"/><link rel="dns-prefetch" href="//pubads.g.doubleclick.net"/><link rel="dns-prefetch" href="//pagead2.googlesyndication.com"/><link rel="dns-prefetch" href="//pr.ybp.yahoo.com"/><link rel="dns-prefetch" href="//ads.yahoo.com"/><link rel="dns-prefetch" href="//u.openx.net"/><link rel="dns-prefetch" href="//ib.adnxs.com"/><link rel="dns-prefetch" href="//ox-d.bstk.servedbyopenx.com"/><link rel="dns-prefetch" href="https://ad.doubleclick.net"/><script>var SCCookie=function(){var COOKIE_NAME_SC="sc",DELIMITER=",",sessionCountValue=0,pageviewCountValue=0,cookieExpiration=180*24;function readCookie()
+{var cookieValue=cookiesManager.getCookieValue(COOKIE_NAME_SC),cookieValuesArray,cookieSessionCountValue,cookiePageviewCountValue;if(cookieValue==null){return false;}
+cookieValuesArray=cookieValue.split(DELIMITER);cookieSessionCountValue=parseInt(cookieValuesArray[0],10);cookiePageviewCountValue=parseInt(cookieValuesArray[1],10);if(cookieSessionCountValue>0){sessionCountValue=cookieSessionCountValue;}
+if(cookiePageviewCountValue>0){pageviewCountValue=cookiePageviewCountValue;}
+return true;}
+function writeCookie()
+{cookiesManager.setCookie(COOKIE_NAME_SC,sessionCountValue+DELIMITER+pageviewCountValue,cookieExpiration,UrlHelper.getCurrentDomainFromRequest());}
+return{init:function(){if(typeof BidSidGenerator!=='undefined'){var cookiePresent=readCookie();if(!cookiePresent){sessionCountValue=1;pageviewCountValue=1;}else{if(BidSidGenerator.isSidCookieCreated()||BidSidGenerator.isSpanIdsCookiePresent()){pageviewCountValue=1;sessionCountValue++;}else{pageviewCountValue++;}}
+writeCookie();}},getPageViewCount:function(){return pageviewCountValue;},getSessionCount:function(){return sessionCountValue;}}}();SCCookie.init();</script>
+<script type="text/javascript">var src=null;var retina=window.devicePixelRatio>1;if(retina){new Image().src='http://dictionary.reference.com/drc/img/responsive/serp-highdpi-3146e.png';}else{new Image().src='http://dictionary.reference.com/drc/img/responsive/serp-lowdpi-6c95e.png';}</script><meta property="fb:admins" content="100000304287730;109125464873"/><meta property="og:site_name" content="Dictionary.com"/><meta property="og:image" content="http://static.sfdict.com/dictcloud/img/social_logo-b8e2f.png"/><meta property="fb:app_id" content="127444090629600"/><meta name="msvalidate.01" content="DF5542D7723770377E9ABFF59AC1DC97"/><meta http-equiv="imagetoolbar" content="no"/><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/><meta name="keywords" content="discussion, online dictionary, English dictionary, discussion definition, define discussion, definition of discussion,
+        discussion pronunciation, discussion meaning, discussion origin, discussion examples"/><meta property="og:title" content="the definition of discussion"/><meta name="description" content="Discussion definition, an act or instance of discussing; consideration or examination by argument, comment, etc., especially to explore solutions; informal debate. See more."/><meta property="og:url" content="http://dictionary.reference.com/browse/discussion"/><link rel="shortcut icon" href="http://static.sfdict.com/dictcloud/favicon.ico"/><!--[if lt IE 9]><link rel="respond-proxy" id="respond-proxy" href="http://static.sfdict.com/app/respondProxy-d7e5f.html" /><![endif]--><!--[if lt IE 9]><link rel="respond-redirect" id="respond-redirect" href="http://dictionary.reference.com/img/respond.proxy.gif" /><![endif]--><link rel="search" type="application/opensearchdescription+xml" href="http://dictionary.reference.com/opensearch_desc.xml" title="Dictionary.com"/><link rel="publisher" href="https://plus.google.com/117428481782081853923"/><link rel="canonical" href="http://dictionary.reference.com/browse/discussion"/><link rel="stylesheet" href="http://dictionary.reference.com/drc/css/bootstrap.min-93899.css" type="text/css" media="all"/><link rel="stylesheet" href="http://dictionary.reference.com/drc/css/combinedSerp-54801.css" type="text/css" media="all"/><script type="text/javascript">var searchURL="http://dictionary.reference.com/browse/%40%40queryText%40%40?s=t";var CTSParams={"infix":"","clkpage":"dic","clksite":"dict","clkld":0};</script>
+<script type="text/javascript">var UserController=function(){var USER_STATUS_LOGGED_IN='L';var USER_STATUS_NOT_LOGGED='N';var USER_UNDER_13='Y';var USER_OVER_13='N';var COOKIE_NAME_SESS='sess';var COOKIE_NAME_FAV='fav';var COOKIE_NAME_SUPERSESS='ss';var PREMIUM_STATUS_VALUE=9;var FAV_COOKIE_PREMIUM_STATUS_KEY=0;var FAV_COOKIE_FAV_COUNT_KEY=1;var FAV_COOKIE_USER_UNDER_13_KEY=2;var isLoggedIn=null;var isPremium=null;var isSuperSess=null;var favNumber=null;var isUnder13=null;var displayAds=null;function checkIsUserUnder13(){if(isLoggedIn!==true){return false;}
+var isUnder13=USER_OVER_13;var favCookieValue=cookiesManager.getCookieValue(COOKIE_NAME_FAV);if(favCookieValue!=null){favCookieValue=decodeURIComponent(favCookieValue);isUnder13=favCookieValue.split('|')[FAV_COOKIE_USER_UNDER_13_KEY];}
+return isUnder13===USER_UNDER_13;}
+function checkIsUserLoggedIn(){var userStatus=USER_STATUS_NOT_LOGGED;var sessCookieValue=cookiesManager.getCookieValue(COOKIE_NAME_SESS);if(sessCookieValue!=null){userStatus=sessCookieValue.charAt(0);}
+return userStatus===USER_STATUS_LOGGED_IN;}
+function checkIfUserIsPremium(){var premiumStatus=null;var favCookieValue=cookiesManager.getCookieValue(COOKIE_NAME_FAV);if(favCookieValue!=null){favCookieValue=decodeURIComponent(favCookieValue);premiumStatus=favCookieValue.split('|')[FAV_COOKIE_PREMIUM_STATUS_KEY];}
+return premiumStatus==PREMIUM_STATUS_VALUE;}
+function getFavNum(){var count=0;var favCookieValue=cookiesManager.getCookieValue(COOKIE_NAME_FAV);if(favCookieValue!=null){favCookieValue=decodeURIComponent(favCookieValue);count=favCookieValue.split('|')[FAV_COOKIE_FAV_COUNT_KEY];}
+return count;}
+function checkIfUserHasSuperSession(){var superSessionCookieValue=cookiesManager.getCookieValue(COOKIE_NAME_SUPERSESS);if(superSessionCookieValue!==null){var xhr=createCORSRequest('GET','http://app.dictionary.com/supersession/check/'+superSessionCookieValue);if(xhr){xhr.onload=function(){var responseData=xhr.responseText;var data=JSON.parse(responseData);if(data==null){}else{cookiesManager.setCookie("sess",data['sessionCookie']);changeBodyClassNameForUser();}};xhr.send();}
+return true;}else{return false;}}
+function createCORSRequest(method,url){var xhr=new XMLHttpRequest();if("withCredentials"in xhr){xhr.open(method,url,true);}else if(typeof XDomainRequest!="undefined"){xhr=new XDomainRequest();xhr.open(method,url);}else{xhr=null;}
+return xhr;}
+function changeBodyClassNameForUser(){if(isPremium)
+document.body.className+=' premium';if(isLoggedIn)
+document.body.className+=' loggedin';if(isUnder13)
+document.body.className+=' isUnder13';}
+return{initHead:function(){isLoggedIn=checkIsUserLoggedIn();isPremium=checkIfUserIsPremium();isUnder13=checkIsUserUnder13();},initBody:function(){changeBodyClassNameForUser();if(isLoggedIn!==true){isSuperSess=checkIfUserHasSuperSession();}},isLoggedIn:function(){return isLoggedIn;},isPremium:function(){return isPremium},getFavNumber:function(){if(favNumber===null){favNumber=getFavNum();}
+return favNumber;},isUnder13:function(){return isUnder13;},shouldDisplayAds:function(){if(displayAds===null){displayAds=!isPremium&&!checkIsUserUnder13();}
+return displayAds;}}}();UserController.initHead();</script>
+<script type="text/javascript">"use strict";var adStart=Date.now(),OX_dfp_ads=[["/23219321/iac.dict.dictry.dw/results/serp_short/content",["728x90","970x90","970x250"],"dcomSERPLeaderBoard-728x90",{'pos':'top','pos2':'728x90_1',}],["/23219321/iac.dict.dictry.dw/results/serp_short/content",["300x250","300x600"],"dcomSERPTop-300x250",{'pos':'top','pos2':'300x250_1',}],["/23219321/iac.dict.dictry.dw/results/serp_short/content",["300x250"],"dcomSERPMid-300x250",{'pos':'mid','pos2':'300x250_2',}],["/23219321/iac.dict.dictry.dw/results/serp_short/content",["728x90"],"dcomSERPBottomLeaderBoard-728x90",{'pos':'bot','pos2':'728x90_2',}],],attachScriptAsync,targetingComplete,oxDone,gptCallIntiated=false,completedTargeting={},gptApp=gptApp||{},googletag=googletag||{},targetingEvtResponseTime=[];gptApp.ads=gptApp.ads||[];googletag.cmd=googletag.cmd||[];attachScriptAsync=function(scriptInfo){var tag=document.createElement("script"),p,node=document.getElementsByTagName("script")[0];tag.async=true;for(p in scriptInfo){if(scriptInfo.hasOwnProperty(p)&&p!="src"){tag[p]=scriptInfo[p];}}
+tag.src=scriptInfo.src;node.parentNode.insertBefore(tag,node);}
+gptApp.renderAds=function(){var len=gptApp.ads.length;for(var i=0;i<len;i++){gptApp.ads[i]();}
+gptApp.ads.push=function(fn){if("function"===typeof fn){setTimeout(fn,0);}};};targetingComplete=function(event){completedTargeting[event]=true;if(!gptCallIntiated){targetingEvtResponseTime.push(event+"|"+(Date.now()-adStart));if((completedTargeting.lot&&completedTargeting.amz&&completedTargeting.ox)||event=="fallback"){gptCallIntiated=true;googletag.cmd.push(function(){googletag.enableServices();googletag.pubads().setTargeting("perf",targetingEvtResponseTime);});gptApp.renderAds();}}}
+oxDone=function(events){googletag.cmd.push(function(){try{OX.dfp_bidder.setOxTargeting(googletag.pubads().getSlots());}catch(e){}});targetingComplete("ox");}
+attachScriptAsync({src:"//www.googletagservices.com/tag/js/gpt.js"});attachScriptAsync({src:"//c.amazon-adsystem.com/aax2/amzn_ads.js",onload:function(){try{amznads.getAdsCallback('3067',function(){googletag.cmd.push(function(){amznads.setTargetingForGPTAsync('yip4');});targetingComplete("amz");},1000);}catch(e){}}});attachScriptAsync({id:"LOTCC_4845",src:"//tags.crwdcntrl.net/c/4845/cc.js?ns=_cc4845",onload:function(){try{_cc4845.add("ctax","Sites^Dictionary^Desktop Sites^dict^PageName^dic^^dic");_cc4845.bcp();}catch(e){}}});attachScriptAsync({src:"//ad.crwdcntrl.net/5/c=4736/pe=y/var=ccauds",onload:function(){googletag.cmd.push(function(){var dartCC,lpid,ltpid,cci,audience;if(typeof(ccauds)!='undefined'&&ccauds.Profile){dartCC=[];lpid=(typeof(ccauds.Profile.pid)!='undefined')?ccauds.Profile.pid:"";ltpid=(typeof(ccauds.Profile.tpid)!='undefined')?ccauds.Profile.tpid:"";audience=((ccauds.Profile.Audiences||{}).Audience)||[];for(cci=0;cci<audience.length;cci++){dartCC.push(audience[cci].abbr);}
+googletag.pubads().setTargeting("lpid",lpid).setTargeting("ltpid",ltpid).setTargeting("lseg",dartCC);}});targetingComplete("lot");}});attachScriptAsync({src:"//ox-d.ask.servedbyopenx.com/w/1.0/jstag?nc=23219321-dictionary",onload:function(){setTimeout(function(){if(!('OX'in window)){targetingComplete("ox");}},500);}});setTimeout(function(){targetingComplete("fallback");},1500);</script>
+<script>function getRefValue(referrer){if(referrer.indexOf('dictionary.com')==-1&&referrer.indexOf('thesaurus.com')==-1&&referrer.indexOf('reference.com')==-1){return'organic';}
+return'direct';}
+function getRPV(){return Math.floor((Math.random()*100)+1).toString();}
+function getDCRefValue(){return encodeURIComponent(window.location.href);}
+function getDayofWeek(){return new Date().getDay().toString();}
+function getSPV(){var pv;if(typeof SCCookie!=='undefined'){pv=SCCookie.getPageViewCount()+'';}
+return pv;}
+googletag.slots={};googletag.slotsCount=4;googletag.renderedAdsCount=0;googletag.adsRenderedInfo=(function(){var renderedAds=[];return{set:function(name,size){renderedAds[name]={size:size};},get:function(name){return renderedAds[name];}}}());googletag.cmd.push(function(){googletag.slots["dcomSERPLeaderBoard-728x90"]=googletag.defineSlot("/23219321/iac.dict.dictry.dw/results/serp_short/content",[[728,90],[970,90],[970,250]],"dcomSERPLeaderBoard-728x90").addService(googletag.pubads()).setTargeting("pos","top").setTargeting("pos2","728x90_1").setTargeting("tx1","results").setTargeting("tx2","serp_short").setTargeting("ptype","content");googletag.slots["dcomSERPTop-300x250"]=googletag.defineSlot("/23219321/iac.dict.dictry.dw/results/serp_short/content",[[300,250],[300,600]],"dcomSERPTop-300x250").addService(googletag.pubads()).setTargeting("pos","top").setTargeting("pos2","300x250_1").setTargeting("tx1","results").setTargeting("tx2","serp_short").setTargeting("ptype","content");googletag.slots["dcomSERPMid-300x250"]=googletag.defineSlot("/23219321/iac.dict.dictry.dw/results/serp_short/content",[300,250],"dcomSERPMid-300x250").addService(googletag.pubads()).setTargeting("pos","mid").setTargeting("pos2","300x250_2").setTargeting("tx1","results").setTargeting("tx2","serp_short").setTargeting("ptype","content");googletag.slots["dcomSERPBottomLeaderBoard-728x90"]=googletag.defineSlot("/23219321/iac.dict.dictry.dw/results/serp_short/content",[728,90],"dcomSERPBottomLeaderBoard-728x90").addService(googletag.pubads()).setTargeting("pos","bot").setTargeting("pos2","728x90_2").setTargeting("tx1","results").setTargeting("tx2","serp_short").setTargeting("ptype","content");googletag.pubads().setTargeting("ref",getRefValue(document.referrer)).setTargeting("lang","en").setTargeting("rpv",getRPV()).setTargeting("dc_ref",getDCRefValue()).setTargeting("loc","US").setTargeting("ld","0").setTargeting("dow",getDayofWeek());googletag.pubads().setTargeting("pv",getSPV());googletag.pubads().setTargeting("kw","discussion");var adtest=location.search.match(new RegExp("[\?\&]adtest=([^\&]*)(\&?)","i"));if(adtest!=null&&adtest[1]!=""){googletag.pubads().setTargeting("adtest",adtest[1]);}
+googletag.pubads().enableSingleRequest();googletag.pubads().enableAsyncRendering();googletag.adsLoaded=function(){return googletag.renderedAdsCount>=googletag.slotsCount;};googletag.pubads().addEventListener('slotRenderEnded',function(data){var slotKey;for(slotKey in googletag.slots){if(googletag.slots[slotKey]==data.slot){break;}}
+googletag.adsRenderedInfo.set(slotKey,data.size);googletag.renderedAdsCount+=1;if(googletag.adsLoaded()){if(document.createEvent){var event=new CustomEvent('gptAdsLoaded');document.dispatchEvent(event);}else{var event=document.createEventObject();event.eventType="gptAdsLoaded";document.fireEvent("ongptAdsLoaded",event);}}});});</script>
+<script type='text/javascript'>window.dataLayer=window.dataLayer||[];dataLayer.push({'event':'pageview','device':'Desktop','pageName':'dic','LDid':'0','mseg':"70",'sessionId':cookiesManager.getCookieValue("sid"),'browserId':cookiesManager.getCookieValue("bid")});</script><!--[if lt IE 9]><script type="text/javascript" src="http://static.sfdict.com/app/js/html5-08e79.js" ></script><![endif]--><!--[if lt IE 9]><script type="text/javascript" src="http://static.sfdict.com/app/js/respond.min-b6b12.js" ></script><![endif]--><!--[if lt IE 9]><script type="text/javascript" src="http://static.sfdict.com/app/js/respond.proxy-51cdb.js" ></script><![endif]-->
+<script type="text/javascript">var _qevents=_qevents||[];(function(){var elem=document.createElement('script');elem.src=(document.location.protocol=="https:"?"https://secure":"http://edge")+".quantserve.com/quant.js";elem.async=true;elem.type="text/javascript";var scpt=document.getElementsByTagName('script')[0];scpt.parentNode.insertBefore(elem,scpt);})();</script>
+<script>if(typeof UserController==="undefined"||!UserController.isUnder13()){var _comscore=_comscore||[];_comscore.push({c1:"2",c2:"6034776",c3:"",c4:(new String(window.location)).replace(/\?.*$/,"")});(function(){var s=document.createElement("script"),el=document.getElementsByTagName("script")[0];s.async=true;s.src=(document.location.protocol=="https:"?"https://sb":"http://b")+".scorecardresearch.com/beacon.js";el.parentNode.insertBefore(s,el);})();}</script>
+<noscript>
+<img src="http://b.scorecardresearch.com/p?c1=2&c2=6034776&cv=2.0&cj=1"/>
+</noscript>
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "http://dictionary.reference.com/browse/discussion",
+    "potentialAction":
+    { "@type": "ViewAction", "target": "android-app://com.dictionary/http/dictionary.com/search?word=discussion" }
+}
+</script> </head>
+<body>
+<noscript>
+<iframe src="//www.googletagmanager.com/ns.html?id=GTM-TXC5GP" height="0" width="0" style="display:none;visibility:hidden">
+</iframe>
+</noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TXC5GP');</script>
+<div id="fb-root"></div>
+<script type="text/javascript">UserController.initBody();</script>
+<nav id="nav" class="visible-xs">
+<ul>
+<li><a href="http://www.thesaurus.com/browse/discussion" data-linkid="c1drjk">Thesaurus</a></li>
+<li><a href="http://translate.reference.com/translate?query=discussion" data-linkid="au3zd1">Translate</a></li>
+<li><a href="http://dictionary.reference.com/fun" data-linkid="yp2k17">Puzzles & Games</a></li>
+<li><a href="http://dictionary.reference.com/wordoftheday" data-linkid="1498ik">Word of the Day</a></li>
+<li><a href="http://blog.dictionary.com/" data-linkid="t6ehki">Blog</a></li>
+<li>
+<a href="http://dictionary.reference.com/slideshows/internet-abbreviations" data-linkid="98o4k9">Slideshows</a>
+</li>
+<li><a href="http://app.dictionary.com/appswall" data-linkid="jmrau8">Apps by Dictionary</a></li>
+</ul>
+</nav>
+<script type="text/javascript">function submitForm(){var queryText=document.getElementById('q').value||'search',searchUrl,filter;if(queryText==='/'){queryText=''}else if(queryText.indexOf("#")!==-1||queryText.indexOf("&")!==-1){queryText=encodeURIComponent(queryText);}
+queryText=encodeURIComponent(queryText);searchUrl=searchURL.replace('%40%40queryText%40%40',queryText);location.href=searchUrl;return false;}
+function prepareSearchBox(el){var dataTerm=el.getAttribute('data-term');var value=el.value;if(!(/(iPad|iPhone|iPod)/g.test(navigator.userAgent))){el.focus();if(dataTerm==value){el.select();}}}</script>
+<header id="responsive-header" class="js-header dictionary-header">
+<div class="header-container">
+<div class="right-menu">
+<ul class="loginSpace">
+<li class="user-logged-in"><a href="http://app.dictionary.com/users/settings">My Account</a></li>
+<li class="user-logged-in"><a href="http://app.dictionary.com/logout?logindest=http://dictionary.reference.com/browse/discussion">Log Out</a></li>
+<li class="user-logged-out"><a href="http://app.dictionary.com/login/core?source=header_core&logindest=http://dictionary.reference.com/browse/discussion">Log In</a></li>
+</ul>
+<ul class="social">
+<li><a href="http://www.facebook.com/dictionarycom" class="facebook-icon" data-linkid="79499m"></a></li>
+<li><a href="https://twitter.com/dictionarycom" class="twitter-icon" data-linkid="ataz0h"></a></li>
+<li><a href="https://plus.google.com/+Dictionary" class="google-icon" data-linkid="6fpttk"></a></li>
+</ul>
+<p>follow Dictionary.com</p>
+</div>
+<div class="header-row">
+<div class="app-name-space">
+<div class="app-name-space">
+<a href="http://dictionary.reference.com/" data-linkid="yg487x"> <img src="http://dictionary.reference.com/drc/img/responsive/dcom-logo-8f31c.png" alt="Dictionary.com" class="logo"/>
+</a>
+</div>
+</div>
+<div class="app-content">
+<nav class="nav-space">
+<ul>
+<li class="nav-active">
+<a href="http://dictionary.reference.com/browse/discussion" data-linkid="tqks0v">Dictionary</a>
+<div class="small-arrow"></div>
+</li>
+<li>
+<a href="http://www.thesaurus.com/browse/discussion" data-linkid="qxnxzj">Thesaurus</a>
+</li>
+<li class="nopad ">
+<a href="http://translate.reference.com/translate?query=discussion" data-linkid="s6ljc3">Translate</a>
+</li>
+<li class="nav-more-button" onclick="">
+<span class="nav-links">More...</span>
+<ul class="drop-down-list-header">
+<li><a href="http://blog.dictionary.com/" data-linkid="prrhwm">Our Blog</a></li>
+<li><a href="http://dictionary.reference.com/fun/crossword" data-linkid="dp2158">Daily Crossword</a></li>
+<li><a href="http://dictionary.reference.com/crossword/index.html" data-linkid="6g2ifa">Crossword Solver</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+<div class="hamburger-space  visible-xs">
+<div id="hamburgerButton" class="js-hamburgerButton button-hamburger"></div>
+</div>
+<div class="search-box-space">
+<div class="u-row">
+<form id="main_search" class="search-form" action="http://dictionary.reference.com/dic">
+<fieldset>
+<div class="search-input">
+<input type="text" value="discussion" autoComplete="off" autocapitalize="off" autocorrect="off" name="q" class="form-control input-lg" id="q" data-term="discussion">
+<input type="hidden" name="s" value="t"/>
+<input type="button" id="search-clear" class="search-clear"/>
+<input type="submit" id="search-submit" class="search-submit" value="Search"/>
+</div>
+</fieldset>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<script type="text/javascript">document.getElementById('main_search').onsubmit=submitForm;prepareSearchBox(document.getElementById('q'));</script>
+<div id="header-leaderboard">
+<div class="leaderboard-ad">
+<div id="dcomSERPLeaderBoard-728x90"><script type="text/javascript">if(typeof UserController!=="undefined"&&!UserController.shouldDisplayAds()){document.getElementById("dcomSERPLeaderBoard-728x90").parentNode.removeChild(document.getElementById("dcomSERPLeaderBoard-728x90"));}else{gptApp.ads.push(function(){googletag.cmd.push(function(){googletag.display("dcomSERPLeaderBoard-728x90");});});}</script></div> </div>
+</div>
+<script type="text/javascript">var ResponsiveHeaderUtils=(function(){function disableStickyForIDevices(){var iOS=/(iPad|iPhone|iPod)/g.test(navigator.userAgent);if(iOS){var body=document.querySelectorAll('body');body[0].className+=' '+'js-is-iDevice';}}
+function disableStickyForAndroid(){var android=/(Android)/g.test(navigator.userAgent);if(android){var body=document.querySelectorAll('body');body[0].className+=' '+'js-is-Android';}}
+return{init:function(){disableStickyForIDevices();disableStickyForAndroid();}}}());ResponsiveHeaderUtils.init();</script>
+<div id="fly-out" class="fly-out fly-out-desktop" style="">
+<a href="http://blog.dictionary.com/denotation-and-connotation/" style="display:block;" data-linkid="879n6m"> <div class="text">
+Denotation vs. Connotation </div>
+</a>
+<button type="button" class="fly-out-close-icon"></button>
+</div>
+<div class="content-container main-area">
+<div class="row">
+<div class="left-rail-container">
+<div class="left-nav-sticky">
+<div class="left-nav-wrapper">
+<ul>
+<li class="left-nav-fav">
+<button class="favorite-button">Favorite Button</button>
+</li>
+<li class="left-nav-cite">
+<a href="http://dictionary.reference.com/#" id="cite-source-link" rel="nofollow" data-linkid="dr8lp1">CITE</a>
+</li>
+<li class="left-nav-trans">
+<a href="http://translate.reference.com/translate?query=discussion" data-linkid="qnmgro">Translate</a>
+</li>
+<li class="social-share-facebook">
+<a id="left-nav-button-fb">Facebook</a>
+<div class="share">Share</div>
+</li>
+<li class="social-share-twitter">
+<a id="left-nav-button-twitter" href="https://twitter.com/share?url=http%3A%2F%2Fdictionary.reference.com%2Fbrowse%2Fdiscussion&text=Discussion definition, an act or instance of discussing; consideration or examination by a...&via=dictionarycom" target="_blank">Twitter</a>
+<div class="share">Tweet</div>
+</li>
+<li class="social-share-google">
+<a id="left-nav-button-gp" href="https://plus.google.com/share?url=http%3A%2F%2Fdictionary.reference.com%2Fbrowse%2Fdiscussion" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false">Google+</a>
+<div class="share">Share</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="center-well-container" data-linkid='nn1ov4' data-cts='{"linkId":"nn1ov4","infix":"","domain":"dictionary.com","clkpage":"dic","clkmod":"1clk","clksite":"dict","clkld":0}' data-href='http://dictionary.reference.com/browse/'>
+<section id="source-luna" data-pm-btn-target=".source-box, .source-meta" class="source-wrapper source-luna is-pm-btn-show pm-btn-spot">
+<div class="source-box oneClick-area">
+<section class="luna-box">
+<header class="main-header oneClick-disabled head-big">
+<div class="waypoint-wrapper header-row header-first-row" data-href="source-luna">
+<h1 class="head-entry"><span class="me" data-syllable="dis·cus·sion">discussion</span></h1>
+<div class="audio-wrapper"> <audio> <source src="http://static.sfdict.com/staticrep/dictaudio/lunawav/D03/D0357500.ogg" type="audio/ogg"> <source src="http://static.sfdict.com/staticrep/dictaudio/D03/D0357500.mp3" type="audio/mpeg"> </audio> <a class="speaker" href="http://static.sfdict.com/staticrep/dictaudio/D03/D0357500.mp3"></a></div> <h3 class="head-entry-variants"></h3>
+</div>
+<div class="header-row header-extras pronounce pronset">
+<div>
+<span class="pron spellpron">[dih-<span class="dbox-bold">skuhsh</span>-<span class="dbox-italic">uh</span> n] </span>
+<span class="pron ipapron">/dɪˈskʌʃ ən/ </span>
+<span class="pre-def-data"> </span>
+</div>
+<div>
+<button class="prontoggle pronounce-button pronounce-Spell-button">Spell</button>
+<button class="syllable-button syllable-button-off" data-header="1">Syllables</button>
+</div>
+</div>
+<div class="header-row">
+<ul class="headword-bar-list">
+<li>
+<a data-href="source-example-sentences">
+Examples </a>
+</li>
+<li>
+<a data-href="source-word-origin">
+Word Origin </a>
+</li>
+</ul>
+</div>
+</header>
+<div class="source-data">
+<div class="def-list">
+<section class="def-pbk ce-spot" data-collapse-expand='{"target": ".def-set", "type": "def"}'>
+<header class="luna-data-header">
+<span class="dbox-pg">noun</span> </header>
+<div class="def-set">
+<span class="def-number">1.</span>
+<div class="def-content">
+an act or instance of <a class="dbox-xref dbox-roman" href="http://dictionary.reference.com/browse/discuss">discussing</a>; consideration or examination by argument, comment, etc., especially to explore solutions; informal debate. </div>
+</div>
+</section>
+</div>
+<div class="tail-wrapper">
+<div class="tail-box tail-type-origin pm-btn-spot" data-pm-btn-target=".tail-content">
+<div class="tail-header waypoint-wrapper" id="source-word-origin" data-href="source-word-origin">
+Origin of <span class="me" data-syllable="dis·cus·sion">discussion</span> <button class="button-source" type="button">Expand</button>
+</div>
+<div class="tail-content ">
+<div class="tail-elements">
+<div class="map-origin">
+<div class="map-area">
+<div class="map-origin-language" style="left: 45.522222222222%;bottom: 68.088888888889%;">
+<div class="dot dot-left dot-bottom "></div>
+<div class="language-name oneClick-disabled">
+<a class="language-name" href="http://dictionary.reference.com/browse/Middle%20English">Middle English</a>
+</div>
+</div>
+<div class="map-origin-language" style="right: 54.2%;top: 32.466666666667%;">
+<div class="dot dot-right dot-top "></div>
+<div class="language-name oneClick-disabled">
+<a class="language-name" href="http://dictionary.reference.com/browse/Anglo-French">Anglo-French</a>
+</div>
+</div>
+<div class="map-origin-language" style="left: 48.855555555556%;top: 35.8%;">
+<div class="dot dot-left dot-top "></div>
+<div class="language-name oneClick-disabled">
+<a class="language-name" href="http://dictionary.reference.com/browse/Late%20Latin">Late Latin</a>
+</div>
+</div>
+</div>
+</div>
+<div class="timeline oneClick-disabled">
+<div class="span" style="left:49.50495049505% ; width:3.5360678925035% ;">
+<span class="date start-date">1300-1350</span>
+</div>
+</div>
+<span class="dbox-roman">1300-50;</span> <span class="dbox-roman">Middle English</span> < <span class="dbox-roman">Anglo-French</span> < <span class="dbox-roman">Late Latin</span> <span class="dbox-italic">discussiōn-</span> (stem of <span class="dbox-italic">discussiō</span>) inquiry, examination, <span class="dbox-roman">Latin:</span> a shaking. See <a class="dbox-xref dbox-roman" href="http://dictionary.reference.com/browse/discuss">discuss</a>, <a class="dbox-xref dbox-roman" href="http://dictionary.reference.com/browse/-ion">-ion</a> </div>
+</div>
+</div>
+<div class="tail-box tail-type-relf pm-btn-spot" data-pm-btn-target=".tail-content">
+<div class="tail-header ">
+Related forms <button class="button-source" type="button">Expand</button>
+</div>
+<div class="tail-content ce-spot" data-collapse-expand='{"target": ".tail-elements", "type": "supEntry"}'>
+<div class="tail-elements">
+<span class="dbox-bold" data-syllable="dis·cus·sion·al, ">discussional, </span><span class="dbox-pg">adjective</span> </div>
+<div class="tail-elements">
+<span class="dbox-bold" data-syllable="pre·dis·cus·sion, ">prediscussion, </span><span class="dbox-pg">noun</span> </div>
+<div class="tail-elements">
+<span class="dbox-bold" data-syllable="re·dis·cus·sion, ">rediscussion, </span><span class="dbox-pg">noun</span> </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="source-meta">
+Dictionary.com Unabridged<br/>Based on the Random House Dictionary, © Random House, Inc. 2015.<br/>
+<a href="http://dictionary.reference.com/cite.html?qh=discussion&ia=luna" class="source-cite" rel="nofollow">Cite This Source</a>
+</div>
+</section>
+<section id="source-example-sentences" class="source-wrapper source-example-sentences is-pm-btn-show pm-btn-spot" data-pm-btn-target=".source-box">
+<div class="source-title">
+Examples from the Web for <span class="u-headword">discussion</span>
+<button class="js-button-source button-source" type="button">Expand</button>
+</div>
+<div class="sent-wrap ce-spot" data-collapse-expand='{"target": ".source-box", "type": "sentences_list"}'>
+<div class="source-box oneClick-area" data-cts='{"linkId":"k4otco","infix":"","domain":"dictionary.com","clkpage":"dic","clkmod":"1clkesp","clksite":"dict","clkld":0}' data-href='http://dictionary.reference.com/browse/' data-imp="k4otco">
+<div class="source-subtitle oneClick-disabled">Contemporary Examples</div>
+<ul>
+<li>
+<p class="partner-example-text">
+Read Thomas Frank's <em>discussion</em> about this column and his book, Pity the Billionaire. </p>
+<div class="partner-example-credentials" data-linkid='fboxke'>
+<a class="partner-example-logo" href="http://www.thedailybeast.com?source=dictionary" target="_blank" rel="nofollow"></a>
+<span>
+<a href="http://www.thedailybeast.com/articles/2012/10/04/billionaires-are-the-victims-thomas-frank-on-the-republican-strategy.html?source=dictionary" target="_blank" rel="nofollow">Billionaires Are the Victims! Thomas Frank on the Republican Strategy</a>
+</span>
+<span>
+<a href="http://www.thedailybeast.com/contributors/thomas-frank.html?source=dictionary" target="_blank" rel="nofollow">Thomas Frank</a>
+</span>
+<span class="oneClick-disabled">
+October 3, 2012 </span>
+</div>
+</li>
+<li>
+<p class="partner-example-text">
+This year al-Zawahiri focused his annual message on a <em>discussion</em> of the drone war and its impact. </p>
+<div class="partner-example-credentials" data-linkid='fboxke'>
+<a class="partner-example-logo" href="http://www.thedailybeast.com?source=dictionary" target="_blank" rel="nofollow"></a>
+<span>
+<a href="http://www.thedailybeast.com/articles/2012/09/13/al-qaeda-s-libya-vengeance-plot.html?source=dictionary" target="_blank" rel="nofollow">Al Qaeda’s Libya Vengeance Plot</a>
+</span>
+<span>
+<a href="http://www.thedailybeast.com/contributors/bruce-riedel.html?source=dictionary" target="_blank" rel="nofollow">Bruce Riedel</a>
+</span>
+<span class="oneClick-disabled">
+September 12, 2012 </span>
+</div>
+</li>
+<li>
+<p class="partner-example-text">
+Forgive me, here, for bringing to the <em>discussion</em> a personal note. </p>
+<div class="partner-example-credentials" data-linkid='fboxke'>
+<a class="partner-example-logo" href="http://www.thedailybeast.com?source=dictionary" target="_blank" rel="nofollow"></a>
+<span>
+<a href="http://www.thedailybeast.com/articles/2010/01/11/in-defense-of-tea-parties.html?source=dictionary" target="_blank" rel="nofollow">In Defense of Tea Parties</a>
+</span>
+<span>
+<a href="http://www.thedailybeast.com/contributors/tunku-varadarajan.html?source=dictionary" target="_blank" rel="nofollow">Tunku Varadarajan</a>
+</span>
+<span class="oneClick-disabled">
+January 10, 2010 </span>
+</div>
+</li>
+<li>
+<p class="partner-example-text">
+What follows is an edited transcript of that <em>discussion</em>, which ended in tears for more than one of its participants. </p>
+<div class="partner-example-credentials" data-linkid='fboxke'>
+<a class="partner-example-logo" href="http://www.thedailybeast.com?source=dictionary" target="_blank" rel="nofollow"></a>
+<span>
+<a href="http://www.thedailybeast.com/articles/2012/02/28/community-alison-brie-yvette-nicole-brown-gillian-jacobs-megan-ganz-roundtable.html?source=dictionary" target="_blank" rel="nofollow">‘Community’: Alison Brie, Yvette Nicole Brown, Gillian Jacobs & Megan Ganz Roundtable</a>
+</span>
+<span>
+<a href="http://www.thedailybeast.com/contributors/jace-lacob.html?source=dictionary" target="_blank" rel="nofollow">Jace Lacob</a>
+</span>
+<span class="oneClick-disabled">
+February 27, 2012 </span>
+</div>
+</li>
+<li>
+<p class="partner-example-text">
+Given the way the media works, someone who does that and who is visible can actually help set the agenda of the <em>discussion</em>. </p>
+<div class="partner-example-credentials" data-linkid='fboxke'>
+<a class="partner-example-logo" href="http://www.thedailybeast.com?source=dictionary" target="_blank" rel="nofollow"></a>
+<span>
+<a href="http://www.thedailybeast.com/articles/2009/08/28/the-year-in-palin.html?source=dictionary" target="_blank" rel="nofollow">The Year in Palin</a>
+</span>
+<span>
+<a href="http://www.thedailybeast.com/contributors/the-daily-beast.html?source=dictionary" target="_blank" rel="nofollow">The Daily Beast</a>
+</span>
+<span class="oneClick-disabled">
+August 27, 2009 </span>
+</div>
+</li>
+</ul>
+</div>
+<div class="source-box oneClick-area" data-cts='{"linkId":"ixxth0","infix":"","domain":"dictionary.com","clkpage":"dic","clkmod":"1clkesp","clksite":"dict","clkld":0}' data-href='http://dictionary.reference.com/browse/' data-imp="ixxth0">
+<div class="source-subtitle oneClick-disabled">Historical Examples</div>
+<ul>
+<li>
+<p class="partner-example-text">
+At least it was he who had determined when the <em>discussion</em> should be closed. </p>
+<div class="partner-example-credentials" data-linkid='sl8bq9'>
+<span>
+<a href="http://www.gutenberg.org/files/39556/39556-h/39556-h.htm" target="_blank" rel="nofollow">Guy and Pauline</a>
+</span>
+<span class="oneClick-disabled">
+Compton Mackenzie </span>
+</div>
+</li>
+<li>
+<p class="partner-example-text">
+After supper, Mr. Palfrey opened the <em>discussion</em> on Marriage. </p>
+<div class="partner-example-credentials" data-linkid='sl8bq9'>
+<span>
+<a href="http://www.gutenberg.org/files/9461/9461-h/9461-h.htm" target="_blank" rel="nofollow">The Foolish Lovers</a>
+</span>
+<span class="oneClick-disabled">
+St. John G. Ervine </span>
+</div>
+</li>
+<li>
+<p class="partner-example-text">
+Our absolute lack of facts only made the field of <em>discussion</em> wider. </p>
+<div class="partner-example-credentials" data-linkid='sl8bq9'>
+<span>
+<a href="http://www.gutenberg.org/files/32/32-h/32-h.htm" target="_blank" rel="nofollow">Herland</a>
+</span>
+<span class="oneClick-disabled">
+Charlotte Perkins Stetson Gilman </span>
+</div>
+</li>
+<li>
+<p class="partner-example-text">
+Peaceful, thus drawn into the <em>discussion</em>, cleared his throat again. </p>
+<div class="partner-example-credentials" data-linkid='sl8bq9'>
+<span>
+<a href="http://www.gutenberg.org/files/938/938-h/938-h.htm" target="_blank" rel="nofollow">Good Indian</a>
+</span>
+<span class="oneClick-disabled">
+B. M. Bower </span>
+</div>
+</li>
+<li>
+<p class="partner-example-text">
+Your <em>discussion</em> is interesting and I can understand it well. </p>
+<div class="partner-example-credentials" data-linkid='sl8bq9'>
+<span>
+<a href="http://www.gutenberg.org/files/14345/14345-h/14345-h.htm" target="_blank" rel="nofollow">The Fight For The Republic in China</a>
+</span>
+<span class="oneClick-disabled">
+Bertram Lenox Putnam Weale </span>
+</div>
+</li>
+</ul>
+</div>
+</section><section id="source-ced2" data-pm-btn-target=".source-box, .source-meta" class="source-wrapper source-ced2 is-pm-btn-show pm-btn-spot">
+<div class="source-title">
+British Dictionary definitions for <span class="u-headword">discussion</span> <button class="button-source" type="button">Expand</button>
+</div>
+<div class="source-box oneClick-area">
+<header class="main-header oneClick-disabled head-big">
+<div class="header-row header-first-row">
+<h2 class="head-entry"><span class="me">discussion</span></h2>
+</div>
+<div class="header-row header-middle-row">
+<div class="pronounce">
+<span class="pronset">
+<span class="pron ipapron">/<span class="dbox-pron">dɪˈskʌʃən</span>/ </span>
+</span>
+</div>
+</div>
+</header>
+<div class="source-data ce-spot" data-collapse-expand='{"target": ".def-coll", "type": "collins"}'>
+<div class="def-coll">
+<div class="def-list">
+<div class="def-pbk">
+<span class="dbox-pg">noun</span> <div class="def-set">
+<span class="def-number">1.</span>
+<div class="def-content">
+the examination or consideration of a matter in speech or writing </div>
+</div>
+</div>
+</div>
+<div class="tail-wrapper">
+<div class="tail-box tail-type-relf">
+<div class="tail-header">
+Derived Forms </div>
+<div class="tail-content">
+<div class="tail-elements">
+<span class="dbox-bold" data-syllable="disˈcussional, ">discussional, </span><span class="dbox-pg">adjective</span> </div>
+</div>
+</div>
+</div> </div>
+</div> </div>
+<div class="source-meta">
+Collins English Dictionary - Complete & Unabridged 2012 Digital Edition<br/> © William Collins Sons & Co. Ltd. 1979, 1986 © HarperCollins<br/>Publishers 1998, 2000, 2003, 2005, 2006, 2007, 2009, 2012<br/>
+<a href="http://dictionary.reference.com/cite.html?qh=discussion&ia=ced2" class="source-cite" rel="nofollow">Cite This Source</a>
+</div>
+</section>
+<section id="source-etymon2" data-pm-btn-target=".source-box, .source-meta" class="source-wrapper source-etymon2 is-pm-btn-show pm-btn-spot">
+<div class="source-title">
+Word Origin and History for <span class="u-headword">discussion</span> <button class="button-source" type="button">Expand</button>
+</div>
+<div class="source-box oneClick-area">
+<div class="source-data">
+<div class="def-list">
+<span class="dbox-italic">n.</span> <section class="def-pbk">
+<div class="def-set">
+<p>mid-14c., "examination, investigation, judicial trial," from Old French <span class="dbox-italic">discussion</span> "discussion, examination, investigation, legal trial," from Late Latin <span class="dbox-italic">discussionem</span> (nominative <span class="dbox-italic">discussio</span>) "examination, discussion," in classical Latin, "a shaking," from <span class="dbox-italic">discussus</span>, past participle of <span class="dbox-italic">discutere</span> "strike asunder, break up," from <span class="dbox-italic">dis-</span> "apart" (see <a class="dbox-xref" href="/browse/dis-">dis-</a>) + <span class="dbox-italic">quatere</span> "to shake" (see <a class="dbox-xref" href="/browse/quash">quash</a>). Meaning "a talking over, debating" in English first recorded mid-15c. Sense evolution in Latin appears to have been from "smash apart" to "scatter, disperse," then in post-classical times (via the mental process involved) to "investigate, examine," then to "debate."</p>
+</div>
+</section>
+</div>
+</div> </div>
+<div class="source-meta">
+Online Etymology Dictionary, © 2010 Douglas Harper<br/>
+<a href="http://dictionary.reference.com/cite.html?qh=discussion&ia=etymon2" class="source-cite" rel="nofollow">Cite This Source</a>
+</div>
+</section>
+<div class="hidden-xs">
+<div class="slideshows short-serp-slideshow" data-imp="nqdc8q" data-linkid='nqdc8q'>
+<h3>Discover our greatest slideshows</h3>
+<ul class="carousel">
+<li class="slide">
+<a href="http://dictionary.reference.com/slideshows/internet-abbreviations">
+<img width="130" height="140" id="slideImg1" src="http://static.sfdict.com/assets/6154-4370182-59.jpg">
+</a>
+<div class="title-wrapper">
+<h3>
+<a class="title-link" href="http://dictionary.reference.com/slideshows/internet-abbreviations">9 Internet Abbreviations Decoded</a>
+</h3>
+</div>
+</li> <li class="slide">
+<a href="http://dictionary.reference.com/slideshows/irregular-plurals">
+<img width="130" height="140" id="slideImg2" src="http://static.sfdict.com/assets/2139-1611532-1.jpg">
+</a>
+<div class="title-wrapper">
+<h3>
+<a class="title-link" href="http://dictionary.reference.com/slideshows/irregular-plurals">Double your fun with these...</a>
+</h3>
+</div>
+</li> <div class="u-clear"></div> <li class="slide">
+<a href="http://dictionary.reference.com/slideshows/cycling-words">
+<img width="130" height="140" id="slideImg3" src="http://static.sfdict.com/assets/2419-3544711-43.jpg">
+</a>
+<div class="title-wrapper">
+<h3>
+<a class="title-link" href="http://dictionary.reference.com/slideshows/cycling-words">Penny-farthings to Panniers: 7...</a>
+</h3>
+</div>
+</li> <li class="slide">
+<a href="http://dictionary.reference.com/slideshows/french-loanwords">
+<img width="130" height="140" id="slideImg4" src="http://static.sfdict.com/assets/6073-5480071-19.jpg">
+</a>
+<div class="title-wrapper">
+<h3>
+<a class="title-link" href="http://dictionary.reference.com/slideshows/french-loanwords">Speak with Savoir-faire: 10 French...</a>
+</h3>
+</div>
+</li> <div class="u-clear"></div> </ul>
+</div>
+<div class="blog-container">
+<h3>Browse more topics on our blog</h3>
+<ul>
+<li>
+<a href="http://blog.dictionary.com/discreet-and-discrete">What Is the Difference Between Discreet and Discrete?</a>
+<div class="text">Learn the correct uses of these two commonly confused homophones.</div>
+</li>
+<li>
+<a href="http://blog.dictionary.com/ampersand">What Character Was Removed from the Alphabet?</a>
+<div class="text">What mistaken pronunciation gave this character its name? </div>
+</li>
+<li>
+<a href="http://blog.dictionary.com/apostrophes-101">Apostrophes 101</a>
+<div class="text">This small mark has two primary uses: to signify possession or omitted letters.</div>
+</li>
+<li>
+<a href="http://blog.dictionary.com/getting-words-into-dictionaries">How Do I Get a Word into the Dictionary?</a>
+<div class="text">People invent new words all the time, but which ones actually make it?</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="right-rail-container">
+<div class="constant-content">
+<section id="wotd-text" class="wotd-module">
+<header>
+<h3 class="title icon-wotd">Word of the Day</h3>
+</header>
+<div class="content">
+</div>
+</section><div id="dcomSERPTop-300x250"><script type="text/javascript">if(typeof UserController!=="undefined"&&!UserController.shouldDisplayAds()){document.getElementById("dcomSERPTop-300x250").parentNode.removeChild(document.getElementById("dcomSERPTop-300x250"));}else{gptApp.ads.push(function(){googletag.cmd.push(function(){googletag.display("dcomSERPTop-300x250");});});}</script></div>
+<section id="difficulty-box" data-difficulty="14" data-imp="6ta766">
+<header>
+<h3 class="title icon-glasses">Difficulty index for <span class="u-headword">discussion</span></h3>
+</header>
+<div class="content">
+<div class="difficulty-bar">
+<div class="difficulty-indicator"></div>
+</div>
+</div>
+<span class="subtext">Most English speakers likely know this word</span>
+</section><section id="tile-value-box">
+<header>
+<h3 class="title icon-cup">Word Value for <span class="u-headword">discussion</span></h3>
+</header>
+<div class="content">
+<div class="row">
+<div class="game-scrabble"><span>13</span></div>
+<div class="game-wwf"><span>16</span></div>
+</div>
+<div class="row">
+<span class="descr_scrabble">Scrabble</span>
+<span class="descr_wwf">Words With Friends</span>
+</div>
+</div>
+</section><section class="related-words-box" data-imp="2ksc1p|6">
+<header>
+<h3 class="title">Related Words</h3>
+</header>
+<div class="content" data-linkid='2ksc1p' data-ordinal='1' data-item='1'>
+<ul class="list-vertical">
+<li class="size-1">
+<a href="http://dictionary.reference.com/browse/moot">moot</a>
+</li>
+<li class="size-2">
+<a href="http://dictionary.reference.com/browse/convention">convention</a>
+</li>
+<li class="size-3">
+<a href="http://dictionary.reference.com/browse/round%20table">round table</a>
+</li>
+<li class="size-3">
+<a href="http://dictionary.reference.com/browse/debate">debate</a>
+</li>
+<li class="size-4">
+<a href="http://dictionary.reference.com/browse/discourse">discourse</a>
+</li>
+<li class="size-4">
+<a href="http://dictionary.reference.com/browse/drag">drag</a>
+</li>
+</ul>
+</div>
+</section>
+</div>
+<div class="right-rail-sticky-box">
+<div class="rightRailMiddleAd"><div id="dcomSERPMid-300x250"><script type="text/javascript">if(typeof UserController!=="undefined"&&!UserController.shouldDisplayAds()){document.getElementById("dcomSERPMid-300x250").parentNode.removeChild(document.getElementById("dcomSERPMid-300x250"));}else{gptApp.ads.push(function(){googletag.cmd.push(function(){googletag.display("dcomSERPMid-300x250");});});}</script></div></div>
+<section class="right-rail-nearby-words">
+<h3 class="title">Nearby words for discussion</h3>
+<div class="nearby-words-outer-box">
+<button type="button" class="nearby-move-button nearby-prev"></button>
+<div class="nearby-words-inner-box" data-linkid='lno2pu' data-ordinal='1' data-item='1'>
+<ul class="list-vertical">
+<li class="">
+<a href="http://dictionary.reference.com/browse/discriminate">discriminate</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/discriminated%20union">discriminated union</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/discriminately">discriminately</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/discriminating">discriminating</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/discriminatingly">discriminatingly</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/discrimination">discrimination</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/discrimination%20learning">discrimination learning</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/discriminative">discriminative</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/discriminatively">discriminatively</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/discriminator">discriminator</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/discriminatorily">discriminatorily</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/discriminatory">discriminatory</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/discrown">discrown</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/discs">discs</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/discs%27">discs'</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/discursion">discursion</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/discursive">discursive</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/discursiveness">discursiveness</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/discus">discus</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/discuss">discuss</a>
+</li>
+<li class="visible">
+<a href="http://dictionary.reference.com/browse/discussable">discussable</a>
+</li>
+<li class="visible">
+<a href="http://dictionary.reference.com/browse/discussant">discussant</a>
+</li>
+<li class="visible">
+<a href="http://dictionary.reference.com/browse/discussed">discussed</a>
+</li>
+<li class="visible">
+<a href="http://dictionary.reference.com/browse/discusses">discusses</a>
+</li>
+<li class="visible">
+<a href="http://dictionary.reference.com/browse/discussing">discussing</a>
+</li>
+<li class="visible query-word">
+<a href="http://dictionary.reference.com/browse/discussion">discussion</a>
+</li>
+<li class="visible">
+<a href="http://dictionary.reference.com/browse/discussion%20board">discussion board</a>
+</li>
+<li class="visible">
+<a href="http://dictionary.reference.com/browse/discussion%20board%27s">discussion board's</a>
+</li>
+<li class="visible">
+<a href="http://dictionary.reference.com/browse/discussion%20boards">discussion boards</a>
+</li>
+<li class="visible">
+<a href="http://dictionary.reference.com/browse/discussion%20boards%27">discussion boards'</a>
+</li>
+<li class="visible">
+<a href="http://dictionary.reference.com/browse/discussion%20group">discussion group</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/discussion-board">discussion-board</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/discussion-boards">discussion-boards</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/discussion-boards%27">discussion-boards'</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/discussional">discussional</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/discutient">discutient</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/disdain">disdain</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/disdainful">disdainful</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/disdainfully">disdainfully</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/disdaining">disdaining</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/disease">disease</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/disease%20determinant">disease determinant</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/disease-mongering">disease-mongering</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/diseased">diseased</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/diseconomy">diseconomy</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/disegno">disegno</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/disembargo">disembargo</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/disembark">disembark</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/disembarkation">disembarkation</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/disembarkment">disembarkment</a>
+</li>
+<li class="">
+<a href="http://dictionary.reference.com/browse/disembarrass">disembarrass</a>
+</li>
+</ul>
+</div>
+<button type="button" class="nearby-move-button nearby-next"></button>
+</div>
+</section>
+</div>
+<div class="rightRailBottomAd"></div>
+</div>
+<div class="feedback hidden-xs">
+<a href="https://www.surveymonkey.com/s/8VMQ6NC" target="_blank"></a>
+</div> </div>
+<div class="row">
+<div id="dcomSERPBottomLeaderBoard-728x90"><script type="text/javascript">if(typeof UserController!=="undefined"&&!UserController.shouldDisplayAds()){document.getElementById("dcomSERPBottomLeaderBoard-728x90").parentNode.removeChild(document.getElementById("dcomSERPBottomLeaderBoard-728x90"));}else{gptApp.ads.push(function(){googletag.cmd.push(function(){googletag.display("dcomSERPBottomLeaderBoard-728x90");});});}</script></div> </div>
+</div>
+<footer class="footer-thin">
+<div class="footer-container" data-linkid='gy27eg'>
+<div>
+<ul class="footer-navbar">
+<li class="footer-navbar-list">
+<a href="http://content.dictionary.com/">About</a>
+</li>
+<li class="footer-navbar-list">
+<a href="http://dictionary.reference.com/help/terms.html">Terms</a>
+</li>
+<li class="footer-navbar-list">
+<a href="http://dictionary.reference.com/privacy">Privacy</a>
+</li>
+<li class="footer-navbar-list">
+<a href="http://content.dictionary.com/about/careers">Careers</a>
+</li>
+<li class="footer-navbar-list">
+<a href="http://dictionary.reference.com/apps">Apps</a>
+</li>
+<li class="footer-navbar-list">
+<a href="http://dictionary.reference.com/help">Help</a>
+</li>
+<li class="footer-navbar-list">
+<a href="http://content.dictionary.com/about/contact">Feedback</a>
+</li>
+</ul>
+<div class="footer-copyright">
+&copy;&nbsp;2015 Dictionary.com, LLC.
+</div>
+</div>
+</div>
+</footer>
+<script type="text/javascript" src="http://static.sfdict.com/app/js/jquery-1.11.3.min-3bb97.js"></script><script>var SEOAnchor=(function(){'use strict';function urlencode(str){str=String(str);return encodeURIComponent(str).replace(/!/g,'%21').replace(/'/g,'%27').replace(/\(/g,'%28').replace(/\)/g,'%29').replace(/\*/g,'%2A').replace(/%20/g,'+');}
+function getClickDomain(){var currentUrl=document.URL,replay='dictionary';if(currentUrl.indexOf('thesaurus.com')!==-1){replay='thesaurus';}else if(currentUrl.indexOf('reference.com')!==-1){replay='reference';}
+return replay;}
+function rewriteHref(href){if(!(/^https?:\/\//.test(href))){href=window.location.protocol+'//'+window.location.hostname+href;}
+return href;}
+function getCTSUrl(infix,linkId){infix=(infix!=='')?'.'+infix:'';return'http://click'+infix+'.'+getClickDomain()+'.com/click/'+linkId+'?';}
+function buildQueryFromCTSData($target,data){var paramString='',key,regex=new RegExp("[\\?&]ordinal=([^&#]*)"),qs;$target.removeData('cts');for(key in data){if(data.hasOwnProperty(key)&&key!=='infix'&&key!=='linkId'&&key!=='domain'){paramString+=key+'='+data[key]+'&';}}
+qs=regex.exec(paramString);if(qs!==null){paramString=paramString.replace(qs[0],'&clkord='+qs[1]);}
+return paramString;}
+function buildQueryFromLinkIDData($target,linkIdElement){var $closestWithItem=$target.closest('[data-item]'),paramString='',ordinal=1,text=$target.text().trim(),$closestWithOrdinal,key;if(0!==$closestWithItem.length){paramString+='clkitem='+text+'&';}
+if(linkIdElement!==$target){$closestWithOrdinal=$target.closest('[data-ordinal]');if(0!==$closestWithOrdinal.length){$closestWithOrdinal.find('a').each(function(index,element){if($target.get()===element){return false;}
+ordinal+=1;});paramString+='clkord='+ordinal+'&';}}
+for(key in CTSParams){if(CTSParams.hasOwnProperty(key)&&key!=='infix'){paramString+=key+'='+CTSParams[key]+'&';}}
+return paramString;}
+function getCookieByName(name){var value=null,cookies=document.cookie,searchedCookie=cookies.indexOf(" "+name+"=");if(searchedCookie===-1){var checkFirstCookie=cookies.indexOf(name+"=");searchedCookie=checkFirstCookie==0?0:-1;}
+if(searchedCookie>-1){var startPositionOfValue=cookies.indexOf("=",searchedCookie)+1,endPositionOfValue=cookies.indexOf(";",searchedCookie);if(endPositionOfValue===-1){endPositionOfValue=searchedCookie.length;}
+value=cookies.substring(startPositionOfValue,endPositionOfValue);}
+return value;}
+function getMsegValue(){var msegVal;if(typeof cookiesManager!=="undefined"){msegVal=cookiesManager.getCookieValue("mseg");}else{msegVal=getCookieByName("mseg");}
+return msegVal||"";}
+function attachEvent(){$('body').on('mousedown.cts','a',function(event){var $target=$(event.target).closest('a'),CTS_INITIALIZED_FLAG='cts-initialized',closestLinkIDElement,ctsLink,query,ctsData;if($target.hasClass('cts-disabled')||undefined!==$target.data(CTS_INITIALIZED_FLAG)){return true;}
+if($target.data('cts')!==undefined){ctsData=$target.data('cts');ctsLink=getCTSUrl(ctsData.infix,ctsData.linkId);query=buildQueryFromCTSData($target,ctsData);}else{closestLinkIDElement=$target.closest('[data-linkid]');if(1===closestLinkIDElement.length&&0===$target.closest('[data-type]').length){ctsLink=getCTSUrl(CTSParams.infix,closestLinkIDElement.data('linkid'));query=buildQueryFromLinkIDData($target,closestLinkIDElement);}}
+if(undefined!==ctsLink){ctsLink+=query+'clkdest='+urlencode(rewriteHref($target.attr('href')));ctsLink+='&clkmseg='+getMsegValue();$target.attr('href',ctsLink);$target.data(CTS_INITIALIZED_FLAG,1);}
+return true;});}
+return{attachEvent:function(){attachEvent();},generateCTSURLWithoutOrdinal:function(ctsData,destinationHref,item){var env=ctsData.infix!==""?'.'+ctsData.infix:"",destination=rewriteHref(destinationHref),ctsLink='http://click'+env+'.'+getClickDomain()+'.com/click/'+ctsData.linkId+'?',paramString='',key;for(key in ctsData){if(ctsData.hasOwnProperty(key)&&(key!=='infix'&&key!=='linkId'&&key!=='domain')){paramString+=key+'='+ctsData[key]+'&';}}
+if(item!==undefined){paramString+='clkitem='+item+'&';}
+ctsLink+=paramString+'clkdest='+urlencode(destination);ctsLink+='&clkmseg='+getMsegValue();return ctsLink;}};}());SEOAnchor.attachEvent();$(document).trigger('ctsready');</script>
+<script type="text/javascript" src="http://app.dictionary.com/js/advertisement.js"></script>
+<script>if(typeof window.canRunAds==='undefined'){var img=new Image(),url;url='http://track.reference.com/main.gif?ev=a&ms=%40%40MSEG%40%40&rf=%40%40REFERRER%40%40&cb=%40%40CACHEBUSTER%40%40&pn=dic&st=dict&ab=&dc=desktop';url=url.replace('%40%40REFERRER%40%40',encodeURIComponent(document.referrer)).replace('%40%40CACHEBUSTER%40%40',Math.floor((Math.random()*899999999)+100000000)).replace('%40%40MSEG%40%40',(cookiesManager.getCookieValue('mseg')||''));img.src=url;}</script>
+<script type="text/javascript">if(typeof UserController==="undefined"||!UserController.isUnder13()){_qevents.push({qacct:"p-51zXP5Cc9sxvQ"});}</script>
+<noscript>
+<div style="display: none;"><img src="//pixel.quantserve.com/pixel/p-51zXP5Cc9sxvQ.gif" height="1" width="1" alt="Quantcast"/></div>
+</noscript>
+<script type="text/javascript" src=" http://static.sfdict.com/app/js/require-20139.js"></script>
+<script type="text/javascript">requirejs.config({baseUrl:"http://static.sfdict.com/dictcloud/js",paths:{"appcore":"http:\/\/static.sfdict.com\/app\/js","options":"http:\/\/static.sfdict.com\/app\/js\/options-3eea5","bootstrap":"http:\/\/static.sfdict.com\/app\/r863115477537\/js\/bootstrap","facebook":"http:\/\/connect.facebook.net\/en_US\/all","twitter":"https:\/\/platform.twitter.com\/widgets","instagram":"https:\/\/x.instagramfollowbutton.com\/follow","google-plus":"https:\/\/apis.google.com\/js\/platform","page\/serp\/main":"page\/serp\/main-52139"},shim:{"facebook":{"exports":"FB"},"twitter":{"exports":"twttr"},"instagram":[],"google-plus":{"exports":"googleplus"}}});define('jquery',[],function(){return window.jQuery;});define("runtime-options",function(){return{"shortSerp":true,"definitionsLimit":5,"definitionsDisplayed":3,"wotdLink":"<a href=\"http:\/\/dictionary.reference.com\/wordoftheday\"  class=\"word\"  id=\"wotd\" data-linkid=\"rpilnc\" >$$word$$<\/a>","flashAudioPlayerPath":"http:\/\/static.sfdict.com\/app\/flash\/player-d6fab.swf","isFavoriteURL":"http:\/\/app.reference.com\/favorites\/api\/getfavorites","addFavoriteURL":"http:\/\/app.reference.com\/favorites\/api\/addword","searchTerm":"discussion","loginPageURL":"http:\/\/app.dictionary.com\/login\/core","clientPlatform":"Desktop","interstitialDashRenderApi":"http:\/\/app.reference.com\/api\/dash\/render\/ipadInterstitial\/dict_serp_ipadInterstitial","canonicalURL":"http:\/\/dictionary.reference.com\/browse\/discussion","pageName":"dic","wotdApiUrl":"http:\/\/restapi.dictionary.com\/api\/wordoftheday","pageType":"serp-short","variant":false,"collapseExpandSettings":{"luna":{"container":"#source-luna","types":{"def":{"name":"luna definitions","type":0,"desktop":{"visibleEntries":7,"condition":7},"mobile":{"visibleEntries":2,"condition":2}},"supEntry":{"name":"supplementary notes - entry-based elements","type":0,"desktop":{"visibleEntries":5,"condition":5},"mobile":{"visibleEntries":2,"condition":2}},"supText":{"name":"supplementary notes - textual elements","type":1,"desktop":{"visibleLines":5,"condition":5},"mobile":{"visibleLines":5,"condition":5}},"usgAlert":{"name":"usage alert - textual elements","type":1,"desktop":{"visibleLines":3,"condition":3},"mobile":{"visibleLines":3,"condition":3}}},"specCase":{"name":"special collapse expand for Luna Mobile","type":0,"mobile":{"visibleEntries":1,"condition":1}}},"idioms":{"container":"#source-ahdi2","types":{"cols":{"name":"idioms dictionary 2 cols list and text","type":3,"desktop":{"visibleLines":5,"condition":7}},"list":{"name":"idioms dictionary ordered list","type":4,"desktop":{"visibleLines":5,"condition":7}}}},"slang":{"container":"#source-das","types":{"def":{"name":"slang dictionary text based","type":5,"desktop":{"visibleLines":5,"condition":7}}}},"21century":{"container":"#source-dict21db","types":{"cent21_entry":{"name":"21st Century entry text","type":6,"desktop":{"visibleLines":5,"condition":7}}}},"abbreviations":{"container":"#source-ahabb2","types":{"abrreviations_entry":{"name":"abbreviations unordered list","type":7,"desktop":{"visibleEntries":3,"condition":5}}}},"collins":{"container":"#source-ced2","types":{"collins":{"name":"collins definitions","type":2,"desktop":{"entries":{"visibleEntries":3,"condition":5},"lines":{"visibleLines":10,"condition":12}}}}},"sentences":{"container":"#source-example-sentences","types":{"sentences_list":{"name":"example sentences list","type":8,"desktop":{"visibleList":3,"condition":4},"mobile":{"visibleList":3,"condition":4}}}}},"collapseExpandToggles":{"luna_entry":0,"luna_text":1,"idioms_cols":3,"idioms_list":4,"slang_text":5,"cent21_entry":6,"col_number":2,"ahabb2_list":7,"sentences_list":8},"webTrack":{"clickInner":"http:\/\/track.reference.com\/main.gif?ev=n&tg=%40%40TARGET%40%40&ar=%40%40ADREFRESH%40%40&ms=%40%40MSEG%40%40&rf=%40%40REFERRER%40%40&cb=%40%40CACHEBUSTER%40%40&pn=%40%40PAGENAME%40%40&st=dict&ab=&dc=desktop","impressions":"http:\/\/track.reference.com\/main.gif?ev=i&lk=%40%40IMPRESSIONLINKIDS%40%40&ms=%40%40MSEG%40%40&rf=%40%40REFERRER%40%40&cb=%40%40CACHEBUSTER%40%40&pn=%40%40PAGENAME%40%40&st=dict&ab=&dc=desktop","pageview":"http:\/\/track.reference.com\/main.gif?ev=p&ct=%40%40CONTENTTITLE%40%40&ms=%40%40MSEG%40%40&rf=%40%40REFERRER%40%40&cb=%40%40CACHEBUSTER%40%40&pn=%40%40PAGENAME%40%40&st=dict&ab=&dc=desktop","click":"http:\/\/track.reference.com\/main.gif?ev=c&cl=%40%40LINKIDS%40%40&ci=%40%40ITEM%40%40&co=%40%40ORDINAL%40%40&ms=%40%40MSEG%40%40&rf=%40%40REFERRER%40%40&cb=%40%40CACHEBUSTER%40%40&pn=%40%40PAGENAME%40%40&st=dict&ab=&dc=desktop","videoPlay":"http:\/\/track.reference.com\/main.gif?ev=v&vn=%40%40VIDEONAME%40%40&vp=%40%40VIDEOPERCENTAGE%40%40&vx=%40%40VIDEOPIXEL%40%40&vr=%40%40VIDEOREPLAY%40%40&rf=%40%40REFERRER%40%40&cb=%40%40CACHEBUSTER%40%40&pn=%40%40PAGENAME%40%40&st=dict&ab=&dc=desktop","videoImpression":"http:\/\/track.reference.com\/main.gif?ev=r&vn=%40%40VIDEONAME%40%40&vx=%40%40VIDEOPIXEL%40%40&qr=discussion&rf=%40%40REFERRER%40%40&cb=%40%40CACHEBUSTER%40%40&pn=%40%40PAGENAME%40%40&st=dict&ab=&dc=desktop"},"socialEvent":"{\"basePath\":\"http:\\\/\\\/track.reference.com\\\/track\\\/social\",\"attributes\":{\"site\":\"dict\",\"pageName\":\"dic\",\"ldid\":0}}"};});require(["page\/serp\/main"])</script>
+<script>(function(factory){if(typeof require==='function'){require(['jquery'],factory);}else{factory($);}}(function($){var impressionLinkIds={};$('[data-imp]').each(function(){if($(this).is(':visible')){var imp=$(this).data('imp').toString().split('|',2);if(impressionLinkIds[imp[0]]===undefined){impressionLinkIds[imp[0]]=0;}
+if(imp[1]!==undefined){impressionLinkIds[imp[0]]+=parseInt(imp[1]);}else{impressionLinkIds[imp[0]]+=1;}}});var lkValue='';for(var linkId in impressionLinkIds){lkValue+=linkId+(impressionLinkIds[linkId]>1?'|'+impressionLinkIds[linkId]:'')+','}
+if(lkValue.slice(-1)===','){lkValue=lkValue.slice(0,-1);}
+if(lkValue!=''){var ms=(typeof ms==='undefined')?cookiesManager.getCookieValue('mseg')||"":ms;new Image().src="http://track.reference.com/main.gif?ev=i&pn=dic&st=dict&ab=&dc=desktop&lk="+lkValue+"&ms="+ms+"&rf="+encodeURIComponent(document.referrer)+"&cb="+Math.floor((Math.random()*899999999)+100000000);}}));</script>
+</body>
+</html>

@@ -1,0 +1,1595 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+<meta content='text/html;charset=UTF-8' http-equiv='Content-Type'>
+    <title>What are Discussions?</title>
+      
+      <script src="//screenstepslive-com.global.ssl.fastly.net/assets/application-865f5bf386ed57cc5f6d0610457adb5b.js" type="text/javascript"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="kphjxqY+D11gwz0pRBcYODyzvhR7lZAyhH6ZXLiVba0=" name="csrf-token" />
+  <script type="text/javascript" charset="utf-8">
+    jQuery(document).ready(function(){
+      jQuery("a[rel^='prettyPhoto']").prettyPhoto({
+    	  show_title: false,
+    	  social_tools: false,
+    	  theme: 'light_rounded',
+    	  deeplinking: false
+    	});
+      jQuery('.screensteps-mobile-nav').click(function(){
+        jQuery('#navigation-container, #screensteps-admin-bar, #screensteps-sidebar').slideToggle(500);
+      });
+      loadAdminNav('2204')
+    });
+  </script>
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9138420-9']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+// Jquery function to get url parameters
+$.extend({
+  getUrlVars: function(){
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+      hash = hashes[i].split('=');
+      vars.push(hash[0]);
+      vars[hash[0]] = hash[1];
+    }
+    return vars;
+  },
+  getUrlVar: function(name){
+    return $.getUrlVars()[name];
+  }
+});
+
+var get_vars;
+var removeItems = function(level){
+  switch(parseInt(level)){
+    case 4:
+      // set max width=600px
+      $('#screensteps-document').css('max-width','600px');
+      var iml = $('#screensteps-document').find('img');
+      for(var x=0; x<iml.length; x++){ 
+          $(iml[x]).css('max-width','470px');
+      }
+    case 3:
+      // Remove next, prev
+      $('.screensteps-next-prev-navigation').hide();
+      $('#screensteps-breadcrumb').hide();
+    case 2:
+      // Remove Comments
+      $('#comments-wrapper').hide();
+    case 1:
+    default:
+      // Remove header, sidebar, and footer
+      $('#top').hide();
+      $('#screensteps-sidebar').hide();
+      $('#screensteps-main-content-wrapper').css('margin-right','10px');
+      $('#screensteps-content-wrapper').css('min-width', '0px');
+      $('body,html').css('min-width','0px').css('background-color','#fff')
+      $('#page').css('-moz-box-shadow', 'none').css('-webkit-box-shadow', 'none');
+      $('#container').css('margin',0).css('padding',0);
+  }
+}
+$(document).ready(function(){
+    get_vars = $.getUrlVars();
+    if(get_vars['e']!==undefined){
+      removeItems(get_vars['e']);
+
+
+    }
+});
+
+
+$(document).ready(function() {
+  if ($('#screensteps-document').length > 0) {
+    var add_this = $('#add-this-container');
+    add_this.insertAfter($('#screensteps-breadcrumb'));
+    add_this.removeClass('hide');
+    $('#screensteps-steps div.screensteps-next-prev-navigation').before(add_this.html());
+  }
+  if ($('#screensteps-content-wrapper.manual-toc').length > 0) {
+    var add_this = $('#add-this-container');
+    $('#screensteps-inner-content').append(add_this);
+    add_this.removeClass('hide');
+  }
+
+// new community banner
+$("#header_container").css({"position":"relative","overflow":"hidden"});$('head').append("<style>@-webkit-keyframes slide {from {right: -370px; }}@-moz-keyframes slide {from {right: -370px; }}@keyframes slide {from {right: -370px; }}#newcommunity { height: 0px; width: 370px; border: 24px solid #ECE813; border-right: 0px; border-left: 24px solid rgba(255, 255, 255, 0); position: relative; -webkit-animation: slide 1s ease-out;-moz-animation: slide 1s ease-out; animation: slide 1s ease-out;font: bold 2em/1.6em Helvetica, Arial, sans-serif; text-decoration: none; color: #58585B; float: right; margin: 5px 0px -10px -400px; } #newcommunity:hover { color: #776; border-color: #EDEB86 rgba(0, 0, 0, 0) #EDEB86 rgba(0, 0, 0, 0) } #newcommunity span {position: relative; top: -22px; padding: 4px 0 2px 26px; display: block; } </style>");$("#top-right").before('<a href="https://community.canvaslms.com/community/answers/guides/" id="newcommunity" style="right: 0px;" title="View Guides in new Community"><span>A new community is here!</span></a>');
+
+});
+
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9138420-9']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+
+
+</script>
+
+      <link href="//screenstepslive-com.global.ssl.fastly.net/stylesheets/screensteps-site-layout.css" media="screen" rel="stylesheet" type="text/css" />
+
+
+<link rel="icon" 
+      type="image/png" 
+      href="https://instructure.zendesk.com/system/logos/2026/9684/Support_favicon.jpg">
+
+    <link href="https://assets.zendesk.com/assets/screen.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="https://assets.zendesk.com/assets/print.css" media="print" rel="stylesheet" type="text/css" />
+
+      
+    <!--[if IE ]>
+      <style type="text/css" media="screen">
+        div#screensteps-main-content #screensteps-search form input.search-submit { font-size: 15px; }
+      </style>
+    <![endif]-->
+    
+    <!-- REPLACE THE LINE BELOW WITH A LINK TO YOUR CUSTOM ZENDESK GENERATED STYLESHEET. YOU CAN FIND THIS BY VIEWING THE PAGE SOURCE FOR YOUR ZENDESK SITE. -->
+    <link rel='stylesheet' type='text/css' href='https://instructure.zendesk.com/generated/stylesheets/branding/456/45693/1350285611.css' media='screen' />
+    <link href="https://stylesheets/screensteps-live-zendesk.css" media="screen" rel="stylesheet" type="text/css"/>
+
+    
+    <style type="text/css" media="screen">
+ html, body {
+  background-color: #444F51;
+  padding: 0 8px;
+  font-size: 13px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+  color: #000;
+}
+
+#page {
+  padding: 0px 0px 5px 0px;
+  -moz-box-shadow: -2px 0px 2px #333;
+  -webkit-box-shadow: -2px 0px 2px #333;
+}
+
+div#container {
+  padding: 16px 15px;
+}
+
+#top-menu-background, .menu-drop {
+  border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+}
+div#page a.image-link:hover { text-decoration: none; }
+  
+#screensteps-content-wrapper { margin-bottom: 20px; padding-top:20px;}
+#screensteps-content-wrapper #screensteps-title-area { padding: 0; border:0;}  
+#screensteps-content-wrapper ol, #screensteps-content-wrapper ul { margin: 1em 0px; padding-left: 40px;}
+div#screensteps-content-wrapper h1 { font-size: 24px; font-weight: normal; margin: 11px 0 7px 20px; word-wrap: break-word; color: #555555; }  
+#screensteps-content-wrapper h1.manual { line-height: 30px;} 
+#screensteps-content-wrapper h1.lesson { margin-left: 0; font-weight: bold;}
+
+#screensteps-content-wrapper #screensteps-breadcrumb { padding-left: 10px; margin-left:5px; margin-right:5px; font-size: 12px; margin-bottom: 15px;}
+#screensteps-content-wrapper #screensteps-breadcrumb a { text-decoration: none; font-size: 12px;}
+
+div#screensteps-content-wrapper div#screensteps-main-content-wrapper { margin-right: 258px; background-color: #F4F4F4; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; padding: 9px 8px 20px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;}
+div#screensteps-content-wrapper div#screensteps-main-content-wrapper:after { content: "."; display:inline-block; display: block; height: 0; clear: both; visibility: hidden; overflow: visible;}
+
+#screensteps-content-wrapper #screensteps-search { background-color: white; margin: 0; padding: 10px 20px; border: 2px solid #E9E9E9; border-bottom: 0; border-radius: 5px 5px 0 0; -moz-border-radius: 5px 5px 0 0; -webkit-border-radius: 5px 5px 0 0;}
+#screensteps-content-wrapper #screensteps-search p.search-form { background-color: inherit; background-image: none; padding-left: 0; padding-right: 0;}
+#screensteps-content-wrapper #screensteps-search p.search-form { *background-color: transparent;}
+div#screensteps-main-content #screensteps-search form { width:auto; background: none; border-width: 0;}
+div#screensteps-main-content #screensteps-search form input.search-field { width: 500px; font-size: 20px; background: url("//zendesk.com/images/searchinput.gif") no-repeat scroll -205px 50% #FFFFFF; border: 1px solid #A8A8A8; padding: 5px; padding-left: 30px; vertical-align: middle; float: none; height: auto; line-height: normal; color: black; }
+div#screensteps-main-content #screensteps-search form input.search-submit { font-size: 20px; margin: 0 0 0 5px; padding: 6px 10px 5px; vertical-align: middle; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; background: url("//zendesk.com/images/button-bg.gif") repeat-x scroll left bottom #FEFFFE; border-color: #DDD #CCC #CCC #DDD; color: #555; border-style: solid; border-width: 1px; cursor: pointer; display: inline-block; font-family: Arial, "Lucida Grande"; position: relative; float: none; width: auto; height: 36px; text-indent: 0;}
+  
+/*#screensteps-search form a.reset-search { display: none;}  */
+div#screensteps-search div.search-results { border:0; padding: 10px 0;}
+
+div#screensteps-main-content #screensteps-inner-content .manual { background-position: 0 0;}
+div#screensteps-main-content #screensteps-inner-content .bucket { background-position: 0 0;}
+
+#screensteps-content-wrapper #screensteps-inner-content .asset-list li {background: url("/images/icon-book.png") no-repeat 0px 0px;}
+
+/*
+ * #screensteps-document * { font-size: 15px; }
+ * */
+#screensteps-document .screensteps-next-prev-navigation ul li * { font-size: 10px;}
+#screensteps-document .description { padding-bottom: 15px;}
+#screensteps-document p { line-height: 140%;}
+#screensteps-document p + p { margin-top: 1.5em;}
+#screensteps-document h2 { margin-bottom: 1em;}
+#screensteps-steps {background: #fff; border: 1px solid #dedede; border-top-width: 1px; padding: 35px 20px 35px 20px; line-height: 140%; border-radius: 4px; -moz-border-radius: 4px;-webkit-border-radius: 4px;}
+#screensteps-description { border:0 ;}
+#screensteps-description div.screensteps-next-prev-navigation { margin-top: -13px; }
+#screensteps-content-wrapper div.screensteps-next-prev-navigation ul { padding-left: 0;}
+
+#comments-wrapper #comments-count {font-weight: normal;}
+#add-comment h3 { margin: 1.5em 0;}
+
+div#screensteps-content-wrapper div#screensteps-main-content-wrapper div#screensteps-inner-content { padding: 15px 0; border: none; background-color: inherit; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; padding: 20px; border: 2px solid #E9E9E9; border-top: 0; -webkit-border-radius: 0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px; background-color: #FFFFFF;}
+
+div#screensteps-content-wrapper div#screensteps-sidebar { width: 241px; float: right;}
+#screensteps-sidebar h3 { font-weight: normal; font-size: 20px;}
+
+div#screensteps-sidebar div.screensteps-sidebar-widget { background-color: #dbedfe; padding: 12px 22px !important; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; margin: 16px 0 !important;   }
+div#screensteps-sidebar-widget p { margin: 10px 0;}
+div#screensteps-sidebar div.screensteps-sidebar-widget#screensteps-rss { background-color: transparent;}
+
+#screensteps-sidebar #sidebar-chapters ul, #screensteps-sidebar .tags ul#tags { margin-bottom: 0; float:none;}
+#screensteps-sidebar #sidebar-chapters li a, #screensteps-sidebar .tags ul#tags li a { border-bottom: 0; padding-left: 0;}
+#screensteps-sidebar #sidebar-comments p#comments-count { margin-bottom: 8px;}
+
+#screensteps-sidebar .tags ul#tags li a span.tag-link { }
+
+#screensteps-content-wrapper.left-sidebar #screensteps-sidebar #sidebar-chapters li a:hover span.chapter-count,
+  #screensteps-content-wrapper.left-sidebar #screensteps-sidebar .tags ul#tags li a:hover span.tag-count {background-image:none;}
+#screensteps-content-wrapper.right-sidebar #screensteps-sidebar #sidebar-chapters li a:hover span.chapter-link,
+  #screensteps-content-wrapper.right-sidebar #screensteps-sidebar .tags ul#tags li a:hover span.tag-link {background-image:none;}
+
+#page #screensteps-content-wrapper #screensteps-sidebar #sidebar-chapters li a ,
+#page #screensteps-content-wrapper #screensteps-sidebar .tags ul#tags li a  {padding-right: 22px; padding-left: 22px;}
+
+#page #screensteps-content-wrapper #screensteps-sidebar #sidebar-chapters li a span.chapter-link,
+#page #screensteps-content-wrapper #screensteps-sidebar .tags ul#tags li a span.tag-link { padding-left: 0;}
+
+div#screensteps-sidebar #sidebar-message { border: 0;}
+
+div#screensteps-content-wrapper div#screensteps-sidebar div.screensteps-sidebar-widget#sidebar-chapters ul,
+div#screensteps-content-wrapper div#screensteps-sidebar div.screensteps-sidebar-widget.tags ul { margin-left: -22px; margin-right: -22px;}
+
+#screensteps-content-wrapper #screensteps-sidebar #screensteps-manual-pdf {margin-bottom:1.5em;}
+#screensteps-content-wrapper #screensteps-sidebar h4 {margin:16px 0;}
+#screensteps-content-wrapper #screensteps-sidebar #google-translator table {margin-left: -12px;}
+
+#screensteps-content-wrapper.lesson #screensteps-sidebar #sidebar-search { background-color: white; margin-left: -12px !important;}
+
+/* Our Customizations */
+#header_container {
+    background-color: white;
+    border-bottom: 1px solid #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.header, .header a, #table_header a, #top-right, #top-right a, #top-menu a.tab, #user_chat h1 span, #user_chat #end_session{
+	color: black;
+}
+
+#top-menu-background {
+  background-color:#D4D4D4;
+  font-size: 11px;
+}
+
+#top-menu ul li.active:hover {
+  background:#fff;
+}
+
+div#screensteps-sidebar div.screensteps-sidebar-widget {
+  background-color: #D0D0D0;
+}
+#screensteps-description {
+  border: 1px solid #dedede;
+  padding: 15px 20px 5px 20px;
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px;
+  -webkit-border-radius: 5px 5px;
+  /*
+  */
+  margin-bottom: 8px;
+  background-color: white;
+  font-size: 13px;
+}
+
+#screensteps-inner-content .asset-list {
+  font-size: 13px;
+}
+#screensteps-inner-content h2 {
+  font-size: 16px;
+  border-bottom: 1px solid #F2F2F2;
+  padding-bottom: 6px;
+}
+#screensteps-inner-content h2>a {
+  color: #000;
+}
+#screensteps-inner-content .asset-list li {
+  padding-bottom: 8px;
+}
+#screensteps-steps .image {
+  background: none;
+  border: 1px solid #D0D0D0;
+}
+
+#screensteps-inner-content h2 {
+  margin-bottom: 6px;
+}
+.screensteps-next-prev-navigation {
+  font-size: 14px;
+}
+
+#screensteps-steps .step h2 {
+  font-family: Helvetica,Arial,sans-serif;
+}
+#screensteps-inner-content #manual-contents li.chapter {
+  border-top: none;
+  padding-top: 0px;
+  margin-top: 0px;
+  /*  
+  padding-top: 30px;
+  margin-top: 30px;
+  */
+}
+#screensteps-inner-content #manual-contents .chapter-contents li {
+  margin-bottom: 5px;
+}
+#screensteps-inner-content #manual-contents .chapter-contents {
+  font-size: 13px;
+</style>
+  </head>
+  <body bgcolor='#656A6C'>
+    <div id='page'>
+      <div id='top'>
+        <div id='header_container' class="screenstepslive-header-toggle">
+          <div id='top-right'></div>
+          <div style='padding: 3px 0 1px 3px; margin: 0;'>
+            <table id='table_header'>
+              <tr>
+                <td>
+                  <a href='https://guides.instructure.com/' target='_blank'>
+                  <img src='https://instructure.zendesk.com/system/logos/2035/7841/Canvas_byinstructure_color_web.png' style='vertical-align:middle; margin: 0 5px 0 5px;' />
+                </a>
+                </td>
+                <td>
+                  <img id='logo-delimeter' src='https://asset3.zendesk.com/images/logo-delimiter.png' style='vertical-align:middle; margin: 0 8px 0 5px;' />
+                </td>
+                <td>
+                  <a href="//help.instructure.com/home">Help Center</a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div id='top-menu-background'>
+          <div id='top-menu'>
+            <ul id='green' style='width: 100%;'>
+              <li class='tab_home main first'>
+                <a class="tab" href="//help.instructure.com/home">Home</a>
+              </li>
+              <li class='tab_forums main'>
+                <a class="tab" href="//help.instructure.com/forums">Canvas Community</a>
+              </li>
+              <li class='tab_documentation active main'>
+                <a class="tab" href="https://guides.instructure.com">Canvas Guides</a>
+              </li>
+              <li class='tab_new first main'>
+                <a class="tab" href="//help.instructure.com/forums/337224-product-release-notes">Release Notes</a>
+              </li>
+
+<li class='tab_new first main'>
+                <a class="tab" href="//help.instructure.com/requests">Check Your Existing Requests</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id='container'>
+
+        <div id='contentwrapper'>
+
+
+
+          <div id='ScreenStepsContent'>
+
+              <script type="text/javascript">
+	jQuery(document).ready(function(jQuery) {
+		var lesson_id = 40312;
+		var section_id = 23845;
+		var expansion = 'none';
+		switch(expansion) {
+			case 'none':
+				jQuery('ul.nested-chapter-lessons').hide();
+				break;
+			case 'all':
+				jQuery('ul.nested-chapter-lessons').show();
+				break;
+			case 'one':
+				jQuery('ul.nested-chapter-lessons').hide();
+				jQuery('li.chapter-list-item[data-section-id="' + section_id + '"] ul.nested-chapter-lessons').show();
+				break;
+		}
+		jQuery('li.chapter-list-item[data-section-id="' + section_id + '"]').addClass('here');
+		jQuery('li[data-lesson-id="' + lesson_id + '"]').addClass('here');
+	});
+</script>
+<div class='lesson manual-lesson right-sidebar' id='screensteps-content-wrapper'>
+<div aria-label="breadcrumb" aria-level="3" id="screensteps-breadcrumb"><a href="/">Canvas Guides</a><a href="/m/4152">Canvas Instructor Guide</a> <span class='chapter-breadcrumb'><a href="/m/4152/c/23845">Discussions</a></span>What are Discussions for instructors?</div>
+<div aria-label='sidebar' id='screensteps-sidebar' role='complementary'>
+<div class='screensteps-sidebar-widget' id='screensteps-rss'>
+<p><a href="/s/2204.rss">Subscribe to our feed</a></p>
+</div>
+<div class='screensteps-sidebar-widget' id='sidebar-search' role='search'>
+<!-- /%h3= search_text -->
+<form accept-charset="UTF-8" action="/searches" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<input class="search-field" id="text" name="text" title="Search" type="text" />
+<input class="search-submit" name="commit" type="submit" value="search" />
+</form>
+
+</div>
+<div class='screensteps-sidebar-widget' id='sidebar-chapters'>
+<h3>Chapters</h3>
+<ul id='sidebar-chapter-list'>
+<li class='chapter-list-item' data-section-id='39072'>
+<a class='toggle-lessons' href='/m/4152/c/39072' role='Accordion'>
+<span class='chapter-link'>Introduction</span>
+<span class='chapter-count'>
+&nbsp;4
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='73169'><a href="/m/4152/l/73169-how-do-i-sign-up-for-a-canvas-account-as-an-instructor">How do I sign up for a Canvas account as an instructor?</a></li>
+<li data-lesson-id='103949'><a href="/m/4152/l/103949-how-does-canvas-work-as-a-supplement-to-face-to-face-courses">How does Canvas work as a supplement to face-to-face courses?</a></li>
+<li data-lesson-id='56665'><a href="/m/4152/l/56665-how-do-i-embed-a-lesson-inside-a-canvas-course">How do I embed a lesson inside a Canvas course?</a></li>
+<li data-lesson-id='196070'><a href="/m/4152/l/196070-will-canvas-work-on-my-mobile-device">Will Canvas work on my mobile device? </a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='31966'>
+<a class='toggle-lessons' href='/m/4152/c/31966' role='Accordion'>
+<span class='chapter-link'>Analytics</span>
+<span class='chapter-count'>
+&nbsp;5
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='66789'><a href="/m/4152/l/66789-what-are-analytics-for-my-course">What are Analytics for my course?</a></li>
+<li data-lesson-id='66790'><a href="/m/4152/l/66790-how-do-i-view-analytics-for-a-course">How do I view Analytics for a course?</a></li>
+<li data-lesson-id='66792'><a href="/m/4152/l/66792-what-will-analytics-tell-me-about-my-course">What will Analytics tell me about my course?</a></li>
+<li data-lesson-id='66791'><a href="/m/4152/l/66791-how-do-i-view-analytics-for-a-student-in-my-course">How do I view Analytics for a student in my course?</a></li>
+<li data-lesson-id='66793'><a href="/m/4152/l/66793-what-will-analytics-tell-me-about-my-student-in-my-course">What will Analytics tell me about my student in my course?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='23830'>
+<a class='toggle-lessons' href='/m/4152/c/23830' role='Accordion'>
+<span class='chapter-link'>Announcements</span>
+<span class='chapter-count'>
+&nbsp;15
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='40297'><a href="/m/4152/l/40297-what-are-announcements">What are Announcements?</a></li>
+<li data-lesson-id='76768'><a href="/m/4152/l/76768-how-do-i-use-the-announcements-index-page">How do I use the Announcements Index Page?</a></li>
+<li data-lesson-id='50726'><a href="/m/4152/l/50726-how-are-announcements-listed">How are Announcements listed?</a></li>
+<li data-lesson-id='50731'><a href="/m/4152/l/50731-how-do-i-make-an-announcement-in-my-course">How do I make an Announcement in my course?</a></li>
+<li data-lesson-id='50732'><a href="/m/4152/l/50732-how-do-i-edit-an-announcement-in-my-course">How do I edit an Announcement in my course?</a></li>
+<li data-lesson-id='66009'><a href="/m/4152/l/66009-how-do-i-add-content-to-an-announcement-in-my-course">How do I add content to an Announcement in my course?</a></li>
+<li data-lesson-id='50733'><a href="/m/4152/l/50733-how-do-i-delete-an-announcement">How do I delete an Announcement?</a></li>
+<li data-lesson-id='50734'><a href="/m/4152/l/50734-how-do-i-add-an-external-rss-feed-to-an-announcement">How do I add an external RSS feed to an Announcement?</a></li>
+<li data-lesson-id='50739'><a href="/m/4152/l/50739-how-do-i-view-an-announcement-rss-feed">How do I view an Announcement RSS feed?</a></li>
+<li data-lesson-id='50742'><a href="/m/4152/l/50742-how-do-i-subscribe-to-the-announcement-rss-feed">How do I subscribe to the Announcement RSS Feed?</a></li>
+<li data-lesson-id='50735'><a href="/m/4152/l/50735-how-do-i-delay-posting-an-announcement-until-a-specific-date-in-my-course">How do I delay posting an Announcement until a specific date in my course?</a></li>
+<li data-lesson-id='50720'><a href="/m/4152/l/50720-how-do-i-attach-a-file-to-an-announcement-in-my-course">How do I attach a file to an Announcement in my course?</a></li>
+<li data-lesson-id='50740'><a href="/m/4152/l/50740-how-do-i-require-students-to-post-to-an-announcement-before-they-see-replies">How do I require students to post to an Announcement before they see replies?</a></li>
+<li data-lesson-id='66010'><a href="/m/4152/l/66010-how-do-i-close-an-announcement-for-comments-in-my-course">How do I close an Announcement for comments in my course?</a></li>
+<li data-lesson-id='50743'><a href="/m/4152/l/50743-how-do-i-reply-to-an-announcement">How do I reply to an Announcement?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='23831'>
+<a class='toggle-lessons' href='/m/4152/c/23831' role='Accordion'>
+<span class='chapter-link'>Assignments</span>
+<span class='chapter-count'>
+&nbsp;30
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='55573'><a href="/m/4152/l/55573-what-are-assignments-for-instructors">What are Assignments for instructors?</a></li>
+<li data-lesson-id='67000'><a href="/m/4152/l/67000-how-do-i-use-the-assignments-index-page">How do I use the Assignments Index Page?</a></li>
+<li data-lesson-id='180493'><a href="/m/4152/l/180493-how-do-i-use-draft-state-in-assignments">How do I use Draft State in Assignments?</a></li>
+<li data-lesson-id='46543'><a href="/m/4152/l/46543-what-is-the-difference-between-a-canvas-assignment-and-a-canvas-activity">What is the difference between a Canvas Assignment and a Canvas Activity?</a></li>
+<li data-lesson-id='54365'><a href="/m/4152/l/54365-what-are-the-different-assignment-types-available-to-instructors-in-canvas-courses">What are the different Assignment types available to instructors in Canvas courses?</a></li>
+<li data-lesson-id='73044'><a href="/m/4152/l/73044-what-is-the-difference-between-assignment-due-dates-and-availability-dates">What is the difference between assignment due dates and availability dates?</a></li>
+<li data-lesson-id='67003'><a href="/m/4152/l/67003-how-do-i-create-an-assignment">How do I create an Assignment?</a></li>
+<li data-lesson-id='41283'><a href="/m/4152/l/41283-how-do-i-create-an-assignment-shell-in-an-assignment-group">How do I create an Assignment shell in an Assignment Group?</a></li>
+<li data-lesson-id='101242'><a href="/m/4152/l/101242-how-do-i-assign-an-assignment-to-an-individual-student-or-course-section">How do I assign an Assignment to an individual student or course section?</a></li>
+<li data-lesson-id='101241'><a href="/m/4152/l/101241-what-do-differentiated-assignments-look-like-in-canvas">What do Differentiated Assignments look like in Canvas?</a></li>
+<li data-lesson-id='41291'><a href="/m/4152/l/41291-how-do-i-add-assignment-groups-in-my-course">How do I add Assignment Groups in my course?</a></li>
+<li data-lesson-id='67002'><a href="/m/4152/l/67002-how-do-i-weight-the-final-course-grade-based-on-assignment-groups">How do I weight the final course grade based on Assignment Groups?</a></li>
+<li data-lesson-id='232976'><a href="/m/4152/l/232976-how-do-i-create-rules-for-an-assignment-group">How do I create rules for an Assignment Group? </a></li>
+<li data-lesson-id='41285'><a href="/m/4152/l/41285-how-do-i-add-details-to-an-assignment">How do I add details to an Assignment?</a></li>
+<li data-lesson-id='54246'><a href="/m/4152/l/54246-how-do-i-delete-an-assignment">How do I delete an Assignment?</a></li>
+<li data-lesson-id='54240'><a href="/m/4152/l/54240-how-do-i-add-or-edit-points-for-an-assignment">How do I add or edit points for an Assignment?</a></li>
+<li data-lesson-id='41295'><a href="/m/4152/l/41295-how-do-i-restrict-online-submission-file-types-for-an-assignment-in-my-course">How do I restrict online submission file types for an assignment in my course?</a></li>
+<li data-lesson-id='54248'><a href="/m/4152/l/54248-how-do-i-create-a-student-group-assignment">How do I create a student group assignment?</a></li>
+<li data-lesson-id='82270'><a href="/m/4152/l/82270-how-do-i-add-a-grading-scheme-to-an-assignment">How do I add a grading scheme to an Assignment?</a></li>
+<li data-lesson-id='54251'><a href="/m/4152/l/54251-can-a-student-resubmit-any-assignment">Can a student resubmit any Assignment?</a></li>
+<li data-lesson-id='57124'><a href="/m/4152/l/57124-where-can-i-find-statistics-about-assignments-and-submissions-in-my-course">Where can I find statistics about Assignments and submissions in my course?</a></li>
+<li data-lesson-id='54366'><a href="/m/4152/l/54366-what-is-a-peer-review-assignment">What is a peer review Assignment?</a></li>
+<li data-lesson-id='54249'><a href="/m/4152/l/54249-how-do-i-create-a-peer-review-assignment">How do I create a peer review Assignment?</a></li>
+<li data-lesson-id='54250'><a href="/m/4152/l/54250-how-do-i-manually-assign-peer-reviews-for-an-assignment">How do I manually assign peer reviews for an Assignment?</a></li>
+<li data-lesson-id='78747'><a href="/m/4152/l/78747-how-do-i-automatically-assign-peer-reviews-for-an-assignment">How do I automatically assign peer reviews for an Assignment?</a></li>
+<li data-lesson-id='295594'><a href="/m/4152/l/295594-how-do-i-set-up-an-assignment-to-be-sent-to-powerschool">How do I set up an assignment to be sent to PowerSchool?</a></li>
+<li data-lesson-id='40741'><a href="/m/4152/l/40741-how-do-i-create-a-new-assignment-with-turnitin">How do I create a new assignment with Turnitin?</a></li>
+<li data-lesson-id='64207'><a href="/m/4152/l/64207-how-do-i-set-a-course-submission-comment-for-a-turnitin-assignment">How do I set a course submission comment for a Turnitin Assignment?</a></li>
+<li data-lesson-id='64457'><a href="/m/4152/l/64457-how-can-i-tell-if-there-is-a-submission-error-with-a-turnitin-assignment">How can I tell if there is a submission error with a Turnitin assignment?</a></li>
+<li data-lesson-id='340211'><a href="/m/4152/l/340211-how-do-i-import-scorm-files-as-an-assignment">How do I import SCORM files as an assignment? </a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='45706'>
+<a class='toggle-lessons' href='/m/4152/c/45706' role='Accordion'>
+<span class='chapter-link'>Attendance (Roll Call)</span>
+<span class='chapter-count'>
+&nbsp;8
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='107422'><a href="/m/4152/l/107422-what-is-the-roll-call-attendance-tool">What is the Roll Call Attendance Tool?</a></li>
+<li data-lesson-id='107406'><a href="/m/4152/l/107406-how-do-i-configure-the-roll-call-attendance-tool-for-my-course">How do I configure the Roll Call Attendance tool for my course?</a></li>
+<li data-lesson-id='430299'><a href="/m/4152/l/430299-how-do-i-change-the-value-of-the-roll-call-attendance-tool-in-the-gradebook">How do I change the value of the Roll Call Attendance tool in the Gradebook?</a></li>
+<li data-lesson-id='107412'><a href="/m/4152/l/107412-how-do-i-take-roll-call-using-the-attendance-tool">How do I take roll call using the Attendance tool?</a></li>
+<li data-lesson-id='107413'><a href="/m/4152/l/107413-how-do-i-use-roll-call-attendance-badges">How do I use Roll Call Attendance Badges?</a></li>
+<li data-lesson-id='107414'><a href="/m/4152/l/107414-how-is-roll-call-attendance-graded-in-canvas">How is Roll Call Attendance graded in Canvas?</a></li>
+<li data-lesson-id='107416'><a href="/m/4152/l/107416-how-do-i-create-a-roll-call-seating-chart-using-the-attendance-tool">How do I create a roll call seating chart using the Attendance tool?</a></li>
+<li data-lesson-id='107417'><a href="/m/4152/l/107417-how-do-i-run-roll-call-attendance-reports-for-my-course">How do I run Roll Call Attendance reports for my course?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='23832'>
+<a class='toggle-lessons' href='/m/4152/c/23832' role='Accordion'>
+<span class='chapter-link'>Calendar</span>
+<span class='chapter-count'>
+&nbsp;15
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='54668'><a href="/m/4152/l/54668-what-is-the-calendar-for-instructors">What is the Calendar for instructors?</a></li>
+<li data-lesson-id='54669'><a href="/m/4152/l/54669-how-do-i-use-the-calendar">How do I use the Calendar?</a></li>
+<li data-lesson-id='54670'><a href="/m/4152/l/54670-how-do-i-filter-my-calendar-view-by-course">How do I filter my Calendar view by course?</a></li>
+<li data-lesson-id='41296'><a href="/m/4152/l/41296-how-do-i-add-an-event-to-the-course-calendar">How do I add an event to the course Calendar?</a></li>
+<li data-lesson-id='41985'><a href="/m/4152/l/41985-how-do-i-add-a-personal-reminder-to-my-calendar">How do I add a personal reminder to my Calendar?</a></li>
+<li data-lesson-id='54671'><a href="/m/4152/l/54671-how-do-i-create-an-assignment-shell-from-the-calendar">How do I create an Assignment shell from the Calendar?</a></li>
+<li data-lesson-id='54672'><a href="/m/4152/l/54672-how-do-i-edit-an-event-or-assignment-in-the-calendar">How do I edit an event or assignment in the Calendar?</a></li>
+<li data-lesson-id='81745'><a href="/m/4152/l/81745-how-do-i-add-a-conference-invitation-link-to-the-course-calendar">How do I add a Conference invitation link to the course Calendar?</a></li>
+<li data-lesson-id='81746'><a href="/m/4152/l/81746-how-do-i-set-a-different-calendar-event-date-for-each-section-in-my-course">How do I set a different Calendar event date for each section in my course? </a></li>
+<li data-lesson-id='54673'><a href="/m/4152/l/54673-how-do-i-subscribe-to-the-calendar-feed-using-outlook">How do I subscribe to the Calendar Feed using Outlook?</a></li>
+<li data-lesson-id='54708'><a href="/m/4152/l/54708-how-do-i-subscribe-to-the-calendar-feed-using-google-calendar">How do I subscribe to the Calendar Feed using Google Calendar?</a></li>
+<li data-lesson-id='61285'><a href="/m/4152/l/61285-what-is-the-scheduler">What is the Scheduler?</a></li>
+<li data-lesson-id='59601'><a href="/m/4152/l/59601-how-do-i-create-an-appointment-group-in-the-scheduler">How do I create an appointment group in the Scheduler?</a></li>
+<li data-lesson-id='61286'><a href="/m/4152/l/61286-how-do-i-manage-the-number-of-attendees-for-an-individual-appointment-in-the-scheduler">How do I manage the number of attendees for an individual appointment in the Scheduler? </a></li>
+<li data-lesson-id='61489'><a href="/m/4152/l/61489-how-do-i-remove-students-from-an-appointment-in-the-scheduler">How do I remove students from an appointment in the Scheduler?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='23833'>
+<a class='toggle-lessons' href='/m/4152/c/23833' role='Accordion'>
+<span class='chapter-link'>Chat</span>
+<span class='chapter-count'>
+&nbsp;3
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='55285'><a href="/m/4152/l/55285-what-is-chat">What is Chat?</a></li>
+<li data-lesson-id='55286'><a href="/m/4152/l/55286-how-do-i-use-chat-in-my-course">How do I use Chat in my course?</a></li>
+<li data-lesson-id='111083'><a href="/m/4152/l/111083-how-do-i-view-chat-history">How do I view Chat history?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='23834'>
+<a class='toggle-lessons' href='/m/4152/c/23834' role='Accordion'>
+<span class='chapter-link'>Collaborations</span>
+<span class='chapter-count'>
+&nbsp;4
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='55281'><a href="/m/4152/l/55281-what-are-collaborations">What are Collaborations?</a></li>
+<li data-lesson-id='55282'><a href="/m/4152/l/55282-how-do-i-edit-a-google-docs-collaboration">How do I edit a Google Docs Collaboration?</a></li>
+<li data-lesson-id='55283'><a href="/m/4152/l/55283-how-do-i-create-a-google-docs-collaboration">How do I create a Google Docs Collaboration?</a></li>
+<li data-lesson-id='55284'><a href="/m/4152/l/55284-how-do-i-delete-a-google-doc-collaboration">How do I delete a Google Doc Collaboration?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='74371'>
+<a class='toggle-lessons' href='/m/4152/c/74371' role='Accordion'>
+<span class='chapter-link'>Computer Specifications</span>
+<span class='chapter-count'>
+&nbsp;4
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='82542'><a href="/m/4152/l/82542-what-are-the-basic-computer-specifications-for-canvas">What are the basic computer specifications for Canvas?</a></li>
+<li data-lesson-id='41056'><a href="/m/4152/l/41056-which-browsers-does-canvas-support">Which browsers does Canvas support? </a></li>
+<li data-lesson-id='334964'><a href="/m/4152/l/334964-how-do-i-clear-my-browser-cache-on-a-mac">How do I clear my browser cache on a Mac?</a></li>
+<li data-lesson-id='334965'><a href="/m/4152/l/334965-how-do-i-clear-my-browser-cache-on-a-pc">How do I clear my browser cache on a PC?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='23835'>
+<a class='toggle-lessons' href='/m/4152/c/23835' role='Accordion'>
+<span class='chapter-link'>Conferences</span>
+<span class='chapter-count'>
+&nbsp;12
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='40302'><a href="/m/4152/l/40302-what-are-conferences-for-instructors">What are Conferences for instructors?</a></li>
+<li data-lesson-id='41306'><a href="/m/4152/l/41306-how-do-i-create-a-conference">How do I create a Conference?</a></li>
+<li data-lesson-id='65962'><a href="/m/4152/l/65962-how-do-i-create-a-long-running-conference">How do I create a long-running Conference?</a></li>
+<li data-lesson-id='65963'><a href="/m/4152/l/65963-how-do-i-delete-a-conference">How do I delete a Conference?</a></li>
+<li data-lesson-id='65964'><a href="/m/4152/l/65964-how-do-i-edit-a-conference">How do I edit a Conference?</a></li>
+<li data-lesson-id='117864'><a href="/m/4152/l/117864-how-do-i-record-a-conference">How do I record a Conference?</a></li>
+<li data-lesson-id='65960'><a href="/m/4152/l/65960-how-do-i-start-a-conference">How do I start a Conference?</a></li>
+<li data-lesson-id='65961'><a href="/m/4152/l/65961-how-do-i-use-the-conference-interface">How do I use the Conference interface?</a></li>
+<li data-lesson-id='41866'><a href="/m/4152/l/41866-how-do-i-join-a-conference-that-has-already-started">How do I join a Conference that has already started?</a></li>
+<li data-lesson-id='299839'><a href="/m/4152/l/299839-how-do-i-conclude-a-conference">How do I conclude a Conference?</a></li>
+<li data-lesson-id='265050'><a href="/m/4152/l/265050-how-do-i-share-my-desktop-in-the-conference-interface">How do I share my desktop in the Conference interface?</a></li>
+<li data-lesson-id='266161'><a href="/m/4152/l/266161-how-do-i-add-files-to-a-conference">How do I add files to a Conference?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='23836'>
+<a class='toggle-lessons' href='/m/4152/c/23836' role='Accordion'>
+<span class='chapter-link'>Conversations</span>
+<span class='chapter-count'>
+&nbsp;17
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='40303'><a href="/m/4152/l/40303-what-is-conversations">What is Conversations? </a></li>
+<li data-lesson-id='48299'><a href="/m/4152/l/48299-how-do-i-use-conversations">How do I use Conversations?</a></li>
+<li data-lesson-id='42679'><a href="/m/4152/l/42679-how-do-i-find-my-unread-messages-in-conversations">How do I find my unread messages in Conversations?</a></li>
+<li data-lesson-id='42680'><a href="/m/4152/l/42680-how-do-i-filter-conversations">How do I filter Conversations?</a></li>
+<li data-lesson-id='68819'><a href="/m/4152/l/68819-how-do-i-star-conversations">How do I star Conversations?</a></li>
+<li data-lesson-id='48305'><a href="/m/4152/l/48305-how-do-i-compose-and-send-a-message">How do I compose and send a message?</a></li>
+<li data-lesson-id='92750'><a href="/m/4152/l/92750-how-do-i-send-a-message-to-an-entire-class-as-an-instructor">How do I send a message to an entire class as an instructor?</a></li>
+<li data-lesson-id='48313'><a href="/m/4152/l/48313-how-do-i-attach-a-file-to-a-message">How do I attach a file to a message?</a></li>
+<li data-lesson-id='48314'><a href="/m/4152/l/48314-how-do-i-attach-a-media-comment-to-a-message">How do I attach a media comment to a message?</a></li>
+<li data-lesson-id='93419'><a href="/m/4152/l/93419-how-do-i-reply-to-a-message-in-conversations">How do I reply to a message in Conversations?</a></li>
+<li data-lesson-id='48332'><a href="/m/4152/l/48332-how-do-i-privately-respond-to-an-individual-in-a-larger-conversation">How do I privately respond to an individual in a larger Conversation?</a></li>
+<li data-lesson-id='41317'><a href="/m/4152/l/41317-how-do-i-reply-to-submission-comments-in-conversations">How do I reply to submission comments in Conversations?</a></li>
+<li data-lesson-id='48302'><a href="/m/4152/l/48302-how-do-i-forward-a-message-from-a-conversation">How do I forward a message from a Conversation?</a></li>
+<li data-lesson-id='42873'><a href="/m/4152/l/42873-how-do-i-add-new-people-to-an-existing-conversation">How do I add new people to an existing Conversation?</a></li>
+<li data-lesson-id='41314'><a href="/m/4152/l/41314-how-do-i-delete-a-conversation">How do I delete a Conversation?</a></li>
+<li data-lesson-id='48303'><a href="/m/4152/l/48303-how-do-i-delete-a-message-from-a-conversation">How do I delete a message from a Conversation?</a></li>
+<li data-lesson-id='41313'><a href="/m/4152/l/41313-how-do-i-archive-a-conversation">How do I archive a Conversation?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='23839'>
+<a class='toggle-lessons' href='/m/4152/c/23839' role='Accordion'>
+<span class='chapter-link'>Course Import Tool</span>
+<span class='chapter-count'>
+&nbsp;10
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='57076'><a href="/m/4152/l/57076-what-is-the-course-import-tool">What is the Course Import Tool?</a></li>
+<li data-lesson-id='239683'><a href="/m/4152/l/239683-how-do-i-copy-a-canvas-course">How do I copy a Canvas course?</a></li>
+<li data-lesson-id='57077'><a href="/m/4152/l/57077-how-do-i-import-content-from-another-canvas-course">How do I import content from another Canvas course?</a></li>
+<li data-lesson-id='41324'><a href="/m/4152/l/41324-how-do-i-import-a-canvas-course-export-package">How do I import a Canvas course export package?</a></li>
+<li data-lesson-id='57065'><a href="/m/4152/l/57065-how-do-i-import-content-from-bb-vista-ce-webct-6-into-canvas">How do I import content from Bb Vista/CE, WebCT 6+ into Canvas?</a></li>
+<li data-lesson-id='78277'><a href="/m/4152/l/78277-how-do-i-import-content-from-moodle-into-canvas">How do I import content from Moodle into Canvas?</a></li>
+<li data-lesson-id='82271'><a href="/m/4152/l/82271-how-do-i-import-content-from-angel-into-canvas">How do I import content from Angel into Canvas?</a></li>
+<li data-lesson-id='82272'><a href="/m/4152/l/82272-how-do-i-import-content-from-blackboard-6-7-8-9-or-common-cartridge-into-canvas">How do I import content from Blackboard 6/7/8/9 or Common Cartridge into Canvas?</a></li>
+<li data-lesson-id='82273'><a href="/m/4152/l/82273-how-do-i-import-content-from-desire-2-learn-d2l-into-canvas">How do I import content from Desire 2 Learn (D2L) into Canvas?</a></li>
+<li data-lesson-id='41323'><a href="/m/4152/l/41323-how-do-i-export-a-canvas-course">How do I export a Canvas course?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='23840'>
+<a class='toggle-lessons' href='/m/4152/c/23840' role='Accordion'>
+<span class='chapter-link'>Course Navigation</span>
+<span class='chapter-count'>
+&nbsp;7
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='40307'><a href="/m/4152/l/40307-how-do-i-use-the-course-home-page-as-an-instructor">How do I use the Course Home Page as an instructor?</a></li>
+<li data-lesson-id='63275'><a href="/m/4152/l/63275-how-do-i-use-the-course-navigation-menu-as-an-instructor">How do I use the Course Navigation Menu as an instructor?</a></li>
+<li data-lesson-id='57079'><a href="/m/4152/l/57079-how-do-i-reorder-and-hide-course-navigation-links">How do I reorder and hide Course Navigation links?</a></li>
+<li data-lesson-id='85584'><a href="/m/4152/l/85584-what-are-course-navigation-indicators">What are Course Navigation indicators?</a></li>
+<li data-lesson-id='57074'><a href="/m/4152/l/57074-what-layout-options-are-available-in-the-course-home-page">What layout options are available in the Course Home Page?</a></li>
+<li data-lesson-id='57075'><a href="/m/4152/l/57075-how-do-i-change-the-course-home-page">How do I change the Course Home Page?</a></li>
+<li data-lesson-id='57071'><a href="/m/4152/l/57071-how-do-i-use-the-course-activity-stream">How do I use the Course Activity Stream?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='23841'>
+<a class='toggle-lessons' href='/m/4152/c/23841' role='Accordion'>
+<span class='chapter-link'>Course Setup Checklist</span>
+<span class='chapter-count'>
+&nbsp;6
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='57104'><a href="/m/4152/l/57104-what-is-the-course-setup-checklist">What is the Course Setup Checklist?</a></li>
+<li data-lesson-id='41327'><a href="/m/4152/l/41327-how-do-i-create-a-new-course-shell">How do I create a new course shell?</a></li>
+<li data-lesson-id='41329'><a href="/m/4152/l/41329-how-do-i-open-the-course-setup-checklist">How do I open the Course Setup Checklist?</a></li>
+<li data-lesson-id='57132'><a href="/m/4152/l/57132-how-do-i-add-students-to-my-course-shell-using-the-course-setup-checklist">How do I add students to my course shell using the Course Setup Checklist?</a></li>
+<li data-lesson-id='57137'><a href="/m/4152/l/57137-how-do-i-resend-student-invitations-to-my-course">How do I resend student invitations to my course?</a></li>
+<li data-lesson-id='57126'><a href="/m/4152/l/57126-how-do-i-publish-my-course">How do I publish my course?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='33869'>
+<a class='toggle-lessons' href='/m/4152/c/33869' role='Accordion'>
+<span class='chapter-link'>Course Statistics</span>
+<span class='chapter-count'>
+&nbsp;3
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='68885'><a href="/m/4152/l/68885-what-are-course-statistics">What are Course Statistics?</a></li>
+<li data-lesson-id='57122'><a href="/m/4152/l/57122-where-can-i-find-course-statistics-on-file-storage">Where can I find course statistics on file storage?</a></li>
+<li data-lesson-id='57123'><a href="/m/4152/l/57123-where-can-i-find-course-statistics-about-online-interactions-with-my-students">Where can I find course statistics about online interactions with my students?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='23843'>
+<a class='toggle-lessons' href='/m/4152/c/23843' role='Accordion'>
+<span class='chapter-link'>Course Status</span>
+<span class='chapter-count'>
+&nbsp;4
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='57125'><a href="/m/4152/l/57125-what-are-the-different-states-of-a-canvas-course">What are the different states of a Canvas course?</a></li>
+<li data-lesson-id='57127'><a href="/m/4152/l/57127-what-is-the-difference-between-concluding-and-deleting-a-course">What is the difference between concluding and deleting a course?</a></li>
+<li data-lesson-id='57128'><a href="/m/4152/l/57128-how-do-i-conclude-a-course-at-the-end-of-a-term">How do I conclude a course at the end of a term?</a></li>
+<li data-lesson-id='57129'><a href="/m/4152/l/57129-how-do-i-permanently-delete-my-course">How do I permanently delete my course?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='23845'>
+<a class='toggle-lessons' href='/m/4152/c/23845' role='Accordion'>
+<span class='chapter-link'>Discussions</span>
+<span class='chapter-count'>
+&nbsp;34
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='40312'><a href="/m/4152/l/40312-what-are-discussions-for-instructors">What are Discussions for instructors?</a></li>
+<li data-lesson-id='76774'><a href="/m/4152/l/76774-how-do-i-use-the-discussions-index-page">How do I use the Discussions Index Page? </a></li>
+<li data-lesson-id='180495'><a href="/m/4152/l/180495-how-do-i-use-draft-state-in-discussions">How do I use Draft State in Discussions?</a></li>
+<li data-lesson-id='123560'><a href="/m/4152/l/123560-how-do-i-pin-a-discussion-on-the-index-page">How do I pin a Discussion on the Index Page?</a></li>
+<li data-lesson-id='123824'><a href="/m/4152/l/123824-how-do-i-close-a-discussion-for-comments-in-my-course">How do I close a Discussion for comments in my course?</a></li>
+<li data-lesson-id='49995'><a href="/m/4152/l/49995-what-is-the-difference-between-announcements-and-discussions">What is the difference between Announcements and Discussions?</a></li>
+<li data-lesson-id='62356'><a href="/m/4152/l/62356-what-is-the-difference-between-threaded-and-focused-discussions">What is the difference between threaded and focused Discussions?</a></li>
+<li data-lesson-id='49996'><a href="/m/4152/l/49996-how-do-i-create-a-discussion-as-an-instructor">How do I create a Discussion as an instructor?</a></li>
+<li data-lesson-id='101243'><a href="/m/4152/l/101243-how-do-i-assign-a-graded-discussion-to-an-individual-student-or-course-section">How do I assign a Graded Discussion to an individual student or course section?</a></li>
+<li data-lesson-id='49997'><a href="/m/4152/l/49997-how-do-i-edit-a-discussion-in-my-course">How do I edit a Discussion in my course?</a></li>
+<li data-lesson-id='49998'><a href="/m/4152/l/49998-how-do-i-delete-a-discussion-in-my-course">How do I delete a Discussion in my course?</a></li>
+<li data-lesson-id='49999'><a href="/m/4152/l/49999-how-do-i-create-a-graded-discussion-for-my-course">How do I create a Graded Discussion for my course?</a></li>
+<li data-lesson-id='64224'><a href="/m/4152/l/64224-how-do-i-create-a-group-discussion-for-my-course">How do I create a Group Discussion for my course?</a></li>
+<li data-lesson-id='50000'><a href="/m/4152/l/50000-how-do-i-enable-a-podcast-feed-for-a-discussion-topic-in-my-course">How do I enable a podcast feed for a Discussion topic in my course?</a></li>
+<li data-lesson-id='41361'><a href="/m/4152/l/41361-how-do-i-delay-posting-a-discussion-topic-until-a-specified-date-in-my-course">How do I delay posting a Discussion topic until a specified date in my course?</a></li>
+<li data-lesson-id='50008'><a href="/m/4152/l/50008-how-can-i-require-students-to-post-to-a-discussion-before-they-see-replies">How can I require students to post to a Discussion before they see replies?</a></li>
+<li data-lesson-id='64223'><a href="/m/4152/l/64223-how-do-i-view-and-sort-discussion-replies-as-an-instructor">How do I view and sort Discussion replies as an instructor?</a></li>
+<li data-lesson-id='50010'><a href="/m/4152/l/50010-how-do-i-reply-to-a-discussion-as-an-instructor">How do I reply to a Discussion as an instructor?</a></li>
+<li data-lesson-id='348630'><a href="/m/4152/l/348630-how-do-i-allow-students-to-like-replies-in-a-discussion">How do I allow students to like replies in a discussion?</a></li>
+<li data-lesson-id='65779'><a href="/m/4152/l/65779-how-do-i-allow-students-to-attach-files-to-a-discussion">How do I allow students to attach files to a Discussion?</a></li>
+<li data-lesson-id='95578'><a href="/m/4152/l/95578-how-do-i-allow-students-to-start-a-new-discussion">How do I allow students to start a new Discussion?</a></li>
+<li data-lesson-id='99890'><a href="/m/4152/l/99890-how-do-i-allow-students-to-edit-and-delete-their-own-discussion-posts">How do I allow students to edit and delete their own Discussion posts?</a></li>
+<li data-lesson-id='99891'><a href="/m/4152/l/99891-how-do-i-edit-or-delete-student-discussion-posts">How do I edit or delete student Discussion posts?</a></li>
+<li data-lesson-id='50007'><a href="/m/4152/l/50007-how-do-i-attach-a-file-to-a-discussion-reply-as-an-instructor">How do I attach a file to a Discussion reply as an instructor?</a></li>
+<li data-lesson-id='50005'><a href="/m/4152/l/50005-how-do-i-link-to-a-youtube-video-in-a-discussion-reply-as-an-instructor">How do I link to a YouTube video in a Discussion reply as an instructor?</a></li>
+<li data-lesson-id='65785'><a href="/m/4152/l/65785-how-do-i-embed-an-image-in-a-discussion-reply-as-an-instructor">How do I embed an image in a Discussion reply as an instructor?</a></li>
+<li data-lesson-id='116357'><a href="/m/4152/l/116357-how-do-i-mark-discussion-posts-as-read-or-unread-as-an-instructor">How do I mark Discussion posts as read or unread as an instructor?</a></li>
+<li data-lesson-id='116351'><a href="/m/4152/l/116351-how-do-i-tell-canvas-to-not-automatically-mark-my-discussion-replies-as-read">How do I tell Canvas to not automatically mark my Discussion replies as read?</a></li>
+<li data-lesson-id='126075'><a href="/m/4152/l/126075-how-do-i-subscribe-to-a-discussion-as-an-instructor">How do I subscribe to a Discussion as an instructor?</a></li>
+<li data-lesson-id='252292'><a href="/m/4152/l/252292-what-is-a-peer-review-discussion">What is a peer review Discussion?</a></li>
+<li data-lesson-id='253057'><a href="/m/4152/l/253057-how-do-i-create-a-peer-review-discussion">How do I create a peer review Discussion?</a></li>
+<li data-lesson-id='253429'><a href="/m/4152/l/253429-how-do-i-manually-assign-peer-reviews-for-a-discussion">How do I manually assign peer reviews for a Discussion?</a></li>
+<li data-lesson-id='253060'><a href="/m/4152/l/253060-how-do-i-automatically-assign-peer-reviews-for-a-discussion">How do I automatically assign peer reviews for a Discussion?</a></li>
+<li data-lesson-id='295614'><a href="/m/4152/l/295614-how-do-i-set-up-a-graded-discussion-to-be-sent-to-powerschool">How do I set up a graded discussion to be sent to PowerSchool?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='23846'>
+<a class='toggle-lessons' href='/m/4152/c/23846' role='Accordion'>
+<span class='chapter-link'>ePortfolios</span>
+<span class='chapter-count'>
+&nbsp;25
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='40313'><a href="/m/4152/l/40313-what-are-eportfolios-for-instructors">What are ePortfolios for instructors?</a></li>
+<li data-lesson-id='41368'><a href="/m/4152/l/41368-what-is-the-eportfolio-dashboard">What is the ePortfolio dashboard?</a></li>
+<li data-lesson-id='41370'><a href="/m/4152/l/41370-how-do-i-create-a-new-eportfolio">How do I create a new ePortfolio?</a></li>
+<li data-lesson-id='69659'><a href="/m/4152/l/69659-how-do-i-change-the-name-of-my-eportfolio">How do I change the name of my ePortfolio?</a></li>
+<li data-lesson-id='41371'><a href="/m/4152/l/41371-how-do-i-create-a-new-eportfolio-section">How do I create a new ePortfolio section?</a></li>
+<li data-lesson-id='41372'><a href="/m/4152/l/41372-how-do-i-change-the-name-of-an-eportfolio-section">How do I change the name of an ePortfolio section?</a></li>
+<li data-lesson-id='41374'><a href="/m/4152/l/41374-how-do-i-edit-the-default-page-in-my-eportfolio-section">How do I edit the default page in my ePortfolio section?</a></li>
+<li data-lesson-id='41375'><a href="/m/4152/l/41375-how-do-i-create-a-new-page-in-my-eportfolio-section">How do I create a new page in my ePortfolio section?</a></li>
+<li data-lesson-id='59976'><a href="/m/4152/l/59976-how-do-i-edit-the-name-of-an-eportfolio-page">How do I edit the name of an ePortfolio page? </a></li>
+<li data-lesson-id='59977'><a href="/m/4152/l/59977-how-do-i-preview-a-page-in-my-eportfolio">How do I preview a page in my ePortfolio?</a></li>
+<li data-lesson-id='59974'><a href="/m/4152/l/59974-how-do-i-organize-my-eportfolio">How do I organize my ePortfolio?</a></li>
+<li data-lesson-id='59978'><a href="/m/4152/l/59978-what-content-can-i-add-to-my-eportfolio-page">What content can I add to my ePortfolio page?</a></li>
+<li data-lesson-id='59979'><a href="/m/4152/l/59979-how-do-i-add-rich-text-content-to-my-eportfolio-page">How do I add rich text content to my ePortfolio page?</a></li>
+<li data-lesson-id='59980'><a href="/m/4152/l/59980-how-do-i-add-html-embedded-content-to-my-eportfolio-page">How do I add HTML/Embedded content to my ePortfolio page?</a></li>
+<li data-lesson-id='59981'><a href="/m/4152/l/59981-how-do-i-retrieve-assignments-from-previous-courses-in-my-eportfolio">How do I retrieve Assignments from previous courses in my ePortfolio?</a></li>
+<li data-lesson-id='59982'><a href="/m/4152/l/59982-how-do-i-upload-a-file-or-image-to-my-eportfolio-page">How do I upload a file or image to my ePortfolio page?</a></li>
+<li data-lesson-id='59983'><a href="/m/4152/l/59983-how-can-i-share-a-private-eportfolio">How can I share a private ePortfolio?</a></li>
+<li data-lesson-id='59984'><a href="/m/4152/l/59984-how-do-i-make-my-eportfolio-public">How do I make my ePortfolio public?</a></li>
+<li data-lesson-id='59985'><a href="/m/4152/l/59985-what-is-the-eportfolio-getting-started-wizard">What is the ePortfolio Getting Started Wizard?</a></li>
+<li data-lesson-id='59986'><a href="/m/4152/l/59986-how-do-i-use-the-eportfolio-getting-started-wizard">How do I use the ePortfolio Getting Started Wizard?</a></li>
+<li data-lesson-id='41376'><a href="/m/4152/l/41376-how-do-i-enable-comments-in-my-eportfolio">How do I enable comments in my ePortfolio?</a></li>
+<li data-lesson-id='41377'><a href="/m/4152/l/41377-how-do-i-make-comments-public-in-my-eportfolio">How do I make comments public in my ePortfolio?</a></li>
+<li data-lesson-id='59987'><a href="/m/4152/l/59987-how-do-i-organize-my-eportfolio-pages">How do I organize my ePortfolio pages?</a></li>
+<li data-lesson-id='41378'><a href="/m/4152/l/41378-how-do-i-download-the-contents-of-my-eportfolio">How do I download the contents of my ePortfolio?</a></li>
+<li data-lesson-id='59988'><a href="/m/4152/l/59988-how-do-i-delete-my-eportfolio">How do I delete my ePortfolio?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='34222'>
+<a class='toggle-lessons' href='/m/4152/c/34222' role='Accordion'>
+<span class='chapter-link'>External Apps (LTI)</span>
+<span class='chapter-count'>
+&nbsp;12
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='121959'><a href="/m/4152/l/121959-what-is-the-app-center">What is the App Center?</a></li>
+<li data-lesson-id='74563'><a href="/m/4152/l/74563-what-are-lti-tools-external-apps">What are LTI Tools (External Apps)?</a></li>
+<li data-lesson-id='74551'><a href="/m/4152/l/74551-where-can-i-find-external-apps-to-use-in-my-course">Where can I find External Apps to use in my course? </a></li>
+<li data-lesson-id='74482'><a href="/m/4152/l/74482-how-do-i-configure-an-external-app-for-a-course-using-a-url">How do I configure an External App for a course using a URL?</a></li>
+<li data-lesson-id='74552'><a href="/m/4152/l/74552-how-do-i-configure-an-external-app-for-a-course-using-xml">How do I configure an External App for a course using XML?</a></li>
+<li data-lesson-id='57103'><a href="/m/4152/l/57103-how-do-i-manually-configure-an-external-app-for-a-course">How do I manually configure an External App for a course?</a></li>
+<li data-lesson-id='74553'><a href="/m/4152/l/74553-how-do-i-link-to-a-configured-external-app-in-modules">How do I link to a configured External App in Modules?</a></li>
+<li data-lesson-id='74554'><a href="/m/4152/l/74554-how-do-i-link-to-a-softchalk-lesson-from-an-assignment-in-canvas">How do I link to a SoftChalk lesson from an Assignment in Canvas?</a></li>
+<li data-lesson-id='74555'><a href="/m/4152/l/74555-how-do-i-link-to-a-resource-from-a-configured-external-app-in-modules">How do I link to a resource from a configured External App in Modules?</a></li>
+<li data-lesson-id='74556'><a href="/m/4152/l/74556-how-do-i-add-an-external-app-that-creates-a-course-navigation-link">How do I add an External App that creates a Course Navigation Link?</a></li>
+<li data-lesson-id='74557'><a href="/m/4152/l/74557-how-do-i-add-an-external-app-that-creates-a-rich-content-editor-button">How do I add an External App that creates a Rich Content Editor button?</a></li>
+<li data-lesson-id='121979'><a href="/m/4152/l/121979-how-do-i-use-the-app-center-in-my-course">How do I use the App Center in my course?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='23847'>
+<a class='toggle-lessons' href='/m/4152/c/23847' role='Accordion'>
+<span class='chapter-link'>Files</span>
+<span class='chapter-count'>
+&nbsp;22
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='55574'><a href="/m/4152/l/55574-what-are-files-for-instructors">What are Files for instructors?</a></li>
+<li data-lesson-id='314203'><a href="/m/4152/l/314203-how-do-i-use-files-as-an-instructor">How do I use Files as an instructor?</a></li>
+<li data-lesson-id='41387'><a href="/m/4152/l/41387-how-do-i-move-and-organize-my-files-as-an-instructor">How do I move and organize my files as an instructor?</a></li>
+<li data-lesson-id='314042'><a href="/m/4152/l/314042-how-do-i-rename-a-file-as-an-instructor">How do I rename a file as an instructor?</a></li>
+<li data-lesson-id='41464'><a href="/m/4152/l/41464-where-are-my-personal-files-as-an-instructor">Where are my personal Files as an instructor?</a></li>
+<li data-lesson-id='41466'><a href="/m/4152/l/41466-where-are-my-course-files-as-an-instructor">Where are my course Files as an instructor?</a></li>
+<li data-lesson-id='41465'><a href="/m/4152/l/41465-where-are-my-group-files-as-an-instructor">Where are my group Files as an instructor?</a></li>
+<li data-lesson-id='56630'><a href="/m/4152/l/56630-how-do-i-create-a-folder-in-files-as-an-instructor">How do I create a folder in Files as an instructor?</a></li>
+<li data-lesson-id='41383'><a href="/m/4152/l/41383-how-do-i-upload-a-file-to-my-course">How do I upload a file to my course?</a></li>
+<li data-lesson-id='41384'><a href="/m/4152/l/41384-how-do-i-preview-a-file-as-an-instructor">How do I preview a file as an instructor?</a></li>
+<li data-lesson-id='41385'><a href="/m/4152/l/41385-how-do-i-upload-zip-files-as-an-instructor">How do I upload ZIP files as an instructor?</a></li>
+<li data-lesson-id='41386'><a href="/m/4152/l/41386-how-do-i-bulk-upload-files-to-my-course">How do I bulk upload files to my course?</a></li>
+<li data-lesson-id='41388'><a href="/m/4152/l/41388-how-do-i-delete-a-file-as-an-instructor">How do I delete a file as an instructor?</a></li>
+<li data-lesson-id='41389'><a href="/m/4152/l/41389-how-do-i-download-a-single-file-as-an-instructor">How do I download a single file as an instructor?</a></li>
+<li data-lesson-id='41390'><a href="/m/4152/l/41390-how-do-i-download-a-folder-in-zip-format-as-an-instructor">How do I download a folder in ZIP format as an instructor?</a></li>
+<li data-lesson-id='41391'><a href="/m/4152/l/41391-how-do-i-restrict-files-and-folders-to-students-in-canvas">How do I restrict files and folders to students in Canvas?</a></li>
+<li data-lesson-id='314032'><a href="/m/4152/l/314032-how-do-i-set-usage-rights-for-a-course-file">How do I set usage rights for a course file?</a></li>
+<li data-lesson-id='314466'><a href="/m/4152/l/314466-how-do-i-set-usage-rights-for-a-file-folder">How do I set usage rights for a file folder?</a></li>
+<li data-lesson-id='41392'><a href="/m/4152/l/41392-what-document-types-does-canvas-convert-using-the-document-previewer">What document types does Canvas convert using the document previewer?</a></li>
+<li data-lesson-id='41393'><a href="/m/4152/l/41393-what-types-of-media-files-are-supported-in-the-canvas-media-player">What types of media files are supported in the Canvas media player?</a></li>
+<li data-lesson-id='41395'><a href="/m/4152/l/41395-what-is-my-file-storage-quota-for-my-course">What is my File Storage quota for my course?</a></li>
+<li data-lesson-id='75094'><a href="/m/4152/l/75094-how-do-i-edit-an-html-file-in-my-course">How do I edit an HTML file in my course?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='23848'>
+<a class='toggle-lessons' href='/m/4152/c/23848' role='Accordion'>
+<span class='chapter-link'>Global Navigation</span>
+<span class='chapter-count'>
+&nbsp;10
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='41951'><a href="/m/4152/l/41951-how-do-i-log-in-to-canvas">How do I log in to Canvas?</a></li>
+<li data-lesson-id='40311'><a href="/m/4152/l/40311-how-do-i-use-the-dashboard">How do I use the Dashboard? </a></li>
+<li data-lesson-id='420619'><a href="/m/4152/l/420619-how-do-i-use-the-dashboard-new-canvas-ui">How do I use the Dashboard? (New Canvas UI)</a></li>
+<li data-lesson-id='40315'><a href="/m/4152/l/40315-how-do-i-use-the-global-navigation-menu">How do I use the Global Navigation Menu?</a></li>
+<li data-lesson-id='420898'><a href="/m/4152/l/420898-how-do-i-use-the-global-navigation-menu-new-canvas-ui">How do I use the Global Navigation Menu? (New Canvas UI)</a></li>
+<li data-lesson-id='103948'><a href="/m/4152/l/103948-how-do-i-view-my-canvas-courses">How do I view my Canvas courses?</a></li>
+<li data-lesson-id='48284'><a href="/m/4152/l/48284-how-do-i-customize-my-course-list">How do I customize my Course list?</a></li>
+<li data-lesson-id='284596'><a href="/m/4152/l/284596-how-do-i-view-my-institution-s-public-course-index">How do I view my institution&#x27;s Public Course Index?</a></li>
+<li data-lesson-id='41954'><a href="/m/4152/l/41954-how-do-i-get-help-with-canvas">How do I get help with Canvas?</a></li>
+<li data-lesson-id='41355'><a href="/m/4152/l/41355-how-do-i-log-out-of-canvas">How do I log out of Canvas?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='23849'>
+<a class='toggle-lessons' href='/m/4152/c/23849' role='Accordion'>
+<span class='chapter-link'>Grades</span>
+<span class='chapter-count'>
+&nbsp;35
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='54996'><a href="/m/4152/l/54996-what-are-grades-and-the-gradebook">What are Grades and the Gradebook?</a></li>
+<li data-lesson-id='220009'><a href="/m/4152/l/220009-how-do-i-use-the-gradebook">How do I use the Gradebook?</a></li>
+<li data-lesson-id='212381'><a href="/m/4152/l/212381-how-do-i-use-individual-view-in-the-gradebook">How do I use Individual View in the Gradebook?</a></li>
+<li data-lesson-id='388944'><a href="/m/4152/l/388944-how-do-i-view-and-modify-the-grading-periods-available-for-my-course">How do I view and modify the grading periods available for my course?</a></li>
+<li data-lesson-id='95583'><a href="/m/4152/l/95583-what-do-the-icons-and-colors-in-the-gradebook-represent">What do the icons and colors in the Gradebook represent?</a></li>
+<li data-lesson-id='54998'><a href="/m/4152/l/54998-how-do-i-view-assignment-details-in-the-gradebook">How do I view assignment details in the Gradebook?</a></li>
+<li data-lesson-id='406523'><a href="/m/4152/l/406523-how-do-i-create-extra-assignment-columns-for-non-submission-assignments-in-the-gradebook">How do I create extra assignment columns for non-submission assignments in the Gradebook?</a></li>
+<li data-lesson-id='95584'><a href="/m/4152/l/95584-how-do-i-hide-and-filter-students-in-the-gradebook">How do I hide and filter students in the Gradebook?</a></li>
+<li data-lesson-id='54999'><a href="/m/4152/l/54999-how-do-i-enter-and-edit-scores-in-the-gradebook">How do I enter and edit scores in the Gradebook?</a></li>
+<li data-lesson-id='386299'><a href="/m/4152/l/386299-how-do-i-excuse-an-assignment-for-a-student-in-the-gradebook">How do I excuse an assignment for a student in the Gradebook?</a></li>
+<li data-lesson-id='95585'><a href="/m/4152/l/95585-how-do-i-use-grading-history-in-the-gradebook">How do I use grading history in the Gradebook?</a></li>
+<li data-lesson-id='55000'><a href="/m/4152/l/55000-how-do-i-leave-comments-for-students-in-the-gradebook">How do I leave comments for students in the Gradebook?</a></li>
+<li data-lesson-id='55001'><a href="/m/4152/l/55001-how-do-i-send-a-message-to-my-students-from-the-gradebook">How do I send a message to my students from the Gradebook?</a></li>
+<li data-lesson-id='55002'><a href="/m/4152/l/55002-how-do-i-set-a-default-grade-for-an-assignment">How do I set a default grade for an Assignment?</a></li>
+<li data-lesson-id='55003'><a href="/m/4152/l/55003-how-do-i-curve-grades-in-the-gradebook">How do I curve Grades in the Gradebook?</a></li>
+<li data-lesson-id='45130'><a href="/m/4152/l/45130-how-do-i-mute-an-assignment-in-the-gradebook">How do I mute an assignment in the Gradebook?</a></li>
+<li data-lesson-id='55006'><a href="/m/4152/l/55006-how-do-i-evaluate-group-assignments-in-my-course">How do I evaluate group assignments in my course?</a></li>
+<li data-lesson-id='55007'><a href="/m/4152/l/55007-where-can-i-find-the-student-view-of-the-gradebook">Where can I find the student view of the Gradebook?</a></li>
+<li data-lesson-id='113748'><a href="/m/4152/l/113748-how-do-i-view-my-students-total-grades-as-a-point-value-instead-of-a-percentage-in-the-gradebook">How do I view my students&#x27; total grades as a point value instead of a percentage in the Gradebook?</a></li>
+<li data-lesson-id='55008'><a href="/m/4152/l/55008-how-do-i-sort-my-gradebook">How do I sort my Gradebook?</a></li>
+<li data-lesson-id='252179'><a href="/m/4152/l/252179-how-do-i-move-the-total-column-in-the-gradebook">How do I move the Total column in the Gradebook?</a></li>
+<li data-lesson-id='170783'><a href="/m/4152/l/170783-how-do-i-use-the-notes-column-in-the-gradebook">How do I use the Notes column in the Gradebook?</a></li>
+<li data-lesson-id='55009'><a href="/m/4152/l/55009-how-do-i-change-assignment-group-weights-in-the-gradebook">How do I change assignment group weights in the Gradebook?</a></li>
+<li data-lesson-id='55010'><a href="/m/4152/l/55010-how-can-i-view-grades-for-concluded-student-enrollments-in-my-course">How can I view Grades for concluded student enrollments in my course?</a></li>
+<li data-lesson-id='55011'><a href="/m/4152/l/55011-how-do-i-bulk-download-assignment-submissions-in-canvas">How do I bulk download Assignment submissions in Canvas?</a></li>
+<li data-lesson-id='75096'><a href="/m/4152/l/75096-how-do-i-bulk-upload-assignment-submissions-in-canvas">How do I bulk upload Assignment submissions in Canvas?</a></li>
+<li data-lesson-id='55012'><a href="/m/4152/l/55012-how-do-i-download-scores-from-the-gradebook">How do I download scores from the Gradebook?</a></li>
+<li data-lesson-id='55013'><a href="/m/4152/l/55013-how-do-i-upload-changes-to-the-gradebook">How do I upload changes to the Gradebook?</a></li>
+<li data-lesson-id='51029'><a href="/m/4152/l/51029-how-do-i-publish-grades-to-banner">How do I publish grades to Banner?</a></li>
+<li data-lesson-id='295587'><a href="/m/4152/l/295587-how-do-i-publish-grades-to-powerschool">How do I publish grades to PowerSchool?</a></li>
+<li data-lesson-id='55015'><a href="/m/4152/l/55015-what-are-what-if-grades">What are What-If Grades?</a></li>
+<li data-lesson-id='64431'><a href="/m/4152/l/64431-how-does-turnitin-work-in-the-speedgrader">How does Turnitin work in the SpeedGrader?</a></li>
+<li data-lesson-id='75097'><a href="/m/4152/l/75097-can-i-see-turnitin-feedback-in-the-gradebook">Can I see Turnitin feedback in the Gradebook?</a></li>
+<li data-lesson-id='78195'><a href="/m/4152/l/78195-how-do-i-give-my-students-extra-credit">How do I give my students extra credit?</a></li>
+<li data-lesson-id='181047'><a href="/m/4152/l/181047-how-do-i-treat-ungraded-assignments-as-zero-in-the-gradebook">How do I treat ungraded assignments as zero in the Gradebook?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='23850'>
+<a class='toggle-lessons' href='/m/4152/c/23850' role='Accordion'>
+<span class='chapter-link'>Groups</span>
+<span class='chapter-count'>
+&nbsp;19
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='55483'><a href="/m/4152/l/55483-what-are-student-groups">What are Student Groups?</a></li>
+<li data-lesson-id='55484'><a href="/m/4152/l/55484-how-do-i-view-student-groups-as-an-instructor">How do I view Student Groups as an instructor?</a></li>
+<li data-lesson-id='41414'><a href="/m/4152/l/41414-which-groups-am-i-enrolled-in-as-an-instructor">Which Groups am I enrolled in as an instructor?</a></li>
+<li data-lesson-id='55485'><a href="/m/4152/l/55485-how-do-i-create-a-new-group-set">How do I create a new Group Set?</a></li>
+<li data-lesson-id='433813'><a href="/m/4152/l/433813-how-do-i-clone-a-group-set">How do I clone a Group Set?</a></li>
+<li data-lesson-id='433815'><a href="/m/4152/l/433815-how-do-i-edit-a-group-set">How do I edit a Group Set?</a></li>
+<li data-lesson-id='55490'><a href="/m/4152/l/55490-how-do-i-automatically-create-groups-in-a-group-set">How do I automatically create Groups in a Group Set?</a></li>
+<li data-lesson-id='55489'><a href="/m/4152/l/55489-how-do-i-manually-create-groups-in-a-group-set">How do I manually create Groups in a Group Set?</a></li>
+<li data-lesson-id='55488'><a href="/m/4152/l/55488-how-do-i-expand-and-collapse-groups">How do I expand and collapse Groups?</a></li>
+<li data-lesson-id='55486'><a href="/m/4152/l/55486-how-do-i-create-self-sign-up-groups">How do I create self sign-up Groups?</a></li>
+<li data-lesson-id='55491'><a href="/m/4152/l/55491-how-do-i-automatically-assign-students-to-groups">How do I automatically assign students to Groups?</a></li>
+<li data-lesson-id='225018'><a href="/m/4152/l/225018-how-do-i-manually-assign-students-to-groups">How do I manually assign students to Groups?</a></li>
+<li data-lesson-id='224908'><a href="/m/4152/l/224908-how-do-i-assign-a-student-leader-to-a-group">How do I assign a student leader to a Group?</a></li>
+<li data-lesson-id='45127'><a href="/m/4152/l/45127-how-do-i-message-students-who-have-not-signed-up-for-a-self-sign-up-group">How do I message students who have not signed up for a self sign-up group?</a></li>
+<li data-lesson-id='55487'><a href="/m/4152/l/55487-how-do-i-prevent-students-from-switching-groups-in-self-sign-up-groups">How do I prevent students from switching groups in self sign-up Groups?</a></li>
+<li data-lesson-id='55492'><a href="/m/4152/l/55492-how-do-i-move-a-student-into-a-different-group">How do I move a student into a different Group?</a></li>
+<li data-lesson-id='55495'><a href="/m/4152/l/55495-how-do-i-view-student-activity-within-a-group-as-an-instructor">How do I view student activity within a Group as an instructor?</a></li>
+<li data-lesson-id='55494'><a href="/m/4152/l/55494-how-do-i-delete-a-group-set">How do I delete a Group Set?</a></li>
+<li data-lesson-id='225730'><a href="/m/4152/l/225730-how-do-i-start-a-collaboration-with-a-student-group-as-an-instructor">How do I start a Collaboration with a Student Group as an instructor?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='23855'>
+<a class='toggle-lessons' href='/m/4152/c/23855' role='Accordion'>
+<span class='chapter-link'>Modules</span>
+<span class='chapter-count'>
+&nbsp;23
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='55575'><a href="/m/4152/l/55575-what-are-modules-for-instructors">What are Modules for instructors?</a></li>
+<li data-lesson-id='322062'><a href="/m/4152/l/322062-how-do-i-use-the-modules-index-page">How do I use the Modules Index Page?</a></li>
+<li data-lesson-id='180497'><a href="/m/4152/l/180497-how-do-i-use-draft-state-in-modules">How do I use Draft State in Modules?</a></li>
+<li data-lesson-id='41424'><a href="/m/4152/l/41424-how-do-i-create-a-new-module">How do I create a new Module?</a></li>
+<li data-lesson-id='322085'><a href="/m/4152/l/322085-how-do-i-edit-a-module">How do I edit a Module?</a></li>
+<li data-lesson-id='41427'><a href="/m/4152/l/41427-how-do-i-add-items-to-a-module">How do I add items to a Module?</a></li>
+<li data-lesson-id='70463'><a href="/m/4152/l/70463-how-do-i-add-duplicate-module-items">How do I add duplicate Module items?</a></li>
+<li data-lesson-id='101239'><a href="/m/4152/l/101239-how-do-i-use-duplicate-module-items-as-checkpoints-in-my-course">How do I use duplicate Module items as checkpoints in my course?</a></li>
+<li data-lesson-id='70462'><a href="/m/4152/l/70462-how-do-i-use-duplicate-module-items-to-remind-students-about-important-content">How do I use duplicate module items to remind students about important content?</a></li>
+<li data-lesson-id='41425'><a href="/m/4152/l/41425-how-do-i-reorder-modules">How do I reorder Modules?</a></li>
+<li data-lesson-id='41426'><a href="/m/4152/l/41426-how-do-i-delete-a-module">How do I delete a Module?</a></li>
+<li data-lesson-id='40798'><a href="/m/4152/l/40798-how-do-i-add-text-to-a-module">How do I add text to a Module?</a></li>
+<li data-lesson-id='41428'><a href="/m/4152/l/41428-how-do-i-edit-module-items">How do I edit Module items?</a></li>
+<li data-lesson-id='41429'><a href="/m/4152/l/41429-how-do-i-remove-module-items">How do I remove Module items?</a></li>
+<li data-lesson-id='41430'><a href="/m/4152/l/41430-how-do-i-reorder-module-items">How do I reorder Module items?</a></li>
+<li data-lesson-id='41431'><a href="/m/4152/l/41431-how-do-i-require-students-to-move-through-each-module-item-in-order">How do I require students to move through each Module item in order?</a></li>
+<li data-lesson-id='41432'><a href="/m/4152/l/41432-how-do-i-lock-a-module">How do I lock a Module?</a></li>
+<li data-lesson-id='41433'><a href="/m/4152/l/41433-how-do-i-set-up-prerequisite-modules">How do I set up prerequisite Modules?</a></li>
+<li data-lesson-id='61967'><a href="/m/4152/l/61967-how-do-i-add-requirements-to-a-module">How do I add requirements to a Module?</a></li>
+<li data-lesson-id='40891'><a href="/m/4152/l/40891-how-do-i-expand-or-collapse-module-contents-as-an-instructor">How do I expand or collapse Module contents as an instructor?</a></li>
+<li data-lesson-id='102031'><a href="/m/4152/l/102031-how-do-i-view-the-progress-of-my-students-in-modules">How do I view the progress of my students in Modules?</a></li>
+<li data-lesson-id='40386'><a href="/m/4152/l/40386-how-do-i-link-to-an-un-configured-external-tool-in-modules">How do I link to an un-configured External Tool in Modules?</a></li>
+<li data-lesson-id='70926'><a href="/m/4152/l/70926-how-do-i-link-to-an-external-url-in-modules">How do I link to an external URL in Modules?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='23856'>
+<a class='toggle-lessons' href='/m/4152/c/23856' role='Accordion'>
+<span class='chapter-link'>Notification Preferences</span>
+<span class='chapter-count'>
+&nbsp;3
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='40323'><a href="/m/4152/l/40323-how-do-notification-preferences-work">How do Notification Preferences work?</a></li>
+<li data-lesson-id='73162'><a href="/m/4152/l/73162-how-do-i-set-my-notification-preferences">How do I set my Notification Preferences?</a></li>
+<li data-lesson-id='41434'><a href="/m/4152/l/41434-what-are-the-default-canvas-notification-preferences">What are the default Canvas Notification Preferences?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='23857'>
+<a class='toggle-lessons' href='/m/4152/c/23857' role='Accordion'>
+<span class='chapter-link'>Outcomes</span>
+<span class='chapter-count'>
+&nbsp;15
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='67950'><a href="/m/4152/l/67950-what-are-outcomes">What are Outcomes?</a></li>
+<li data-lesson-id='332742'><a href="/m/4152/l/332742-what-calculation-methods-are-available-for-outcomes">What calculation methods are available for Outcomes?</a></li>
+<li data-lesson-id='67951'><a href="/m/4152/l/67951-how-do-i-create-an-outcome-for-my-course">How do I create an Outcome for my course? </a></li>
+<li data-lesson-id='67952'><a href="/m/4152/l/67952-how-do-i-find-an-existing-outcome-to-add-to-a-course">How do I find an existing Outcome to add to a course?</a></li>
+<li data-lesson-id='87671'><a href="/m/4152/l/87671-how-do-i-find-state-or-common-core-standards-outcomes-to-add-to-a-course">How do I find State or Common Core Standards Outcomes to add to a course?</a></li>
+<li data-lesson-id='41437'><a href="/m/4152/l/41437-how-do-i-create-outcome-groups-for-my-course">How do I create Outcome groups for my course?</a></li>
+<li data-lesson-id='333533'><a href="/m/4152/l/333533-how-do-i-edit-or-delete-an-outcome-or-outcome-group-in-my-course">How do I edit or delete an Outcome or Outcome group in my course?</a></li>
+<li data-lesson-id='311314'><a href="/m/4152/l/311314-how-do-i-move-outcomes-and-outcome-groups-in-my-course">How do I move Outcomes and Outcome groups in my course?</a></li>
+<li data-lesson-id='67953'><a href="/m/4152/l/67953-where-do-i-find-outcomes-reports-for-students-in-my-course">Where do I find Outcomes reports for students in my course?</a></li>
+<li data-lesson-id='67954'><a href="/m/4152/l/67954-how-do-i-track-student-progress-on-a-learning-outcome">How do I track student progress on a Learning Outcome?</a></li>
+<li data-lesson-id='42891'><a href="/m/4152/l/42891-how-do-i-align-an-outcome-with-a-question-bank">How do I align an Outcome with a Question Bank?</a></li>
+<li data-lesson-id='226473'><a href="/m/4152/l/226473-how-do-i-view-all-aligned-items-and-artifacts-within-an-outcome">How do I view all aligned items and artifacts within an Outcome?</a></li>
+<li data-lesson-id='179359'><a href="/m/4152/l/179359-how-do-i-use-the-learning-mastery-gradebook">How do I use the Learning Mastery Gradebook?</a></li>
+<li data-lesson-id='220023'><a href="/m/4152/l/220023-how-do-i-use-individual-view-in-the-learning-mastery-gradebook">How do I use Individual View in the Learning Mastery Gradebook?</a></li>
+<li data-lesson-id='226363'><a href="/m/4152/l/226363-how-do-i-create-custom-course-outcome-names-for-students">How do I create custom course Outcome names for students?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='23858'>
+<a class='toggle-lessons' href='/m/4152/c/23858' role='Accordion'>
+<span class='chapter-link'>Pages</span>
+<span class='chapter-count'>
+&nbsp;14
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='55576'><a href="/m/4152/l/55576-what-are-pages-for-instructors">What are Pages for instructors?</a></li>
+<li data-lesson-id='322017'><a href="/m/4152/l/322017-how-do-i-use-the-pages-index-page">How do I use the Pages Index Page?</a></li>
+<li data-lesson-id='180494'><a href="/m/4152/l/180494-how-do-i-use-draft-state-in-pages">How do I use Draft State in Pages?</a></li>
+<li data-lesson-id='41440'><a href="/m/4152/l/41440-how-do-i-create-a-new-page-in-my-course">How do I create a new page in my course?</a></li>
+<li data-lesson-id='41441'><a href="/m/4152/l/41441-how-do-i-change-the-name-of-a-page-in-my-course">How do I change the name of a page in my course?</a></li>
+<li data-lesson-id='41442'><a href="/m/4152/l/41442-how-do-i-edit-a-page-in-my-course">How do I edit a page in my course?</a></li>
+<li data-lesson-id='41443'><a href="/m/4152/l/41443-how-do-i-delete-a-page-in-my-course">How do I delete a page in my course?</a></li>
+<li data-lesson-id='56689'><a href="/m/4152/l/56689-how-do-i-upload-a-pdf-to-a-page-in-my-course">How do I upload a PDF to a page in my course?</a></li>
+<li data-lesson-id='41444'><a href="/m/4152/l/41444-how-do-i-link-to-other-canvas-pages-in-my-course">How do I link to other Canvas pages in my course?</a></li>
+<li data-lesson-id='41445'><a href="/m/4152/l/41445-how-do-i-set-a-front-page-for-my-course">How do I set a Front Page for my course?</a></li>
+<li data-lesson-id='40719'><a href="/m/4152/l/40719-how-do-i-embed-a-video-in-a-page-in-my-course">How do I embed a video in a page in my course?</a></li>
+<li data-lesson-id='87672'><a href="/m/4152/l/87672-how-do-i-create-a-file-link-in-a-page-in-my-course">How do I create a file link in a page in my course? </a></li>
+<li data-lesson-id='101244'><a href="/m/4152/l/101244-how-do-i-view-the-history-of-a-page-in-my-course">How do I view the history of a page in my course?</a></li>
+<li data-lesson-id='126836'><a href="/m/4152/l/126836-how-do-i-start-a-google-hangout-on-air-in-my-canvas-course">How do I start a Google+ Hangout On Air in my Canvas course?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='23859'>
+<a class='toggle-lessons' href='/m/4152/c/23859' role='Accordion'>
+<span class='chapter-link'>People</span>
+<span class='chapter-count'>
+&nbsp;15
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='55478'><a href="/m/4152/l/55478-how-do-i-access-the-people-page-as-an-instructor">How do I access the People page as an instructor?</a></li>
+<li data-lesson-id='55479'><a href="/m/4152/l/55479-how-do-i-use-the-people-page-as-an-instructor">How do I use the People page as an instructor?</a></li>
+<li data-lesson-id='40729'><a href="/m/4152/l/40729-how-do-i-add-students-to-my-course">How do I add students to my course? </a></li>
+<li data-lesson-id='57133'><a href="/m/4152/l/57133-how-do-i-limit-a-student-to-only-see-fellow-students-in-a-course-section">How do I limit a student to only see fellow students in a course section?</a></li>
+<li data-lesson-id='57134'><a href="/m/4152/l/57134-how-do-i-find-the-user-details-for-a-student-in-my-course">How do I find the user details for a student in my course?</a></li>
+<li data-lesson-id='57136'><a href="/m/4152/l/57136-how-do-i-edit-a-student-s-full-name-display-name-and-time-zone-in-my-course">How do I edit a student&#x27;s full name, display name, and time zone in my course?</a></li>
+<li data-lesson-id='57138'><a href="/m/4152/l/57138-where-can-i-find-concluded-student-enrollments-for-my-course">Where can I find concluded student enrollments for my course?</a></li>
+<li data-lesson-id='55482'><a href="/m/4152/l/55482-how-do-i-add-observers-and-tas-to-my-course">How do I add observers and TAs to my course?</a></li>
+<li data-lesson-id='41869'><a href="/m/4152/l/41869-how-do-i-link-a-student-to-an-observer-in-my-course">How do I link a student to an Observer in my course?</a></li>
+<li data-lesson-id='55481'><a href="/m/4152/l/55481-how-do-i-remove-observers-and-tas-from-my-course">How do I remove observers and TAs from my course?</a></li>
+<li data-lesson-id='102053'><a href="/m/4152/l/102053-how-do-i-add-a-designer-to-my-course">How do I add a designer to my course?</a></li>
+<li data-lesson-id='55014'><a href="/m/4152/l/55014-how-do-i-view-a-summary-of-all-my-student-interactions-in-a-course">How do I view a summary of all my student interactions in a course?</a></li>
+<li data-lesson-id='41457'><a href="/m/4152/l/41457-how-do-i-view-my-course-interactions-with-an-individual-student">How do I view my course interactions with an individual student?</a></li>
+<li data-lesson-id='41458'><a href="/m/4152/l/41458-how-do-i-view-the-course-access-report-for-an-individual-student">How do I view the course access report for an individual student?</a></li>
+<li data-lesson-id='41461'><a href="/m/4152/l/41461-how-can-i-view-registered-web-services-for-a-student-in-my-course">How can I view registered web services for a student in my course?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='23860'>
+<a class='toggle-lessons' href='/m/4152/c/23860' role='Accordion'>
+<span class='chapter-link'>Profile and User Settings</span>
+<span class='chapter-count'>
+&nbsp;12
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='41955'><a href="/m/4152/l/41955-what-are-profile-and-user-settings">What are Profile and User Settings?</a></li>
+<li data-lesson-id='75098'><a href="/m/4152/l/75098-how-do-i-edit-my-profile">How do I edit my Profile?</a></li>
+<li data-lesson-id='41467'><a href="/m/4152/l/41467-how-do-i-add-a-profile-picture">How do I add a Profile picture?</a></li>
+<li data-lesson-id='41957'><a href="/m/4152/l/41957-how-do-i-change-my-user-settings">How do I change my User Settings?</a></li>
+<li data-lesson-id='91042'><a href="/m/4152/l/91042-how-do-i-change-the-language-preference-in-my-user-account">How do I change the language preference in my user account? </a></li>
+<li data-lesson-id='218818'><a href="/m/4152/l/218818-how-do-i-set-a-time-zone-in-my-user-settings">How do I set a time zone in my User Settings?</a></li>
+<li data-lesson-id='41958'><a href="/m/4152/l/41958-how-do-i-change-my-login-password">How do I change my login password?</a></li>
+<li data-lesson-id='41471'><a href="/m/4152/l/41471-how-do-i-add-an-additional-email-address-as-a-contact-method-in-canvas">How do I add an additional email address as a contact method in Canvas?</a></li>
+<li data-lesson-id='65392'><a href="/m/4152/l/65392-how-do-i-change-my-default-email-address">How do I change my default email address?</a></li>
+<li data-lesson-id='41952'><a href="/m/4152/l/41952-how-do-i-reset-my-password">How do I reset my password?</a></li>
+<li data-lesson-id='41472'><a href="/m/4152/l/41472-how-do-i-add-a-text-sms-contact-method-in-canvas">How do I add a text (SMS) contact method in Canvas?</a></li>
+<li data-lesson-id='162488'><a href="/m/4152/l/162488-how-do-i-manage-new-features-in-my-user-account">How do I manage new features in my user account?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='23861'>
+<a class='toggle-lessons' href='/m/4152/c/23861' role='Accordion'>
+<span class='chapter-link'>Quizzes</span>
+<span class='chapter-count'>
+&nbsp;52
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='189607'><a href="/m/4152/l/189607-what-are-quizzes-for-instructors">What are Quizzes for instructors?</a></li>
+<li data-lesson-id='246404'><a href="/m/4152/l/246404-how-do-i-use-the-quizzes-index-page">How do I use the Quizzes Index Page?</a></li>
+<li data-lesson-id='180620'><a href="/m/4152/l/180620-how-do-i-use-draft-state-in-quizzes">How do I use Draft State in Quizzes?</a></li>
+<li data-lesson-id='41473'><a href="/m/4152/l/41473-what-are-the-different-types-of-quizzes">What are the different types of Quizzes?</a></li>
+<li data-lesson-id='41475'><a href="/m/4152/l/41475-what-options-are-available-for-quizzes">What options are available for Quizzes?</a></li>
+<li data-lesson-id='40724'><a href="/m/4152/l/40724-how-do-i-import-quizzes-from-qti-packages">How do I import Quizzes from QTI packages?</a></li>
+<li data-lesson-id='41474'><a href="/m/4152/l/41474-how-do-i-create-a-quiz-with-individual-questions">How do I create a Quiz with individual Questions?</a></li>
+<li data-lesson-id='98624'><a href="/m/4152/l/98624-how-do-i-create-a-quiz-with-a-question-group-to-randomize-quiz-questions">How do I create a Quiz with a Question Group to randomize quiz questions?</a></li>
+<li data-lesson-id='98625'><a href="/m/4152/l/98625-how-do-i-create-a-quiz-by-finding-questions-in-a-question-bank">How do I create a Quiz by finding questions in a Question Bank?</a></li>
+<li data-lesson-id='98626'><a href="/m/4152/l/98626-how-do-i-create-a-quiz-with-a-question-group-linked-to-a-question-bank">How do I create a Quiz with a Question Group linked to a Question Bank?</a></li>
+<li data-lesson-id='41477'><a href="/m/4152/l/41477-how-do-i-create-a-multiple-choice-quiz-question">How do I create a Multiple Choice quiz question?</a></li>
+<li data-lesson-id='43376'><a href="/m/4152/l/43376-how-do-i-create-a-true-false-quiz-question">How do I create a True/False quiz question?</a></li>
+<li data-lesson-id='44125'><a href="/m/4152/l/44125-how-do-i-create-a-fill-in-the-blank-quiz-question">How do I create a Fill-in-the-Blank quiz question?</a></li>
+<li data-lesson-id='43378'><a href="/m/4152/l/43378-how-do-i-create-a-fill-in-multiple-blanks-quiz-question">How do I create a Fill-in-Multiple-Blanks quiz question?</a></li>
+<li data-lesson-id='43379'><a href="/m/4152/l/43379-how-do-i-create-a-multiple-answers-quiz-question">How do I create a Multiple Answers quiz question?</a></li>
+<li data-lesson-id='43380'><a href="/m/4152/l/43380-how-do-i-create-a-multiple-dropdown-quiz-question">How do I create a Multiple Dropdown quiz question?</a></li>
+<li data-lesson-id='63277'><a href="/m/4152/l/63277-how-do-i-create-likert-scale-quiz-questions">How do I create Likert scale quiz questions?</a></li>
+<li data-lesson-id='43381'><a href="/m/4152/l/43381-how-do-i-create-a-matching-quiz-question">How do I create a Matching quiz question?</a></li>
+<li data-lesson-id='43382'><a href="/m/4152/l/43382-how-do-i-create-a-numerical-answer-quiz-question">How do I create a Numerical Answer quiz question?</a></li>
+<li data-lesson-id='43383'><a href="/m/4152/l/43383-how-do-i-create-a-formula-quiz-question-with-a-single-variable">How do I create a Formula quiz question with a single variable?</a></li>
+<li data-lesson-id='63943'><a href="/m/4152/l/63943-how-do-i-create-a-simple-formula-quiz-question">How do I create a Simple Formula quiz question?</a></li>
+<li data-lesson-id='43384'><a href="/m/4152/l/43384-how-do-i-create-an-essay-quiz-question">How do I create an Essay quiz question?</a></li>
+<li data-lesson-id='125612'><a href="/m/4152/l/125612-how-do-i-create-a-file-upload-quiz-question">How do I create a File Upload quiz question?</a></li>
+<li data-lesson-id='78275'><a href="/m/4152/l/78275-how-do-i-link-course-content-to-a-quiz-question">How do I link course content to a Quiz question?</a></li>
+<li data-lesson-id='50747'><a href="/m/4152/l/50747-how-do-i-create-a-question-bank-in-my-course">How do I create a Question Bank in my course?</a></li>
+<li data-lesson-id='50748'><a href="/m/4152/l/50748-how-do-i-bookmark-a-question-bank-in-my-course">How do I bookmark a Question Bank in my course?</a></li>
+<li data-lesson-id='98627'><a href="/m/4152/l/98627-how-do-i-unbookmark-a-question-bank-in-my-course">How do I unbookmark a Question Bank in my course? </a></li>
+<li data-lesson-id='50749'><a href="/m/4152/l/50749-how-do-i-delete-a-question-bank-in-my-course">How do I delete a Question Bank in my course?</a></li>
+<li data-lesson-id='50750'><a href="/m/4152/l/50750-how-do-i-move-multiple-questions-from-one-question-bank-to-another">How do I move multiple questions from one question bank to another?</a></li>
+<li data-lesson-id='50751'><a href="/m/4152/l/50751-how-do-i-move-copy-a-question-from-one-question-bank-to-another">How do I move/copy a question from one question bank to another?</a></li>
+<li data-lesson-id='269261'><a href="/m/4152/l/269261-how-do-i-reorder-questions-or-question-groups-in-a-quiz">How do I reorder questions or question groups in a Quiz?</a></li>
+<li data-lesson-id='68286'><a href="/m/4152/l/68286-how-do-i-import-a-question-bank-from-one-canvas-course-to-another">How do I import a Question Bank from one Canvas course to another?</a></li>
+<li data-lesson-id='91037'><a href="/m/4152/l/91037-how-can-i-create-a-quiz-where-students-only-see-one-question-at-a-time">How can I create a quiz where students only see one question at a time?</a></li>
+<li data-lesson-id='50754'><a href="/m/4152/l/50754-how-do-i-make-a-quiz-available-before-or-after-the-due-date">How do I make a Quiz available before or after the due date?</a></li>
+<li data-lesson-id='101240'><a href="/m/4152/l/101240-how-do-i-assign-a-quiz-to-an-individual-student-or-course-section">How do I assign a Quiz to an individual student or course section?</a></li>
+<li data-lesson-id='50755'><a href="/m/4152/l/50755-how-do-i-delete-a-quiz">How do I delete a Quiz?</a></li>
+<li data-lesson-id='63225'><a href="/m/4152/l/63225-how-do-i-export-quiz-content-from-my-course">How do I export Quiz content from my course?</a></li>
+<li data-lesson-id='50752'><a href="/m/4152/l/50752-once-i-publish-my-quiz-how-do-i-make-additional-changes">Once I publish my Quiz, how do I make additional changes?</a></li>
+<li data-lesson-id='276730'><a href="/m/4152/l/276730-once-i-publish-my-quiz-how-do-i-use-the-moderate-quiz-page">Once I publish my quiz, how do I use the Moderate Quiz page?</a></li>
+<li data-lesson-id='41484'><a href="/m/4152/l/41484-once-i-publish-my-quiz-what-kinds-of-quiz-statistics-are-available">Once I publish my Quiz, what kinds of quiz statistics are available?</a></li>
+<li data-lesson-id='50753'><a href="/m/4152/l/50753-once-i-publish-my-quiz-how-can-i-give-my-students-extra-attempts">Once I publish my Quiz, how can I give my students extra attempts?</a></li>
+<li data-lesson-id='276279'><a href="/m/4152/l/276279-once-i-publish-a-timed-quiz-how-can-i-give-my-students-extra-time">Once I publish a timed quiz, how can I give my students extra time?</a></li>
+<li data-lesson-id='276726'><a href="/m/4152/l/276726-how-do-i-manually-submit-outstanding-student-quiz-submissions">How do I manually submit outstanding student quiz submissions?</a></li>
+<li data-lesson-id='76769'><a href="/m/4152/l/76769-how-do-i-view-student-quiz-results">How do I view student quiz results? </a></li>
+<li data-lesson-id='295598'><a href="/m/4152/l/295598-how-do-i-view-a-quiz-log-for-a-student">How do I view a quiz log for a student?</a></li>
+<li data-lesson-id='139337'><a href="/m/4152/l/139337-how-do-i-regrade-a-quiz">How do I regrade a Quiz?</a></li>
+<li data-lesson-id='235923'><a href="/m/4152/l/235923-how-do-i-use-quiz-fudge-points-in-speedgrader">How do I use Quiz Fudge points in SpeedGrader?</a></li>
+<li data-lesson-id='141685'><a href="/m/4152/l/141685-how-do-i-grade-one-quiz-question-at-a-time-in-speedgrader">How do I grade one Quiz question at a time in SpeedGrader? </a></li>
+<li data-lesson-id='68346'><a href="/m/4152/l/68346-how-do-i-create-a-survey-in-my-course">How do I create a Survey in my course?</a></li>
+<li data-lesson-id='68348'><a href="/m/4152/l/68348-how-do-i-view-survey-results-in-my-course">How do I view Survey results in my course?</a></li>
+<li data-lesson-id='182372'><a href="/m/4152/l/182372-how-do-i-view-practice-quiz-results">How do I view Practice Quiz results?</a></li>
+<li data-lesson-id='295616'><a href="/m/4152/l/295616-how-do-i-set-up-a-quiz-to-be-sent-to-powerschool">How do I set up a quiz to be sent to PowerSchool?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='23863'>
+<a class='toggle-lessons' href='/m/4152/c/23863' role='Accordion'>
+<span class='chapter-link'>Rich Content Editor</span>
+<span class='chapter-count'>
+&nbsp;29
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='40330'><a href="/m/4152/l/40330-what-is-the-rich-content-editor">What is the Rich Content Editor?</a></li>
+<li data-lesson-id='41501'><a href="/m/4152/l/41501-how-do-i-align-text-using-the-rich-content-editor">How do I align text using the Rich Content Editor?</a></li>
+<li data-lesson-id='41511'><a href="/m/4152/l/41511-how-do-i-use-the-font-size-and-paragraph-drop-down-menus-to-style-my-text">How do I use the Font Size and Paragraph drop-down menus to style my text?</a></li>
+<li data-lesson-id='41502'><a href="/m/4152/l/41502-how-do-i-remove-formatting-from-text-i-am-pasting-from-another-source">How do I remove formatting from text I am pasting from another source?</a></li>
+<li data-lesson-id='41503'><a href="/m/4152/l/41503-how-do-i-create-a-bulleted-or-numbered-list-using-the-rich-content-editor">How do I create a bulleted or numbered list using the Rich Content Editor?</a></li>
+<li data-lesson-id='41504'><a href="/m/4152/l/41504-how-do-i-insert-a-table-using-the-rich-content-editor">How do I insert a table using the Rich Content Editor?</a></li>
+<li data-lesson-id='65823'><a href="/m/4152/l/65823-how-do-i-edit-content-in-the-html-view-in-the-rich-content-editor">How do I edit content in the HTML view in the Rich Content Editor?</a></li>
+<li data-lesson-id='115077'><a href="/m/4152/l/115077-how-do-i-embed-images-from-canvas-into-the-rich-content-editor">How do I embed images from Canvas into the Rich Content Editor?</a></li>
+<li data-lesson-id='41506'><a href="/m/4152/l/41506-how-do-i-embed-images-from-the-web-in-the-rich-content-editor">How do I embed images from the web in the Rich Content Editor?</a></li>
+<li data-lesson-id='41507'><a href="/m/4152/l/41507-how-do-i-embed-images-from-flickr-creative-commons">How do I embed images from Flickr Creative Commons?</a></li>
+<li data-lesson-id='65824'><a href="/m/4152/l/65824-how-do-i-create-a-hyperlink-in-the-rich-content-editor">How do I create a hyperlink in the Rich Content Editor?</a></li>
+<li data-lesson-id='41508'><a href="/m/4152/l/41508-how-do-i-link-to-a-youtube-video-in-the-rich-content-editor">How do I link to a YouTube video in the Rich Content Editor?</a></li>
+<li data-lesson-id='41505'><a href="/m/4152/l/41505-how-do-i-embed-iframe-videos-using-the-rich-content-editor">How do I embed iFrame videos using the Rich Content Editor?</a></li>
+<li data-lesson-id='48622'><a href="/m/4152/l/48622-how-do-i-upload-a-video-using-the-rich-content-editor">How do I upload a video using the Rich Content Editor?</a></li>
+<li data-lesson-id='65825'><a href="/m/4152/l/65825-how-do-i-upload-an-audio-file-using-the-rich-content-editor">How do I upload an audio file using the Rich Content Editor?</a></li>
+<li data-lesson-id='41509'><a href="/m/4152/l/41509-how-do-i-record-a-video-using-the-rich-content-editor">How do I record a video using the Rich Content Editor?</a></li>
+<li data-lesson-id='65826'><a href="/m/4152/l/65826-how-do-i-record-audio-using-the-rich-content-editor">How do I record audio using the Rich Content Editor?</a></li>
+<li data-lesson-id='40742'><a href="/m/4152/l/40742-what-should-i-do-if-i-can-t-record-video-comments-with-my-webcam">What should I do if I can&#x27;t record video comments with my webcam?</a></li>
+<li data-lesson-id='40320'><a href="/m/4152/l/40320-how-do-i-use-the-math-editor-in-the-rich-content-editor">How do I use the Math Editor in the Rich Content Editor?</a></li>
+<li data-lesson-id='65827'><a href="/m/4152/l/65827-what-is-the-content-selector-in-the-rich-content-editor">What is the Content Selector in the Rich Content Editor?</a></li>
+<li data-lesson-id='65828'><a href="/m/4152/l/65828-how-do-i-insert-links-to-course-content-into-the-rich-content-editor-using-the-content-selector">How do I insert links to course content into the Rich Content Editor using the Content Selector?</a></li>
+<li data-lesson-id='65829'><a href="/m/4152/l/65829-how-do-i-insert-course-files-into-the-rich-content-editor-using-the-content-selector">How do I insert course files into the Rich Content Editor using the Content Selector?  </a></li>
+<li data-lesson-id='65830'><a href="/m/4152/l/65830-how-do-i-insert-course-images-into-the-rich-content-editor-using-the-content-selector">How do I insert course images into the Rich Content Editor using the Content Selector?</a></li>
+<li data-lesson-id='68090'><a href="/m/4152/l/68090-how-do-i-set-the-auto-open-for-inline-preview-for-files-using-the-rich-content-editor">How do I set the auto-open for inline preview for Files using the Rich Content Editor?</a></li>
+<li data-lesson-id='68091'><a href="/m/4152/l/68091-how-do-i-disable-inline-previews-for-files-using-the-rich-content-editor">How do I disable inline previews for Files using the Rich Content Editor?</a></li>
+<li data-lesson-id='98631'><a href="/m/4152/l/98631-how-do-i-create-a-caption-file-for-an-external-video">How do I create a caption file for an external video?</a></li>
+<li data-lesson-id='98632'><a href="/m/4152/l/98632-how-do-i-create-captions-for-new-or-uploaded-videos-in-canvas">How do I create captions for new or uploaded videos in Canvas?</a></li>
+<li data-lesson-id='98633'><a href="/m/4152/l/98633-how-do-i-view-captions-in-a-video">How do I view captions in a video?</a></li>
+<li data-lesson-id='106654'><a href="/m/4152/l/106654-how-do-i-embed-a-dynamic-google-document-into-the-rich-content-editor">How do I embed a dynamic Google document into the Rich Content Editor?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='23864'>
+<a class='toggle-lessons' href='/m/4152/c/23864' role='Accordion'>
+<span class='chapter-link'>Rubrics</span>
+<span class='chapter-count'>
+&nbsp;11
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='39716'><a href="/m/4152/l/39716-what-is-a-rubric">What is a Rubric?</a></li>
+<li data-lesson-id='86227'><a href="/m/4152/l/86227-how-do-i-create-a-rubric-in-my-course">How do I create a Rubric in my course?</a></li>
+<li data-lesson-id='40072'><a href="/m/4152/l/40072-how-do-i-add-a-rubric-to-an-assignment">How do I add a Rubric to an Assignment?</a></li>
+<li data-lesson-id='40069'><a href="/m/4152/l/40069-how-do-i-add-a-rubric-to-a-graded-discussion">How do I add a Rubric to a Graded Discussion?</a></li>
+<li data-lesson-id='39720'><a href="/m/4152/l/39720-how-do-i-add-a-rubric-to-a-quiz">How do I add a Rubric to a Quiz?</a></li>
+<li data-lesson-id='39717'><a href="/m/4152/l/39717-how-do-i-edit-rubric-details-in-my-course">How do I edit Rubric details in my course?</a></li>
+<li data-lesson-id='39719'><a href="/m/4152/l/39719-how-do-i-use-free-form-comments-instead-of-ratings-in-a-rubric">How do I use free-form comments instead of ratings in a Rubric?</a></li>
+<li data-lesson-id='39723'><a href="/m/4152/l/39723-how-do-i-find-existing-rubrics-for-an-assignment">How do I find existing Rubrics for an Assignment?</a></li>
+<li data-lesson-id='39724'><a href="/m/4152/l/39724-how-do-i-manage-rubrics-in-my-course">How do I manage Rubrics in my course?</a></li>
+<li data-lesson-id='41439'><a href="/m/4152/l/41439-how-do-i-align-an-outcome-with-a-rubric-in-my-course">How do I align an Outcome with a Rubric in my course?</a></li>
+<li data-lesson-id='39726'><a href="/m/4152/l/39726-how-do-i-use-a-rubric-to-grade-an-assignment">How do I use a Rubric to grade an Assignment?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='23865'>
+<a class='toggle-lessons' href='/m/4152/c/23865' role='Accordion'>
+<span class='chapter-link'>Settings</span>
+<span class='chapter-count'>
+&nbsp;40
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='40331'><a href="/m/4152/l/40331-what-are-the-canvas-settings-at-the-course-level">What are the Canvas settings at the course level?</a></li>
+<li data-lesson-id='57087'><a href="/m/4152/l/57087-what-options-are-available-on-the-course-details-page">What options are available on the Course Details page?</a></li>
+<li data-lesson-id='41512'><a href="/m/4152/l/41512-how-do-i-change-my-course-name-and-course-code">How do I change my course name and course code?</a></li>
+<li data-lesson-id='218816'><a href="/m/4152/l/218816-how-do-i-set-a-time-zone-for-my-course">How do I set a time zone for my course?</a></li>
+<li data-lesson-id='57088'><a href="/m/4152/l/57088-how-do-i-change-the-start-and-end-dates-for-my-course">How do I change the start and end dates for my course?</a></li>
+<li data-lesson-id='91044'><a href="/m/4152/l/91044-how-do-i-change-the-language-preference-for-my-course">How do I change the language preference for my course?</a></li>
+<li data-lesson-id='206341'><a href="/m/4152/l/206341-how-do-i-use-grading-schemes-in-my-course">How do I use grading schemes in my course?</a></li>
+<li data-lesson-id='57089'><a href="/m/4152/l/57089-how-do-i-enable-a-grading-scheme-for-my-course">How do I enable a grading scheme for my course?</a></li>
+<li data-lesson-id='57090'><a href="/m/4152/l/57090-how-do-i-create-a-grading-scheme-for-my-course">How do I create a grading scheme for my course?</a></li>
+<li data-lesson-id='57091'><a href="/m/4152/l/57091-how-do-i-remove-a-grading-scheme-from-my-course">How do I remove a grading scheme from my course?</a></li>
+<li data-lesson-id='57092'><a href="/m/4152/l/57092-how-do-i-delete-a-grading-scheme-in-my-course">How do I delete a grading scheme in my course?</a></li>
+<li data-lesson-id='103956'><a href="/m/4152/l/103956-what-is-a-creative-commons-license">What is a Creative Commons license?</a></li>
+<li data-lesson-id='57093'><a href="/m/4152/l/57093-how-do-i-set-a-license-for-my-course-and-make-it-publicly-visible">How do I set a license for my course and make it publicly visible?</a></li>
+<li data-lesson-id='284582'><a href="/m/4152/l/284582-how-do-i-make-the-syllabus-for-my-course-publicly-visible">How do I make the syllabus for my course publicly visible?</a></li>
+<li data-lesson-id='303351'><a href="/m/4152/l/303351-how-do-i-make-my-course-visible-to-authenticated-users">How do I make my course visible to authenticated users?</a></li>
+<li data-lesson-id='284583'><a href="/m/4152/l/284583-how-do-i-include-a-course-in-the-public-course-index">How do I include a course in the Public Course Index?</a></li>
+<li data-lesson-id='332400'><a href="/m/4152/l/332400-how-do-i-change-student-access-for-my-course-before-or-after-the-course-dates">How do I change student access for my course before or after the course dates?</a></li>
+<li data-lesson-id='57094'><a href="/m/4152/l/57094-how-do-i-change-additional-options-for-students-in-my-course">How do I change additional options for students in my course?</a></li>
+<li data-lesson-id='48290'><a href="/m/4152/l/48290-how-do-i-change-self-enrollment-settings-for-my-course">How do I change self-enrollment settings for my course?</a></li>
+<li data-lesson-id='72084'><a href="/m/4152/l/72084-how-do-i-enable-course-self-enrollment-with-a-secret-url">How do I enable course self-enrollment with a secret URL?</a></li>
+<li data-lesson-id='74473'><a href="/m/4152/l/74473-how-do-i-enable-course-self-enrollment-with-a-join-code">How do I enable course self-enrollment with a join code?</a></li>
+<li data-lesson-id='92748'><a href="/m/4152/l/92748-how-do-i-hide-totals-in-my-students-grade-summaries">How do I hide totals in my students&#x27; grade summaries?</a></li>
+<li data-lesson-id='92749'><a href="/m/4152/l/92749-how-do-i-hide-the-box-and-whisker-plot-grade-distribution-graphs-from-students">How do I hide the box and whisker plot (grade distribution) graphs from students?</a></li>
+<li data-lesson-id='101246'><a href="/m/4152/l/101246-how-do-i-disable-comments-in-announcements-for-the-entire-course">How do I disable comments in Announcements for the entire course?</a></li>
+<li data-lesson-id='55346'><a href="/m/4152/l/55346-how-are-courses-and-sections-related">How are courses and sections related?</a></li>
+<li data-lesson-id='57096'><a href="/m/4152/l/57096-how-do-i-add-a-section-to-my-course">How do I add a section to my course?</a></li>
+<li data-lesson-id='97895'><a href="/m/4152/l/97895-how-do-i-add-students-to-a-course-section">How do I add students to a course section?</a></li>
+<li data-lesson-id='73680'><a href="/m/4152/l/73680-how-do-i-edit-the-details-for-a-course-section">How do I edit the details for a course section?</a></li>
+<li data-lesson-id='57095'><a href="/m/4152/l/57095-how-do-i-change-the-name-of-a-course-section">How do I change the name of a course section?</a></li>
+<li data-lesson-id='57097'><a href="/m/4152/l/57097-how-do-i-delete-a-course-section">How do I delete a course section?</a></li>
+<li data-lesson-id='57098'><a href="/m/4152/l/57098-how-do-i-view-section-enrollments-in-my-course">How do I view section enrollments in my course?</a></li>
+<li data-lesson-id='41450'><a href="/m/4152/l/41450-how-do-i-conclude-an-enrollment-in-my-course">How do I conclude an enrollment in my course?</a></li>
+<li data-lesson-id='61152'><a href="/m/4152/l/61152-what-is-student-view">What is Student View?</a></li>
+<li data-lesson-id='61153'><a href="/m/4152/l/61153-how-do-i-enable-student-view">How do I enable Student View?</a></li>
+<li data-lesson-id='41451'><a href="/m/4152/l/41451-how-do-i-delete-an-enrollment-in-my-course">How do I delete an enrollment in my course?</a></li>
+<li data-lesson-id='57102'><a href="/m/4152/l/57102-how-do-i-reset-course-content">How do I reset course content?</a></li>
+<li data-lesson-id='156575'><a href="/m/4152/l/156575-how-do-i-manage-new-features-for-my-course">How do I manage new features for my course?</a></li>
+<li data-lesson-id='196631'><a href="/m/4152/l/196631-what-feature-options-are-currently-available-for-my-canvas-course">What Feature Options are currently available for my Canvas course?</a></li>
+<li data-lesson-id='75091'><a href="/m/4152/l/75091-how-do-i-access-the-canvas-beta-environment">How do I access the Canvas beta environment?</a></li>
+<li data-lesson-id='75092'><a href="/m/4152/l/75092-how-do-i-access-the-canvas-test-environment">How do I access the Canvas test environment?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='23867'>
+<a class='toggle-lessons' href='/m/4152/c/23867' role='Accordion'>
+<span class='chapter-link'>SpeedGrader</span>
+<span class='chapter-count'>
+&nbsp;15
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='55016'><a href="/m/4152/l/55016-what-is-speedgrader">What is SpeedGrader?</a></li>
+<li data-lesson-id='55019'><a href="/m/4152/l/55019-how-do-i-get-to-speedgrader-from-the-gradebook">How do I get to SpeedGrader from the Gradebook?</a></li>
+<li data-lesson-id='55020'><a href="/m/4152/l/55020-how-do-i-get-to-speedgrader-from-an-assignment-quiz-or-graded-discussion">How do I get to SpeedGrader from an Assignment, Quiz, or Graded Discussion?</a></li>
+<li data-lesson-id='55021'><a href="/m/4152/l/55021-how-do-i-use-speedgrader">How do I use SpeedGrader?</a></li>
+<li data-lesson-id='55022'><a href="/m/4152/l/55022-how-do-i-open-a-rubric-in-speedgrader">How do I open a Rubric in SpeedGrader?</a></li>
+<li data-lesson-id='55023'><a href="/m/4152/l/55023-how-do-i-leave-feedback-for-my-students-in-speedgrader">How do I leave feedback for my students in SpeedGrader?</a></li>
+<li data-lesson-id='55024'><a href="/m/4152/l/55024-how-do-i-view-past-versions-of-submissions-in-speedgrader">How do I view past versions of submissions in SpeedGrader?</a></li>
+<li data-lesson-id='55025'><a href="/m/4152/l/55025-how-do-i-download-assignments-in-speedgrader">How do I download Assignments in SpeedGrader?</a></li>
+<li data-lesson-id='55026'><a href="/m/4152/l/55026-how-do-i-sort-assignments-in-speedgrader">How do I sort Assignments in SpeedGrader?</a></li>
+<li data-lesson-id='55028'><a href="/m/4152/l/55028-how-do-i-find-a-student-submission-in-speedgrader">How do I find a student submission in SpeedGrader?</a></li>
+<li data-lesson-id='41529'><a href="/m/4152/l/41529-how-do-i-track-my-progress-and-the-average-grade-in-speedgrader">How do I track my progress and the average grade in SpeedGrader?</a></li>
+<li data-lesson-id='45129'><a href="/m/4152/l/45129-how-do-i-mute-or-unmute-an-assignment-in-speedgrader">How do I mute or unmute an Assignment in SpeedGrader?</a></li>
+<li data-lesson-id='55029'><a href="/m/4152/l/55029-how-do-i-hide-student-names-in-speedgrader">How do I hide student names in SpeedGrader?</a></li>
+<li data-lesson-id='80119'><a href="/m/4152/l/80119-how-do-i-use-crocodoc-in-canvas-assignments">How do I use Crocodoc in Canvas assignments?</a></li>
+<li data-lesson-id='103957'><a href="/m/4152/l/103957-how-do-i-use-chrome-s-speech-recognition-feature-to-leave-a-comment-in-speedgrader">How do I use Chrome&#x27;s speech recognition feature to leave a comment in SpeedGrader?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='23868'>
+<a class='toggle-lessons' href='/m/4152/c/23868' role='Accordion'>
+<span class='chapter-link'>Syllabus</span>
+<span class='chapter-count'>
+&nbsp;3
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='55577'><a href="/m/4152/l/55577-how-do-i-use-the-syllabus-as-an-instructor">How do I use the Syllabus as an instructor?</a></li>
+<li data-lesson-id='41537'><a href="/m/4152/l/41537-how-do-i-edit-the-syllabus-description">How do I edit the Syllabus description?</a></li>
+<li data-lesson-id='41538'><a href="/m/4152/l/41538-how-do-i-navigate-the-syllabus-table-and-calendar">How do I navigate the Syllabus table and calendar?</a></li>
+</ul>
+</li>
+<li class='chapter-list-item' data-section-id='23862'>
+<a class='toggle-lessons' href='/m/4152/c/23862' role='Accordion'>
+<span class='chapter-link'>Web Services</span>
+<span class='chapter-count'>
+&nbsp;7
+</span>
+</a>
+<ul class='nested-chapter-lessons'>
+<li data-lesson-id='40329'><a href="/m/4152/l/40329-how-do-i-connect-to-web-services-outside-of-canvas">How do I connect to web services outside of Canvas?</a></li>
+<li data-lesson-id='73170'><a href="/m/4152/l/73170-how-do-i-connect-to-delicious-as-a-web-service-in-canvas">How do I connect to Delicious as a web service in Canvas?</a></li>
+<li data-lesson-id='73172'><a href="/m/4152/l/73172-how-do-i-connect-to-google-drive-as-a-web-service-in-canvas">How do I connect to Google Drive as a web service in Canvas?</a></li>
+<li data-lesson-id='73173'><a href="/m/4152/l/73173-how-do-i-connect-to-twitter-as-a-web-service-in-canvas">How do I connect to Twitter as a web service in Canvas?</a></li>
+<li data-lesson-id='73174'><a href="/m/4152/l/73174-how-do-i-connect-to-skype-as-a-web-service-in-canvas">How do I connect to Skype as a web service in Canvas?</a></li>
+<li data-lesson-id='73175'><a href="/m/4152/l/73175-how-do-i-connect-to-linkedin-as-a-web-service-in-canvas">How do I connect to LinkedIn as a web service in Canvas?</a></li>
+<li data-lesson-id='283338'><a href="/m/4152/l/283338-how-do-i-connect-to-yo-as-a-web-service-in-canvas">How do I connect to Yo as a web service in Canvas?</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class='screensteps-sidebar-widget' id='sidebar-message'>
+<p><a rel="license" href="//creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="//i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<br />
+<p></p></p>
+<h3>Can&#8217;t find what you&#8217;re looking for?</h3>
+<ul>
+<li><a href="//community.canvaslms.com/community/answers">Ask the community</a><br />
+<li><a href="//community.canvaslms.com/community/ideas">Request a Feature</a><br />
+<li><a href="//community.canvaslms.com/community/help">File a Ticket</a></ul>
+<h3>More Resources</h3>
+<ul>
+<li><a href="//releases.canvaslms.com">Read Release Notes</a><br />
+<li><a href="//community.canvaslms.com">Community Resources</a><br />
+<li><a href="//https://community.canvaslms.com/community/ideas/canvaslive">Participate in CanvasLIVE!</a><br />
+<li><a href="//canvas.instructure.com/doc/api/">View <span class="caps">API</span> Documentation</a><br />
+<li><a href="//www.eduappcenter.com/">View Edu App Center</a></ul>
+<h3>New to Instructure?</h3>
+<ul>
+<li><a href="//www.canvaslms.com">Learn more</a><br />
+<li><a href="//www.canvaslms.com/try-canvas">Sign up for a demo</a><br />
+<li><a href="//www.facebook.com/instructure">Visit us on facebook</a><br />
+<li><a href="//twitter.com/#!/instructure">Follow us on twitter</a></ul>
+<p>
+<p>
+<h3>Download Manuals</h3>
+<p>While we won&#8217;t be updating Canvas Guides <span class="caps">PDF</span> manuals every release, we will create the <span class="caps">PDF</span> manuals at least three times a year (roughly April/May, August/September, December/January).<br />
+<h4>Updated on 2015-08-19</h4></p>
+<h4>Canvas Guides</h4>
+<ul>
+<li><a href="https://guides.instructure.com/m/8470/pdf">Canvas Student Getting Started Guide</a><br />
+<li><a href="https://guides.instructure.com/m/8472/pdf">Canvas Instructor Getting Started Guide</a><br />
+<li><a href="https://guides.instructure.com/m/4214/pdf">Canvas Admin Guide</a><br />
+<li><a href="https://guides.instructure.com/m/4152/pdf">Canvas Instructor Guide</a><br />
+<li><a href="https://guides.instructure.com/m/4212/pdf">Canvas Student Guide</a><br />
+<li><a href="https://guides.instructure.com/m/4144/pdf">Canvas Observer Guide</a></ul>
+<h4>Canvas Catalog</h4>
+<ul><li><a href="https://guides.instructure.com/m/26051/pdf">Canvas Catalog Guide</a></ul>
+<h4>Canvas Commons</h4>
+<ul><li><a href="https://guides.instructure.com/m/38287/pdf">Commons Guide</a></ul>
+<h4>Canvas by Instructure App</h4>
+<ul>
+<li><a href="https://guides.instructure.com/m/18555/pdf">Canvas by Instructure Android Phone Guide</a><br />
+<li><a href="https://guides.instructure.com/m/18560/pdf">Canvas by Instructure Android Tablet Guide</a><br />
+<li><a href="https://guides.instructure.com/m/18561/pdf">Canvas by Instructure iOS Phone Guide</a><br />
+<li><a href="https://guides.instructure.com/m/18562/pdf">Canvas by Instructure iOS Tablet Guide</a></ul>
+<h4>MagicMarker App</h4>
+<ul>
+<li><a href="https://guides.instructure.com/m/22289/pdf">MagicMarker iOS Tablet Guide</a></ul>
+<h4>Polls for Canvas App</h4>
+<ul>
+<li><a href="https://guides.instructure.com/m/22678/pdf">Polls for Canvas Android Phone Guide</a><br />
+<li><a href="https://guides.instructure.com/m/22679/pdf">Polls for Canvas Android Tablet Guide</a><br />
+<li><a href="https://guides.instructure.com/m/22288/pdf">Polls for Canvas iOS Phone Guide</a><br />
+<li><a href="https://guides.instructure.com/m/22677/pdf">Polls for Canvas iOS Tablet Guide</a></ul>
+<h4>SpeedGrader App</h4>
+<ul>
+<li><a href="https://guides.instructure.com/m/30486/pdf">SpeedGrader Android Phone Guide</a><br />
+<li><a href="https://guides.instructure.com/m/30454/pdf">SpeedGrader Android Tablet Guide</a><br />
+<li><a href="https://guides.instructure.com/m/19294/pdf">SpeedGrader iOS Tablet Guide</a></ul>
+
+</div>
+<div class='screensteps-sidebar-widget' id='lesson-sidebar-info'>
+<h3>Last Updated</h3><p>Aug 08, 2015</p>
+<div class='pdf-container'>
+<p></p>
+<p><a href="/s/2204/m/4152/pdf" class="pdf lesson-pdf">Download Manual PDF</a></p>
+</div>
+</div>
+<div class='screensteps-sidebar-widget' id='other-assets'>
+<h3>Other Resources</h3>
+<ul class='asset-list with-divider'>
+<li class='divider'><h4>Canvas Guides</h4></li>
+<li class='manual'><a href="/m/8470">Canvas Student Getting Started Guide</a></li>
+<li class='manual'><a href="/m/8472">Canvas Instructor Getting Started Guide</a></li>
+<li class='divider'><h4>Canvas Guides</h4></li>
+<li class='manual'><a href="/m/4214">Canvas Admin Guide</a></li>
+<li class='manual'><a href="/m/4152">Canvas Instructor Guide</a></li>
+<li class='manual'><a href="/m/4212">Canvas Student Guide</a></li>
+<li class='manual'><a href="/m/4144">Canvas Observer Guide</a></li>
+<li class='manual'><a href="/m/4210">Canvas Video Guide</a></li>
+<li class='divider'><h4>Canvas Catalog</h4></li>
+<li class='manual'><a href="/m/26051">Canvas Catalog Guide</a></li>
+<li class='divider'><h4>Commons</h4></li>
+<li class='manual'><a href="/m/38287">Commons Guide</a></li>
+<li class='divider'><h4>Mobile Guides - Canvas by Instructure</h4></li>
+<li class='manual'><a href="/m/18555">Canvas by Instructure Android Phone Guide</a></li>
+<li class='manual'><a href="/m/18560">Canvas by Instructure Android Tablet Guide</a></li>
+<li class='manual'><a href="/m/18561">Canvas by Instructure iOS Phone Guide</a></li>
+<li class='manual'><a href="/m/18562">Canvas by Instructure iOS Tablet Guide</a></li>
+<li class='divider'><h4>Mobile Guides - MagicMarker</h4></li>
+<li class='manual'><a href="/m/22289">MagicMarker iOS Tablet Guide</a></li>
+<li class='divider'><h4>Mobile Guides - Polls for Canvas</h4></li>
+<li class='manual'><a href="/m/22678">Polls for Canvas Android Phone Guide</a></li>
+<li class='manual'><a href="/m/22679">Polls for Canvas Android Tablet Guide</a></li>
+<li class='manual'><a href="/m/22288">Polls for Canvas iOS Phone Guide</a></li>
+<li class='manual'><a href="/m/22677">Polls for Canvas iOS Tablet Guide</a></li>
+<li class='divider'><h4>Mobile Guides - SpeedGrader</h4></li>
+<li class='manual'><a href="/m/30454">SpeedGrader Android Tablet Guide</a></li>
+<li class='manual'><a href="/m/30486">SpeedGrader Android Phone Guide</a></li>
+<li class='manual'><a href="/m/19294">SpeedGrader iOS Tablet Guide</a></li>
+</ul>
+</div>
+<div class='screensteps-sidebar-widget' id='google-translator'>
+<h3>Translate</h3>
+<div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', autoDisplay: false}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</div>
+
+
+</div>
+<div id='screensteps-main-content-wrapper' role='main'>
+<div id='screensteps-main-content'>
+<div id='screensteps-document'>
+<div id='screensteps-description'>
+<div class='screensteps-next-prev-navigation'>
+<ul>
+<li class='previous'>
+<strong>Prev</strong>: <a href="/m/4152/l/57129-how-do-i-permanently-delete-my-course">How do I permanently delete my course?</a>
+</li>
+<li class='next'>
+<strong>Next</strong>: <a href="/m/4152/l/76774-how-do-i-use-the-discussions-index-page">How do I use the Discussions Index Page? </a>
+</li>
+</ul>
+</div>
+
+<h1 class='lesson'>What are Discussions for instructors?</h1>
+<div class='description'>
+<p><em>Canvas recently introduced a new page design called the New Canvas User Interface (UI). Depending on your Canvas view, your page design may vary from the images shown in this lesson. However, the functionality and location of the components remain the same.</em></p>
+<p>Canvas provides an integrated system for class discussions, allowing both instructors and students to start and contribute to as many discussion topics as desired. Discussions can also be created as an assignment for grading purposes (and seamlessly integrated with the Canvas Gradebook), or simply serve as a forum for topical and current events. Discussions can also be created within student groups.</p>
+<ul><li>Help students start thinking about an upcoming Assignment or class discussion.</li>
+<li>Follow-up on a conversation or questions that began in a face-to-face classroom.</li>
+<li>Test student comprehension of important points made in class.</li>
+<li>Debate contradictory ideas.</li>
+<li>Brainstorm different approaches to a class problem.</li>
+</ul>
+<p><strong>Note: </strong>Discussions are not the same as Announcements. Learn the difference between <a href="../../4152/l/49995?data-resolve-url=true&amp;data-manual-id=4152" target="">Announcements and Discussions</a>.</p>
+</div>
+
+</div>
+<div id='screensteps-steps'>
+<div class='step' data-step-uuid='bf7d8466-4a93-4f74-8e3c-2f4ac4281993' id=''>
+<h2 id="HowDoIAccessDiscussions?">How do I access Discussions?</h2>
+<div>
+<div class='image clearfix'>
+<a href="/m/4152/l/40312-what-are-discussions-for-instructors/show_image?image_id=5790177" alt="" rel="prettyPhoto"><img alt="How do I access Discussions?" src="http://s3.amazonaws.com/screensteps_live/images/canvas/40312/27/rendered/e9d08ee6-d557-4b09-8a7a-2e4d52207874_display.png?AWSAccessKeyId=AKIAJRW37ULKKSXWY73Q&amp;Expires=1441702249&amp;Signature=XPriA2fP2vLmSEVLSBQ2i4A6y3o%3D" /></a>
+</div>
+
+<div class="instructions"><p>Discussions are accessed within the Discussions link within Course Navigation. </p></div>
+<div class='clear'></div>
+</div>
+</div>
+<div class='step' data-step-uuid='CE5DCCBD-1781-44A4-87C3-8BADA9431E98' id=''>
+<h2 id="HowAreDiscussionsOrganized?">How are Discussions Organized?</h2>
+<div>
+<div class='image clearfix'>
+<a href="/m/4152/l/40312-what-are-discussions-for-instructors/show_image?image_id=5938969" alt="" rel="prettyPhoto"><img alt="How are Discussions Organized?" src="http://s3.amazonaws.com/screensteps_live/images/canvas/40312/28/rendered/f9edafe3-23c8-4915-a11c-14217f2bc50c_display.png?AWSAccessKeyId=AKIAJRW37ULKKSXWY73Q&amp;Expires=1441702249&amp;Signature=%2BBYAv%2Fk3TdnlcYoRGgxgnbrPLik%3D" /></a>
+<a href="/m/4152/l/40312-what-are-discussions-for-instructors/show_image?image_id=5938969" class="preview_image" rel="prettyPhoto" target="_blank">Zoom</a>
+</div>
+
+<div class="instructions"><p>The Discussions Index Page is organized into three main areas: Discussions, Pinned Discussions, and Closed for Comments Discussions. </p>
+<p>Learn more about each of these areas in the <a href="../../4152/l/76774?data-resolve-url=true&amp;data-manual-id=4152" target="">Discussions Index Page</a> lesson.</p></div>
+<div class='clear'></div>
+</div>
+</div>
+<div class='step' data-step-uuid='F675E8CD-DDCF-4D68-BA2A-0DB60B121A22' id=''>
+<h2 id="HowDoIUseDiscussions?">How do I use Discussions?</h2>
+<div>
+
+<div class="instructions"><p>Within Discussions you can:</p>
+<ul><li><a href="../../4152/l/49996?data-resolve-url=true&amp;data-manual-id=4152" target="">Create</a>, <a href="../../4152/l/49997?data-resolve-url=true&amp;data-manual-id=4152" target="">edit</a>, and <a href="../../4152/l/49998?data-resolve-url=true&amp;data-manual-id=4152" target="">delete</a> discussion topics. You can also <a href="../../4152/l/50010?data-resolve-url=true&amp;data-manual-id=4152" target="">reply to</a>, <a href="../../4152/l/99891?data-resolve-url=true&amp;data-manual-id=4152" target="">edit, and delete</a> individual student discussion posts.</li>
+<li>Create <a href="../../4152/l/62356?data-resolve-url=true&amp;data-manual-id=4152" target="">threaded</a> or <a href="../../4152/l/62357?data-resolve-url=true&amp;data-manual-id=4152" target="">focused</a> discussions within your course. (Private discussions can be initiated within student groups, which are not viewable by others outside that group.)</li>
+<li>Create discussions with <a href="../../4152/l/101243?data-resolve-url=true&amp;data-manual-id=4152" target="">varied due dates</a> for different sections within your course. </li>
+<li>Create a <a href="../../4152/l/49999?data-resolve-url=true&amp;data-manual-id=4152" target="">graded discussion</a> or a <a href="../../4152/l/64224?data-resolve-url=true&amp;data-manual-id=4152" target="">group discussion</a> as an assignment. When a discussion is marked as a graded assignment, the Canvas SpeedGrader™ isolates each student’s comments from the thread and combines them into one easily readable view for grading.</li>
+<li><a href="../../4152/l/126075?data-resolve-url=true&amp;data-manual-id=4152" target="">Subscribe</a> to a discussion and be notified of replies. </li>
+<li>Enable <a href="../../4152/l/50000?data-resolve-url=true&amp;data-manual-id=4152" target="">podcast feeds</a> within your discussions.</li>
+<li>Embed or attach <a href="../../4152/l/50007?data-resolve-url=true&amp;data-manual-id=4152" target="">files,</a> <a href="../../4152/l/65785?data-resolve-url=true&amp;data-manual-id=4152" target="">images</a>, and <a href="../../4152/l/50005?data-resolve-url=true&amp;data-manual-id=4152" target="">YouTube</a> videos. </li>
+<li>Add <a href="../../4152/l/69758?data-resolve-url=true&amp;data-manual-id=4152" target="">course content</a> directly from your course. </li>
+<li><a href="../../4152/l/41361?data-resolve-url=true&amp;data-manual-id=4152" target="">Delay discussion posts</a> until a defined date.</li>
+<li><a href="../../4152/l/123560?data-resolve-url=true&amp;data-manual-id=4152" target="">Pin discussion threads</a> that you want your students to see at the top of the Discussions page.</li>
+</ul>
+<p><strong>Note:</strong> You can also use keyboard shortcuts to navigate individual discussion threads. Press<span style="color: rgb(38,38,38);"> the </span><span style="color: rgb(38,38,38);"><strong>comma</strong></span><span style="color: rgb(38,38,38);"> </span><span style="color: rgb(38,38,38);"><strong>key</strong></span><span style="color: rgb(38,38,38);"> and a pop-up window with keyboard shortcuts will appear for keyboard navigation.</span></p></div>
+<div class='clear'></div>
+</div>
+</div>
+<div class='step' data-step-uuid='1e362703-2534-4b57-b62d-8f04d6a5d060' id=''>
+<h2 id="WhatSettingsCanIControlInDiscussions?">What Settings Can I Control in Discussions?</h2>
+<div>
+
+<div class="instructions"><p>You can control certain settings within Discussions:</p>
+<ul><li>Tell Canvas how to mark your discussion posts as <a href="../../4152/l/116357?data-resolve-url=true&amp;data-manual-id=4152" target="">read and unread</a>. You can also <a href="../../4152/l/116351?data-resolve-url=true&amp;data-manual-id=4152" target="">manually mark posts as read</a>.</li>
+<li>Require students to reply to a discussion <a href="../../4152/l/50008?data-resolve-url=true&amp;data-manual-id=4152" target="">before viewing other replies</a>.</li>
+<li>Allow students to <a href="../../4152/l/99890?data-resolve-url=true&amp;data-manual-id=4152" target="">edit or delete</a> their own discussion posts.</li>
+<li>Allow students to <a href="../../4152/l/95578?data-resolve-url=true&amp;data-manual-id=4152" target="">create new discussions</a> and <a href="../../4152/l/65779?data-resolve-url=true&amp;data-manual-id=4152" target="">attach files</a> in your course discussions (this setting does not apply to student groups).</li>
+<li>Allow students to <a href="../../4152/l/348630?data-resolve-url=true&amp;data-manual-id=4152" target="_blank">like discussion replies</a> in your course discussions.</li>
+<li><a href="../../4152/l/123824?data-resolve-url=true&amp;data-manual-id=4152" target="">Close discussion threads</a> to comments.</li>
+</ul></div>
+<div class='clear'></div>
+</div>
+</div>
+
+<div class='screensteps-next-prev-navigation'>
+<ul>
+<li class='previous'>
+<strong>Prev</strong>: <a href="/m/4152/l/57129-how-do-i-permanently-delete-my-course">How do I permanently delete my course?</a>
+</li>
+<li class='next'>
+<strong>Next</strong>: <a href="/m/4152/l/76774-how-do-i-use-the-discussions-index-page">How do I use the Discussions Index Page? </a>
+</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+
+<div data-logged-in-check-url='https://canvas.screenstepslive.com/s/2204/user_nav' id='screensteps-admin-bar' style='display:none;'>
+<div id='screensteps-admin-bar-inner'>
+<ul>
+<li><a href="http://canvas.screenstepslive.com/admin/spaces/2204/lessons/40312?manual_id=4152" target="_blank">View in admin portal</a></li>
+<li><a href="http://canvas.screenstepslive.com/admin/lessons/40312/steps?manual_id=4152&amp;space_id=2204" target="_blank">Edit content on web</a></li>
+<li><a href="screensteps://canvas.screenstepslive.com/open/s/2204/m/4152/a/40312?checkout=1">Edit in desktop</a></li>
+</ul>
+<span>ScreenSteps</span>
+<div class='screensteps-clear'></div>
+</div>
+</div>
+
+<!-- AddThis Button BEGIN -->
+<div id='add-this-container'>
+<div class="addthis_toolbox addthis_default_style " >
+<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+<a class="addthis_button_tweet"></a>
+<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+<a class="addthis_counter addthis_pill_style"></a>
+</div>
+</div>
+<script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4f9f7fa35143b2a1"></script>
+<!-- AddThis Button END -->
+          </div>
+        </div>
+        <div class='clear'></div>
+      </div>
+
+    </div>
+    <div id='footer'>
+
+      <p>
+      </p>
+    </div>
+  </body>
+</html>
